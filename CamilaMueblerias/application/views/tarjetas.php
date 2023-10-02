@@ -1,0 +1,87 @@
+<?php
+    defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Camila Mueblerias</title>
+    <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/tarjetas.css">
+</head>
+
+<body>
+    <section>
+        <div class="content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="<?= base_url() ?>public/img/salas/portada.webp" alt="Imagen">
+                        <div class="custom-card-content">
+                            <h5 class="custom-card-title">Salas</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insert/"><button class='custom-card-button'>Agregar tarjeta</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="<?= base_url() ?>public/img/recamaras/portada.webp" alt="Imagen">
+                        <div class="custom-card-content">
+                            <h5 class="custom-card-title">Recamaras</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insert/"><button
+                                    class='custom-card-button'>Agregar tarjeta </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="<?= base_url() ?>public/img/cocinas/portada.webp" alt="Imagen">
+                        <div class="custom-card-content">
+                            <h5 class="custom-card-title">Cocinas</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insert"><button class='custom-card-button'>Agregar tarjeta </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="<?= base_url() ?>public/img/electronica/portada.webp" alt="Imagen">
+                        <div class="custom-card-content">
+                            <h5 class="custom-card-title">Electronica</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insert/"><button class='custom-card-button'>Agregar tarjeta </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp" alt="Imagen">
+                        <div class="custom-card-content">
+                            <h5 class="custom-card-title">Electrodomesticos</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insert/"><button class='custom-card-button'>Agregar tarjeta</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="<?= base_url() ?>public/img/motos/portada.webp" alt="Imagen">
+                        <div class="custom-card-content">
+                            <h5 class="custom-card-title">Motos</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insert/"><button class='custom-card-button'>Agregar tarjeta</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+    <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= base_url() ?>public/js/home.js"></script>
+</body>
+</html>
