@@ -17,13 +17,17 @@ section{
   border-radius: 7px;
   height: 360px;
   margin: 15px 5px 20px 5px;
+  position: relative;
+    top: 0;
+  transition: 0.5s box-shadow ease;
+  transition: 0.5s top ease;
 }
 .card img {
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
   height: 70%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .custom-card-button{
   margin-top: 2px;
@@ -40,3 +44,11 @@ section{
   display: block;
   height: 30%;
 }
+
+.card:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.349) ;
+  top: -5px;
+  cursor: pointer;
+  transition: 5s top ease;
+  transition: 0.2s box-shadow ease;
+}   

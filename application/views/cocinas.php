@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/salas1.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/salas.css">
 </head>
 
 <body>
@@ -24,21 +24,23 @@
     </header>
     <main>
         <section>
-            <div class="container-fluid">
+            <div class="container-flui ">
                 <div class="row flex-nowrap">
                     <div class="sidebar col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white">
-                        <div id="sticky-sidebar" class="sidebar d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <div id="sticky-sidebar"
+                            class="sidebar d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
 
                             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
                                 id="menu">
                                 <li class="nav-item list">
                                     <a href="">
-                                    <i class="bi bi-list fs-4"></i>
+                                        <i class="bi bi-list fs-4"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="<?= base_url() ?>index.php/principal/" class="nav-link align-middle px-0">
-                                        <i class="fs-5 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Inicio</span>
+                                        <i class="fs-5 bi-house"></i> <span
+                                            class="ms-1 d-none d-sm-inline">Inicio</span>
                                     </a>
                                 </li>
                                 <li>
@@ -93,26 +95,14 @@
                                             class="ms-1 d-none d-sm-inline">Servicios</span> </a>
                                     <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                         <li class="w-100">
-                                            <a href="#" class="nav-link px-0"> <span
-                                                    class="d-none d-sm-inline">Product</span> </a>
+                                            <a href="" class="nav-link px-0"> <span class="d-none d-sm-inline"><i
+                                                        class="bi bi-truck"> Entrega en Domicilio</i></span> </a>
                                         </li>
                                     </ul>
                                     <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                         <li>
-                                            <a href="#" class="nav-link px-0"> <span
-                                                    class="d-none d-sm-inline">Product</span> </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                        <li>
-                                            <a href="#" class="nav-link px-0"> <span
-                                                    class="d-none d-sm-inline">Product</span> </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                        <li>
-                                            <a href="#" class="nav-link px-0"> <span
-                                                    class="d-none d-sm-inline">Product</span> </a>
+                                            <a href="" class="nav-link px-0"> <span class="d-none d-sm-inline"><i
+                                                        class="bi bi-shop"> Entrega en Tienda</i></span> </a>
                                         </li>
                                     </ul>
 
@@ -124,7 +114,7 @@
                     <div class="col py-3">
                         <div class="content">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="card">
                                         <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
                                         <div class="custom-card-content">
@@ -134,7 +124,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="card">
                                         <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
                                         <div class="custom-card-content">
@@ -144,7 +134,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="card">
                                         <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
                                         <div class="custom-card-content">
@@ -154,7 +144,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="card">
                                         <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
                                         <div class="custom-card-content">
@@ -164,7 +154,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="card">
                                         <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
                                         <div class="custom-card-content">
@@ -174,7 +164,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="card">
                                         <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
                                         <div class="custom-card-content">
@@ -184,7 +174,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="card">
                                         <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
                                         <div class="custom-card-content">
@@ -194,7 +184,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="card">
                                         <img src="<?= base_url() ?>public/img/motos/hondadio.jpg" alt="Imagen">
                                         <div class="custom-card-content">
@@ -202,7 +192,7 @@
                                             <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
                                         </div>
                                     </div>
-                                </div>                            
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -224,6 +214,7 @@
 
     </footer>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= base_url() ?>public/js/login.js"></script>
 </body>
 
 </html>

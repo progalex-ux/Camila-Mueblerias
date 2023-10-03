@@ -16,10 +16,10 @@
 
 <body>
     <div class="login-container">
-        <h2>Iniciar Sesión</h2>
+        <h2>Iniciar Sesion</h2>
 
         <div class="form-group">
-            <label for="usuario"><i class="bi bi-person-circle"></i>Usuario:</label>
+            <label for="usuario">Usuario:</label>
             <input type="text" id="usuario" name="usuario" required>
         </div>
         <div class="form-group">
@@ -27,12 +27,12 @@
             <input type="password" id="contrasena" name="contrasena" required>
         </div>
         <div id="liveAlertPlaceholder"></div>
-        <button type="button" class="btn btn-primary" id="liveAlertBtn" onclick="loginUser()">Ingresar</button>
+        <button type="button" class="btn btn-success border" id="liveAlertBtn" onclick="loginUser()">Ingresar</button>
 
     </div>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/home.js"></script>
+    <script src="<?= base_url() ?>public/js/login.js"></script>
 
 </body>
 

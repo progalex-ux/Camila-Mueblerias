@@ -29,8 +29,9 @@
         <div class="secciones">
             <div class="categorias">
                 <div class="menu">
-                    <button class="menu-button" onclick="toggleMenu()">Categorias <img
-                            src="<?= base_url() ?>public/img/iconos/arrow.png" class="arrow" alt=""></button>
+                    <button class="menu-button" onclick="toggleMenu()">Categorias
+                        <i id="menu-icon" onclick="toggleiconMenu()" class="bi bi-chevron-down"></i>
+                    </button>
                     <div class="menu-content" id="myDropdown">
                         <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
@@ -39,10 +40,16 @@
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
                         <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
                     </div>
+                    <div class="menu-content" id="myDropdownicon">
+                        <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
+                        <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
+                        <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
+                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
+                        <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
+                        <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
+                    </div>
                 </div>
-
             </div>
-
         </div>
         <div class="logo">
             <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-original.png"
@@ -64,41 +71,41 @@
 
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/recamaras" class="nav-link">Recamaras</a>
+                                <a href="<?= base_url() ?>index.php/principal/recamaras" class="nav-link linked">Recamaras</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/cocinas" class="nav-link">Cocinas</a>
+                                <a href="<?= base_url() ?>index.php/principal/cocinas" class="nav-link linked">Cocinas</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/salas" class="nav-link">Salas</a>
+                                <a href="<?= base_url() ?>index.php/principal/salas" class="nav-link linked">Salas</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
                                 <a href="<?= base_url() ?>index.php/principal/electrodomesticos"
-                                    class="nav-link">Electrodomesticos</a>
+                                    class="nav-link linked">Electrodomesticos</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
                                 <a href="<?= base_url() ?>index.php/principal/electronica"
-                                    class="nav-link">Electronica</a>
+                                    class="nav-link linked">Electronica</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/motos" class="nav-link">Motos</a>
+                                <a href="<?= base_url() ?>index.php/principal/motos" class="nav-link linked">Motos</a>
                             </li>
                         </ul>
 
                     </li>
                     <li class="nav-item p-3 py-md-1">
-                        <a href="#sideservicios" data-bs-toggle='collapse' class="nav-link"><i class="bi bi-plug"></i>
-                            Servicios <i class="bi bi-chevron-down"></i></a>
+                        <a href="#sideservicios" data-bs-toggle='collapse' class="nav-link"><i
+                                class="bi bi-plug"></i>Servicios <i class="bi bi-chevron-down"></i></a>
 
                         <ul class="nav collapse flex-column" id="sideservicios" data-base-parent="#menuLateral">
                             <li class="nav-item">
@@ -108,8 +115,7 @@
                         </ul>
                         <ul class="nav collapse flex-column" id="sideservicios" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="" class="nav-link disabled"><i class="bi bi-shop"> Entrega en
-                                        Tienda</i></a>
+                                <a href="" class="nav-link disabled"><i class="bi bi-shop"> Entrega en Tienda</i></a>
                             </li>
                         </ul>
                     </li>
@@ -166,69 +172,68 @@
 
             <div class="content">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card">
-                            <img src="<?= base_url() ?>public/img/salas/portada.webp" alt="Imagen">
+                            <img src="<?= base_url() ?>public/img/salas/portada.png" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Salas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/salas"><button
-                                        class='custom-card-button'>Ver mas </button></a>
+                                        class='btn btn-light border'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card">
-                            <img src="<?= base_url() ?>public/img/recamaras/portada.webp" alt="Imagen">
+                            <img src="<?= base_url() ?>public/img/recamaras/portadas.webp" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Recamaras</h5>
                                 <a href="<?= base_url() ?>index.php/principal/recamaras"><button
-                                        class='custom-card-button'>Ver mas </button></a>
+                                        class='btn btn-light border'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card">
-                            <img src="<?= base_url() ?>public/img/cocinas/portada.webp" alt="Imagen">
+                            <img src="<?= base_url() ?>public/img/cocinas/portada.jpg" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Cocinas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/cocinas"><button
-                                        class='custom-card-button'>Ver mas </button></a>
+                                        class='btn btn-light border'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card">
                             <img src="<?= base_url() ?>public/img/electronica/portada.webp" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electronica</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electronica"><button
-                                        class='custom-card-button'>Ver mas </button></a>
+                                        class='btn btn-light border'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card">
                             <img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electrodomesticos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electrodomesticos"><button
-                                        class='custom-card-button'>Ver mas </button></a>
+                                        class='btn btn-light border'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card">
                             <img src="<?= base_url() ?>public/img/motos/portada.webp" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Motos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/motos"><button
-                                        class='custom-card-button'>Ver
-                                        mas </button></a>
+                                        class='btn btn-light border'>Ver mas</button></a>
                             </div>
                         </div>
                     </div>
@@ -248,8 +253,8 @@
         <div class="ctn-f-user">
             <button onclick=login()><i class="bi bi-person-circle px-2  fs-5"></i></button>
         </div>
-
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>
@@ -258,24 +263,7 @@
     </script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/home.js"></script>
-    <script>
-    function toggleMenu() {
-        var dropdown = document.getElementById("myDropdown");
-        if (dropdown.style.display === "block") {
-            dropdown.style.display = "none";
-        } else {
-            dropdown.style.display = "block";
-        }
-    }
-    window.onclick = function(event) {
-        if (!event.target.matches('.menu-button')) {
-            var dropdown = document.getElementById("myDropdown");
-            if (dropdown.style.display === "block") {
-                dropdown.style.display = "none";
-            }
-        }
-    }
-    </script>
+    <script src="<?= base_url() ?>public/js/login.js"></script>
 </body>
 
 </html>

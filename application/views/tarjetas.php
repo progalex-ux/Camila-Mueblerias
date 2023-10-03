@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <header>
+        <button class="btn btn-success border" onclick="home()">Regresar</button>
+    </header>
     <section>
         <div class="content">
             <div class="row">
@@ -82,6 +85,6 @@
     </section>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/home.js"></script>
+    <script src="<?= base_url() ?>public/js/login.js"></script>
 </body>
 </html>
