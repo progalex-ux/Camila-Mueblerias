@@ -8,7 +8,8 @@ header{
     text-align: center;
     display: flex;
     justify-content: space-around;
-    background-color: #fff;
+    background-color:#ffff;
+    
 }
 header button{
     border: none;
@@ -22,7 +23,7 @@ header button{
     height: 100%;
     display: flex;
     justify-content: start;
-    background-color: #fff;
+    background-color: transparent;
 }
 .logo img{
     object-fit: cover;
@@ -33,7 +34,7 @@ header button{
     width: 44%;
     display: flex;
     align-items: center;  
-    background-color: #fff; 
+    background-color: transparent; 
 }
 .categorias{
     width:44%;

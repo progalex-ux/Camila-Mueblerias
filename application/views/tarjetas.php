@@ -15,24 +15,33 @@
 
 <body>
     <header>
-        <button class="btn btn-success border" onclick="home()">Regresar</button>
+        <div class="logo">
+            <div class="boton">
+                <button onclick="home()" class="btn btn-light">Regresar</button>
+            </div>
+            
+        </div>
+        <div class="titulo">
+            <h1>Administrador</h1>
+        </div>
     </header>
     <section>
         <div class="content">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
-                        <img src="<?= base_url() ?>public/img/salas/portada.webp" alt="Imagen">
+                        <img src="<?= base_url() ?>public/img/salas/portada-s.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Salas</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert/"><button class='custom-card-button'>Agregar tarjeta</button></a>
+                            <a href="<?= base_url() ?>index.php/admin/insert/"><button
+                                    class='custom-card-button'>Agregar tarjeta</button></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
-                        <img src="<?= base_url() ?>public/img/recamaras/portada.webp" alt="Imagen">
+                        <img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Recamaras</h5>
                             <a href="<?= base_url() ?>index.php/admin/insert/"><button
@@ -43,10 +52,11 @@
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
-                        <img src="<?= base_url() ?>public/img/cocinas/portada.webp" alt="Imagen">
+                        <img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Cocinas</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert"><button class='custom-card-button'>Agregar tarjeta </button></a>
+                            <a href="<?= base_url() ?>index.php/admin/insert"><button class='custom-card-button'>Agregar
+                                    tarjeta </button></a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +66,8 @@
                         <img src="<?= base_url() ?>public/img/electronica/portada.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Electronica</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert/"><button class='custom-card-button'>Agregar tarjeta </button></a>
+                            <a href="<?= base_url() ?>index.php/admin/insert/"><button
+                                    class='custom-card-button'>Agregar tarjeta </button></a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +77,8 @@
                         <img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Electrodomesticos</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert/"><button class='custom-card-button'>Agregar tarjeta</button></a>
+                            <a href="<?= base_url() ?>index.php/admin/insert/"><button
+                                    class='custom-card-button'>Agregar tarjeta</button></a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +88,8 @@
                         <img src="<?= base_url() ?>public/img/motos/portada.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Motos</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert/"><button class='custom-card-button'>Agregar tarjeta</button></a>
+                            <a href="<?= base_url() ?>index.php/admin/insert/"><button
+                                    class='custom-card-button'>Agregar tarjeta</button></a>
                         </div>
                     </div>
                 </div>
@@ -86,5 +99,7 @@
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script src="<?= base_url() ?>public/js/insert.js"></script>
 </body>
+
 </html>

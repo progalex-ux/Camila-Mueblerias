@@ -16,16 +16,6 @@
 
 <body>
     <header id="sticky-header">
-        <div class="buton">
-            <button class="d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-                aria-controls="staticBackdrop">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                </svg>
-            </button>
-        </div>
         <div class="secciones">
             <div class="categorias">
                 <div class="menu">
@@ -51,6 +41,16 @@
                 </div>
             </div>
         </div>
+        <div class="buton">
+            <button class="d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
         <div class="logo">
             <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-original.png"
                     alt=""></a>
@@ -71,12 +71,14 @@
 
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/recamaras" class="nav-link linked">Recamaras</a>
+                                <a href="<?= base_url() ?>index.php/principal/recamaras"
+                                    class="nav-link linked">Recamaras</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/cocinas" class="nav-link linked">Cocinas</a>
+                                <a href="<?= base_url() ?>index.php/principal/cocinas"
+                                    class="nav-link linked">Cocinas</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
@@ -125,8 +127,7 @@
                             class="bi bi-facebook px-2  fs-2"></i></a>
                     <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
                             class="bi bi-instagram px-2  fs-2"></i></a>
-                    <a href="<?= base_url() ?>index.php/admin/" target="_blank"><i
-                            class="bi bi-person-circle px-2  fs-2"></i></a>
+                    
                 </div>
             </div>
         </div>
@@ -146,14 +147,23 @@
                     <div class="carousel-item active c-item" data-bs-interval="5000">
                         <img src="<?= base_url() ?>public/img/recamaras/portada.webp" class="d-block w-100 c-image"
                             alt="item1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Ofreciendo amor a los tuyos</h5>
+                        </div>
                     </div>
                     <div class="carousel-item c-item" data-bs-interval="3000">
                         <img src="<?= base_url() ?>public/img/salas/portada.webp" class="d-block w-100 c-image"
                             alt="item2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Crea un hogar que refleje tu personalidad</h5>
+                        </div>
                     </div>
                     <div class="carousel-item c-item">
                         <img src="<?= base_url() ?>public/img/cocinas/portada.webp" class="d-block w-100 c-image"
                             alt="item3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Transforma tu espacio, transforma tu vida</h5>
+                        </div>
                     </div>
 
                 </div>
@@ -174,7 +184,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card">
-                            <img src="<?= base_url() ?>public/img/salas/portada.png" alt="Imagen">
+                            <img src="<?= base_url() ?>public/img/salas/portada-s.webp" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Salas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/salas"><button
@@ -185,7 +195,7 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card">
-                            <img src="<?= base_url() ?>public/img/recamaras/portadas.webp" alt="Imagen">
+                            <img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Recamaras</h5>
                                 <a href="<?= base_url() ?>index.php/principal/recamaras"><button
@@ -196,7 +206,7 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card">
-                            <img src="<?= base_url() ?>public/img/cocinas/portada.jpg" alt="Imagen">
+                            <img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Cocinas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/cocinas"><button
@@ -251,7 +261,7 @@
             <h6>Tarimoro, Guanajuato Mexico.</h6>
         </div>
         <div class="ctn-f-user">
-            <button onclick=login()><i class="bi bi-person-circle px-2  fs-5"></i></button>
+            <button onclick=login()><i class="bi bi-person-circle px-2  fs-6"></i></button>
         </div>
     </footer>
 

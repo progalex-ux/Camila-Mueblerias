@@ -1,7 +1,5 @@
 const base_url="http://localhost/CamilaMueblerias/";
-function regresar(){
-  window.location.href = base_url+"index.php/admin/tarjetas";
-}
+
 function login(){
   window.location.href = base_url+"index.php/admin/";
 }

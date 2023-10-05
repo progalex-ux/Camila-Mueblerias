@@ -15,41 +15,47 @@
 </head>
 
 <body>
-    <section>
-        <div class="cont">
-            <div class="lineas">
-                <div class="line1"></div>
-            </div>
+    <header>
+        <div class="logo">
             <div class="boton">
-                <button onclick='regresar()' class="btn btn-primary"><i
-                        class="bi bi-arrow-90deg-left"></i>Regresar</button>
+                <button onclick="returnHome()" class="btn btn-light">Regresar</button>
             </div>
-            <div class="container-fluid">
-                <div class="content">
-                    <div class="mb-3">
-                        <label for="price" class="form-label">Precio</label>
-                        <input type="text" name="price" class="form-control" id="" required>
+
+        </div>
+        <div class="titulo">
+            <h1>Administrador</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="tittle">
+                    <h3>Formulario para agregar tarjetas</h3>
+                </div>
+                <div class="selected-image">
+                    <div id="image-container">
+                        <img id="preview-image" src="" alt="">
                     </div>
-                    <div class="mb-3">
-                        <label for="tittle" class="form-label">Titulo</label>
-                        <input type="text" name="tittle" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Imagen</label>
-                        <input type="file" name="image" class="form-control" required>
-                    </div>
-                    <button type="button" class="btn btn-primary" onclick="ulpoadCard()">Subir</button>
+                </div>
+                <div class="image">
+                    <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/webp, image/avif" onchange="loadImage()">
+                </div>
+                <div class="data">
+                    <label for="price">Precio</label>
+                    <input type="number" name="price">
+                    <label for="tittle">Titulo</label>
+                    <input type="text" name="tittle">
+                </div>
+                <div class="send">
+                    <button type="button" class="btn btn-light border" onclick="saveData()">Agregar</button>
                 </div>
             </div>
-            <div class="lineas">
-                <div class="line2"></div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script src="<?= base_url() ?>public/js/insert.js"></script>
 </body>
 
 </html>

@@ -28,7 +28,10 @@ section{
     min-height:100%;
     width: 100%;
 }
-
+.redes{
+    display: flex;
+    justify-content: center;
+}
 .list{
     display: none;
 }
@@ -54,10 +57,15 @@ section{
 }
 .card{
     height: 320px;
+    /*
     top: 0;
     transition: 0.5s box-shadow ease;
     transition: 0.5s top ease;
+    */
+    margin: 0 0 20px 0;
+    transition: transform 0.2s;
 }
+
 .card img{
     height: 65%;
     object-fit: contain;
@@ -74,11 +82,14 @@ section{
     padding-left: 5px;
 }
 .card:hover{
+    cursor: pointer;
+    /*
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.349) ;
     top: -5px;
-    cursor: pointer;
     transition: 5s top ease;
     transition: 0.1s box-shadow ease;
+    */
+    transform: scale(1.04);
   }   
 #sticky-sidebar{
     position: sticky;
@@ -93,8 +104,10 @@ section{
 .nav-link:hover{
     color: gray;
 }
-.card{
-    margin: 0 0 20px 0;
+
+.buton button{
+    border:none;
+    background-color: transparent;
 }
 footer{
     width: 100%;
@@ -146,6 +159,23 @@ justify-content: center;
     }
     .sidebar{
         display: none;
+    }
+    .buton{
+        width: 40%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .buton button{
+        margin: 10px;
+    }
+    .logo{
+        width: 60%;
+        display: flex;
+        justify-content: start;
+    }
+    .logo img{  
+        object-fit: contain;
     }
 }  
 @media(max-width:575px){
