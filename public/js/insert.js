@@ -24,7 +24,6 @@ function saveData(){
   var price = $("#price").val();
   var tittle = $("#tittle").val();
   var image = $("#image").val();
-  
 
     var jsonData = {
       image: image,
@@ -32,61 +31,21 @@ function saveData(){
       tittle : tittle
     }
     console.log(jsonData);
+    sendData(jsonData);
 }
+
 function sendData(jsonData){
   $.ajax({
-    url: base_url+"index.php/admin/",
+    url: base_url+"index.php/tarjetas/recamaras",
     dataType:"json",
     type:"post",
     data:jsonData,
     success: function (datos,estado,jhrx){
       console.log(datos);
-
     },
     error: function (jhrx,estado,errorA){
       console.log(errorA);
+      console.log(jhrx.responseText)
     }
   });
-}
-function getData() {
-  $.ajax({
-    url:base_url+"index.php/admin/",
-    dataType:"json",
-    type:"get",
-    success: function (datos, estado, jhrx) {
-      console.log(datos);
-      renderCard(datos.noticias);
-  },
-  error: function (jhrx, estado, errorA) {
-      console.log(errorA);
-  }
-  });
-}
-getData();
-
-function renderCard(contenido) {
-  console.log(contenido);
-  $("section").empty();
-
-  if (contenido.length >= 0) {
-      contenido.forEach(function (valor, i, array) {
-          var $div = $("<div class='card'>").append(
-              $("<div class='contenido'>").append(
-                  $("<div class='ladoIzq'>").append(
-                      $("<h2 class='titulo'>").text(valor.Titulo),
-                      $("<div class='cuerpo'>").append(
-                          $("<p>").text(valor.Descripcion),
-                          $("<button onclick='getUser(" + valor.id + ")' class='btn'>").text("Actualizar"),
-                          $("<button onclick='deletedUser(" + valor.id + ")' class='btn'>").text("Borrar")
-                      )
-                  )
-              )
-          );
-          $("section").append($div);
-      });
-  } else {
-      $("section").append(
-          $("<h2 class='cards'>").text("Aún no existen noticias, ingresa una nueva.")
-      );
-  }
 }

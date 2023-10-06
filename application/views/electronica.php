@@ -10,13 +10,12 @@
     <title>Electronica-Camila Mueblerias</title>
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
     <link rel="stylesheet" href="<?= base_url() ?>public/css/salas.css">
 </head>
 
 <body>
-<header>
+    <header id="sticky-header">
         <div class="buton">
             <button class="d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
                 aria-controls="staticBackdrop">
@@ -98,31 +97,27 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="redes d-lg-none py-3">
+                <div class="redes d-lg-none py-3 d-sm-flex">
                     <a href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
                             class="bi bi-facebook px-2  fs-2"></i></a>
                     <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
                             class="bi bi-instagram px-2  fs-2"></i></a>
-                    
+
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section>
+        <section >
             <div class="container-fluid">
                 <div class="row flex-nowrap">
-                    <div class="sidebar col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white">
+                    <div class="sidebar col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white v-line">
                         <div id="sticky-sidebar"
                             class="sidebar d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
 
                             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
                                 id="menu">
-                                <li class="nav-item list">
-                                    <a href="">
-                                        <i class="bi bi-list fs-4"></i>
-                                    </a>
-                                </li>
+                                
                                 <li class="nav-item">
                                     <a href="<?= base_url() ?>index.php/principal/" class="nav-link align-middle px-0">
                                         <i class="fs-5 bi-house"></i> <span
@@ -131,8 +126,8 @@
                                 </li>
                                 <li>
                                     <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                        <i class="bi bi-collection fs-5"></i><span
-                                            class="ms-1 d-none d-sm-inline">Categorias</span></a>
+                                        <span
+                                            class="ms-1 d-none d-sm-inline">Categorias</span><i class="bi bi-chevron-down"></i></a>
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
                                             <a href="<?= base_url() ?>index.php/principal/cocinas"
@@ -149,7 +144,7 @@
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
                                             <a href="<?= base_url() ?>index.php/principal/recamaras"
-                                                class="nav-link px-0 linked"> <span
+                                                class="nav-link px-0"> <span
                                                     class="d-none d-sm-inline"></span>Recamaras</a>
                                         </li>
                                     </ul>
@@ -196,8 +191,9 @@
                             </ul>
                             <hr>
                         </div>
+                        
                     </div>
-                    <div class="col py-3 contenedor">
+                    <div class="col py-3">
                         <div class="content">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -272,13 +268,94 @@
 
                                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/portada.webp" alt="Imagen">
+                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
                                         <div class="custom-card-content">
                                             <h5 class="custom-card-price">$42,990</h5>
                                             <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
+                                        <div class="custom-card-content">
+                                            <h5 class="custom-card-price">$42,990</h5>
+                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
+                                        <div class="custom-card-content">
+                                            <h5 class="custom-card-price">$42,990</h5>
+                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
+                                        <div class="custom-card-content">
+                                            <h5 class="custom-card-price">$42,990</h5>
+                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
+                                        <div class="custom-card-content">
+                                            <h5 class="custom-card-price">$42,990</h5>
+                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
+                                        <div class="custom-card-content">
+                                            <h5 class="custom-card-price">$42,990</h5>
+                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
+                                        <div class="custom-card-content">
+                                            <h5 class="custom-card-price">$42,990</h5>
+                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
+                                        <div class="custom-card-content">
+                                            <h5 class="custom-card-price">$42,990</h5>
+                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
+                                        <div class="custom-card-content">
+                                            <h5 class="custom-card-price">$42,990</h5>
+                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -295,9 +372,11 @@
             <h6>Tarimoro, Guanajuato Mexico.</h6>
         </div>
         <div class="ctn-f-user">
-            <button onclick=login()><i class="bi bi-person-circle px-2  fs-5"></i></button>
+            <button onclick=login()><i class="bi bi-person-circle px-2  fs-6"></i></button>
         </div>
+        <div class="ctn-f-free">
 
+        </div>
     </footer>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>

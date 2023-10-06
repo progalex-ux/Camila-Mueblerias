@@ -38,13 +38,13 @@
                     </div>
                 </div>
                 <div class="image">
-                    <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/webp, image/avif" onchange="loadImage()">
+                    <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/webp, image/avif" onchange="loadImage()" required>
                 </div>
                 <div class="data">
                     <label for="price">Precio</label>
-                    <input type="number" name="price">
+                    <input type="number" name="price" id="price" required>
                     <label for="tittle">Titulo</label>
-                    <input type="text" name="tittle">
+                    <input type="text" name="tittle" id="tittle" required>
                 </div>
                 <div class="send">
                     <button type="button" class="btn btn-light border" onclick="saveData()">Agregar</button>
