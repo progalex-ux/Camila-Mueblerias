@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Camila Mueblerias</title>
+    <title>Admin | Camila Mueblerias</title>
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
     <link rel="stylesheet" href="<?= base_url() ?>public/css/tarjetas.css">
@@ -17,12 +17,12 @@
     <header>
         <div class="logo">
             <div class="boton">
-                <button onclick="home()" class="btn btn-light">Regresar</button>
+                <button onclick="home()" class="btn btn-dark">Regresar</button>
             </div>
             
         </div>
         <div class="titulo">
-            <h1>Administrador</h1>
+            <h1>Admin</h1>
         </div>
     </header>
     <section>
@@ -34,7 +34,7 @@
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Salas</h5>
                             <a href="<?= base_url() ?>index.php/admin/insert/"><button
-                                    class='custom-card-button'>Agregar tarjeta</button></a>
+                            type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Recamaras</h5>
                             <a href="<?= base_url() ?>index.php/admin/insert/"><button
-                                    class='custom-card-button'>Agregar tarjeta </button></a>
+                                    type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -55,8 +55,8 @@
                         <img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Cocinas</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert"><button class='custom-card-button'>Agregar
-                                    tarjeta </button></a>
+                            <a href="<?= base_url() ?>index.php/admin/insert"><button type="button" class="btn btn-dark">Agregar
+                                    contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Electronica</h5>
                             <a href="<?= base_url() ?>index.php/admin/insert/"><button
-                                    class='custom-card-button'>Agregar tarjeta </button></a>
+                            type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Electrodomesticos</h5>
                             <a href="<?= base_url() ?>index.php/admin/insert/"><button
-                                    class='custom-card-button'>Agregar tarjeta</button></a>
+                            type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Motos</h5>
                             <a href="<?= base_url() ?>index.php/admin/insert/"><button
-                                    class='custom-card-button'>Agregar tarjeta</button></a>
+                            type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,6 @@
     </section>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
     <script src="<?= base_url() ?>public/js/insert.js"></script>
 </body>
 

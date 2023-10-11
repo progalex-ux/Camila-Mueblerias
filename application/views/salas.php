@@ -27,8 +27,7 @@
             </button>
         </div>
         <div class="logo">
-            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-original.png"
-                    alt=""></a>
+            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-white.png" alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
             aria-labelledby="staticBackdropLabel">
@@ -97,19 +96,18 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="redes d-lg-none py-3 d-sm-flex">
+                <div class="redes d-lg-none py-3 d-sm-flex ">
                     <a href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
                             class="bi bi-facebook px-2  fs-2"></i></a>
                     <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
                             class="bi bi-instagram px-2  fs-2"></i></a>
-
                 </div>
             </div>
         </div>
     </header>
     <main>
         <section >
-            <div class="container-fluid">
+            <div class="container-fluid centrar">
                 <div class="row flex-nowrap">
                     <div class="sidebar col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white v-line">
                         <div id="sticky-sidebar"
@@ -120,51 +118,51 @@
                                 
                                 <li class="nav-item">
                                     <a href="<?= base_url() ?>index.php/principal/" class="nav-link align-middle px-0">
-                                        <i class="fs-5 bi-house"></i> <span
-                                            class="ms-1 d-none d-sm-inline">Inicio</span>
+                                        <i class="bi-house fs-5"></i><span
+                                            class="ms-1 d-none d-sm-inline"> Inicio</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                                         <span
-                                            class="ms-1 d-none d-sm-inline">Categorias</span><i class="bi bi-chevron-down"></i></a>
+                                            class="ms-1 d-none d-sm-inline"><i class="bi bi-collection fs-6"></i> Categorias</span></a>
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
                                             <a href="<?= base_url() ?>index.php/principal/cocinas"
-                                                class="nav-link px-0"> <span
+                                                class="nav-link linkedd px-0"> <span
                                                     class="d-none d-sm-inline"></span>Cocinas</a>
                                         </li>
                                     </ul>
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
-                                            <a href="<?= base_url() ?>index.php/principal/salas" class="nav-link px-0">
+                                            <a href="<?= base_url() ?>index.php/principal/salas" class="nav-link linkedd px-0">
                                                 <span class="d-none d-sm-inline"></span>Salas</a>
                                         </li>
                                     </ul>
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
                                             <a href="<?= base_url() ?>index.php/principal/recamaras"
-                                                class="nav-link px-0"> <span
+                                                class="nav-link linkedd px-0"> <span
                                                     class="d-none d-sm-inline"></span>Recamaras</a>
                                         </li>
                                     </ul>
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
                                             <a href="<?= base_url() ?>index.php/principal/electrodomesticos"
-                                                class="nav-link px-0"> <span
+                                                class="nav-link linkedd px-0"> <span
                                                     class="d-none d-sm-inline"></span>Electrodomesticos</a>
                                         </li>
                                     </ul>
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
                                             <a href="<?= base_url() ?>index.php/principal/electronica"
-                                                class="nav-link px-0"> <span
+                                                class="nav-link linkedd px-0"> <span
                                                     class="d-none d-sm-inline"></span>Electronica</a>
                                         </li>
                                     </ul>
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
-                                            <a href="<?= base_url() ?>index.php/principal/motos" class="nav-link px-0">
+                                            <a href="<?= base_url() ?>index.php/principal/motos" class="nav-link linkedd px-0">
                                                 <span class="d-none d-sm-inline"></span>Motos</a>
                                         </li>
                                     </ul>
@@ -172,17 +170,17 @@
                                 </li>
                                 <li>
                                     <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                        <i class="bi bi-plug fs-5"></i> <span
+                                        <i class="bi bi-plug fs-5"></i><span
                                             class="ms-1 d-none d-sm-inline">Servicios</span> </a>
                                     <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                         <li class="w-100">
-                                            <a href="" class="nav-link px-0"> <span class="d-none d-sm-inline"><i
+                                            <a href="" class="nav-link linkedd px-0"> <span class="d-none d-sm-inline"><i
                                                         class="bi bi-truck"> Entrega en Domicilio</i></span> </a>
                                         </li>
                                     </ul>
                                     <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                         <li>
-                                            <a href="" class="nav-link px-0"> <span class="d-none d-sm-inline"><i
+                                            <a href="" class="nav-link linkedd px-0"> <span class="d-none d-sm-inline"><i
                                                         class="bi bi-shop"> Entrega en Tienda</i></span> </a>
                                         </li>
                                     </ul>
@@ -190,8 +188,7 @@
                                 </li>
                             </ul>
                             <hr>
-                        </div>
-                        
+                        </div>    
                     </div>
                     <div class="col py-3">
                         <div class="content">
@@ -358,6 +355,11 @@
 
                             </div>
                         </div>
+
+                        <div class="items">
+
+                        </div>
+
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Recamaras-Camila Mueblerias</title>
+    <title>Recamaras | Camila Mueblerias</title>
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
@@ -27,7 +27,7 @@
             </button>
         </div>
         <div class="logo">
-            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-original.png"
+            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -111,7 +111,7 @@
         <section >
             <div class="container-fluid">
                 <div class="row flex-nowrap">
-                    <div class="sidebar col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white v-line">
+                <div class="sidebar col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white v-line">
                         <div id="sticky-sidebar"
                             class="sidebar d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
 
@@ -120,14 +120,14 @@
                                 
                                 <li class="nav-item">
                                     <a href="<?= base_url() ?>index.php/principal/" class="nav-link align-middle px-0">
-                                        <i class="fs-5 bi-house"></i> <span
-                                            class="ms-1 d-none d-sm-inline">Inicio</span>
+                                        <i class="bi-house fs-5"></i><span
+                                            class="ms-1 d-none d-sm-inline"> Inicio</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                                         <span
-                                            class="ms-1 d-none d-sm-inline">Categorias</span><i class="bi bi-chevron-down"></i></a>
+                                            class="ms-1 d-none d-sm-inline"><i class="bi bi-collection fs-6"></i> Categorias</span></a>
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
                                             <a href="<?= base_url() ?>index.php/principal/cocinas"
@@ -172,7 +172,7 @@
                                 </li>
                                 <li>
                                     <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                        <i class="bi bi-plug fs-5"></i> <span
+                                        <i class="bi bi-plug fs-5"></i><span
                                             class="ms-1 d-none d-sm-inline">Servicios</span> </a>
                                     <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                         <li class="w-100">
@@ -326,35 +326,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                             </div>
                         </div>
@@ -378,8 +350,10 @@
 
         </div>
     </footer>
+    <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+    <script src="<?= base_url() ?>public/js/insert.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
+    
 </body>
 
 </html>

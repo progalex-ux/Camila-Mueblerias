@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camila Mueblerias</title>
+    <title>Login | Camila Mueblerias</title>
     <link rel="stylesheet" href="<?= base_url() ?>public/css/login.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
@@ -15,21 +15,36 @@
 </head>
 
 <body>
-    <div class="login-container">
-        <h2>Iniciar Sesion</h2>
-
-        <div class="form-group">
-            <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario" required>
-        </div>
-        <div class="form-group">
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-        </div>
-        <div id="liveAlertPlaceholder"></div>
-        <button type="button" class="btn btn-success border" id="liveAlertBtn" onclick="loginUser()">Ingresar</button>
-
-    </div>
+    <main>
+        <section>
+            <div class="login-contenedor">
+                <div class="imagen-login">
+                    <img src="<?= base_url() ?>public/img/recamaras/portada.webp" alt="">
+                </div>
+                <div class="login">
+                    <div class="empty"></div>
+                    <div class="imagen">
+                        <img src="<?= base_url() ?>public/img/user.png" alt="">
+                    </div>
+                    <div class="tittle">
+                        <h4>Admin</h4>
+                    </div>
+                    <div class="vacio"></div>
+                    <div class="datos-login">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="usuario" id="usuario">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" name="contrasena" id="contrasena">
+                    </div>
+                    <div class="boton">
+                            <button class="btn btn-dark" onclick="loginUser()">Ingresar</button>
+                    </div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>

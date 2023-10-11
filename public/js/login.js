@@ -1,8 +1,8 @@
 const base_url="http://localhost/CamilaMueblerias/";
 
 function login(){
-  window.location.href = base_url+"index.php/admin/";
-}
+	window.location.href = base_url+"index.php/admin/";
+  }
 function home(){
   window.location.href = base_url+"index.php/principal/";
 }

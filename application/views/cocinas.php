@@ -27,7 +27,7 @@
             </button>
         </div>
         <div class="logo">
-            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-original.png"
+            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -111,7 +111,7 @@
         <section >
             <div class="container-fluid">
                 <div class="row flex-nowrap">
-                    <div class="sidebar col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white v-line">
+                <div class="sidebar col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white v-line">
                         <div id="sticky-sidebar"
                             class="sidebar d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
 
@@ -120,14 +120,14 @@
                                 
                                 <li class="nav-item">
                                     <a href="<?= base_url() ?>index.php/principal/" class="nav-link align-middle px-0">
-                                        <i class="fs-5 bi-house"></i> <span
-                                            class="ms-1 d-none d-sm-inline">Inicio</span>
+                                        <i class="bi-house fs-5"></i><span
+                                            class="ms-1 d-none d-sm-inline"> Inicio</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                                         <span
-                                            class="ms-1 d-none d-sm-inline">Categorias</span><i class="bi bi-chevron-down"></i></a>
+                                            class="ms-1 d-none d-sm-inline"><i class="bi bi-collection fs-6"></i> Categorias</span></a>
                                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                         <li class="w-100">
                                             <a href="<?= base_url() ?>index.php/principal/cocinas"
@@ -172,7 +172,7 @@
                                 </li>
                                 <li>
                                     <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                        <i class="bi bi-plug fs-5"></i> <span
+                                        <i class="bi bi-plug fs-5"></i><span
                                             class="ms-1 d-none d-sm-inline">Servicios</span> </a>
                                     <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                         <li class="w-100">

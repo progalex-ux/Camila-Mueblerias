@@ -15,7 +15,12 @@
 </head>
 
 <body>
-    <header id="sticky-header">
+
+    <header>
+        <a href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i class="bi bi-facebook px-2  fs-5"></i></a>
+        <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i class="bi bi-instagram px-2  fs-5"></i></a>
+    </header>
+    <nav id="sticky-header">
         <div class="secciones">
             <div class="categorias">
                 <div class="menu">
@@ -52,7 +57,7 @@
             </button>
         </div>
         <div class="logo">
-            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-original.png"
+            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -127,11 +132,11 @@
                             class="bi bi-facebook px-2  fs-2"></i></a>
                     <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
                             class="bi bi-instagram px-2  fs-2"></i></a>
-                    
+
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
     <main>
         <section>
             <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">

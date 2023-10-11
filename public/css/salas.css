@@ -5,10 +5,13 @@
 }
 header{
     width: 100%;
-    height: 87px;
+    height: 100px;
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color:#EE7323;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
 }
 .logo img{
     width: 100%;
@@ -27,20 +30,27 @@ section{
 
 #sticky-sidebar{
     position: sticky;
-    top:0;
+    top:87px;
     background-color: #fff; 
     z-index: 100;
 }
 .v-line{
-    border-right:1px solid #31313121; 
+    border-right:1px solid #0000003a; 
    
 }
 .redes{
     display: flex;
     justify-content: center;
 }
+.redes i{
+    color:dodgerblue;
+}
 .row{
     max-width: 100%;
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
 }
 .content{
     display: flex;
@@ -78,18 +88,28 @@ section{
     color: black;
 }
 .nav-link:hover{
-    color: black;
+    
     color: rgb(179, 179, 179);
+}
+.linkedd:hover{
+    color: white;
+    background-color:#FC924D;
 }
 
 .buton button{
     border:none;
     background-color: transparent;
 }
+.buton svg{
+    color: white;
+}
 footer{
     width: 100%;
     height: 16vh;
-    background-color:#626567 ;
+    background-color:#FF8A3D;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
  footer h6{
     font-size: 11px;
@@ -106,11 +126,11 @@ footer{
     background-color: transparent;
 }
 .ctn-f-user i{
-    color: #fff;
+    color:#f87d2b;
 }
 .ctn-f{
 width: 100%;
-height: 15%;
+height: 20%;
 display: flex;
 justify-content: center;
 }
@@ -122,13 +142,16 @@ justify-content: center;
 }
 .ctn-f-f{
     width: 100%;
-    height: 25%;
+    height: 22%;
 }
 .ctn-f-free{
-    width: 100%;
-    height: 5%;
+    width:100%;
+    height: 3%;
 }
 @media(max-width: 991px){
+    header{
+        height: 87px;
+    }
     footer{
         height: 11vh;
     }
@@ -136,7 +159,7 @@ justify-content: center;
         display: none;
     }
     .buton{
-        width: 40%;
+        width: 45%;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -145,7 +168,7 @@ justify-content: center;
         margin: 10px;
     }
     .logo{
-        width: 60%;
+        width: 55%;
         display: flex;
         justify-content: start;
     }
