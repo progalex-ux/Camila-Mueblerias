@@ -50,7 +50,7 @@ function enviarDatos(jsonTarjeta) {
 		contentType: false,
 		processData: false,
 		success: function (datos, estado, jhrx) {
-			console.log(datos);
+			
 		},
 		error: function (jhrx, estado, error) {},
 	});
@@ -59,31 +59,37 @@ function enviarDatos(jsonTarjeta) {
 cargarTarjetas();
 
 function cargarTarjetas() {
-	$.ajax({
-		url: base_url+"index.php/tarjetas/obtenerTarjetas",
-		dataType: "json",
-		type: "post",
-		data: {},
-		success: function (datos, estado, jhrx) {
-			console.log(datos);
-			renderTarjetas(datos.tarjetas);
-		},
-		error: function (jhrx, estado, error) {},
-	});
+    $.ajax({
+        url: base_url + "index.php/tarjetas/obtenerTarjetas",
+        dataType: "json",
+        type: "post",
+        data: {},
+        success: function (datos, estado, jhrx) {
+           
+            renderTarjetas(datos.tarjetas);
+        },
+        error: function (jhrx, estado, error) {
+            console.log("Error");
+        },
+    });
 }
-
 function renderTarjetas(tarjetas) {
-	tarjetas.forEach(function (valor, i, array) {
-		var $div = $("<div class ='col-xs-12 col-sm-6 col-md-4 col-lg-3>").append(
-			
-			$("<img  src='" + base_url + valor.image + "'>"),
-			$("<div class='custom-card-content'>").append(
-				$("<h5 class='custom-card-price'>").text(valor.price),
-				$("<p class='custom-card-tittle'>").text(valor.titulo),
-			)
-		
-		);
+   
+    function formatearNumeroConComas(numero) {
+        return numero.toLocaleString();
+    }
 
-		$("#tarjetas").append($div);
-	});
+    tarjetas.forEach(function (valor, i, array) {	
+        var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
+            $("<div class='card'>").append(
+                $("<img src='" + base_url + valor.image + "'>"),
+                $("<div class='custom-card-content'>").append(
+                    $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
+                    $("<p class='custom-card-tittle'>").text(valor.titulo)
+                )
+            )
+        );
+
+        $("#tarjetas").append($div);
+    });
 }

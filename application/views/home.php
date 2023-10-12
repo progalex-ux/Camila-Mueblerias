@@ -17,8 +17,10 @@
 <body>
 
     <header>
-        <a href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i class="bi bi-facebook px-2  fs-5"></i></a>
-        <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i class="bi bi-instagram px-2  fs-5"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
+                class="bi bi-facebook px-2  fs-5"></i></a>
+        <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
+                class="bi bi-instagram px-2  fs-5"></i></a>
     </header>
     <nav id="sticky-header">
         <div class="secciones">
@@ -29,6 +31,10 @@
                     </button>
                     <div class="menu-content" id="myDropdown">
                         <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
+                        <div class="menu-content" id="subMenuRecamaras">
+                            <a href="<?= base_url() ?>index.php/principal/submenu/recamara1">Recamara 1</a>
+                            <a href="<?= base_url() ?>index.php/principal/submenu/recamara2">Recamara 2</a>
+                        </div>
                         <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
                         <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
