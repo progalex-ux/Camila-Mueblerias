@@ -17,32 +17,38 @@ class Tarjetas extends CI_Controller{
     }
 
     public function guardarTarjetas(){
-        $tittle   = $this->input->post("tittle");
-        $price    = $this->input->post("price");
-    
-    
-        $this->upload->do_upload("image");
+
+        $titulo    = $this->input->post("titulo");
+        $precio = $this->input->post("precio");
+        $image       = $this->input->post("image");
+
+        $this->upload->do_upload("file");
         $rutaArchivo = "public/img/";
         $nombreArchivo = $_FILES["image"]["name"];
-        $pathFile = $rutaArchivo . $nombreArchivo;
+        $pathFile = $rutaArchivo.$nombreArchivo;
+
         move_uploaded_file($_FILES["image"]["tmp_name"], $pathFile);
-    
-        $datosTarjeta = array(
-            'image' => $pathFile,
-            'price' => $price,
-            'tittle' => $tittle
+
+
+        
+
+        $datosTarjeta =array(
+            'image'     =>$pathFile,
+            'titulo'      =>$titulo,
+            'precio' =>$precio
         );
-    
+
         $idTarjeta = $this->guardar_mdl->crearTarjetas($datosTarjeta);
-    
-        $datosEnviar = array(
-            'mensaje' => "Registro con éxito",
-            'idRecamara' => $idTarjeta
-        );
-    
+
+        $datosEnviar= array();
+
+        $datosEnviar['mensaje']= "registro con exito";
+        $datosEnviar['idUsuario'] = $idTarjeta;
+
         echo json_encode($datosEnviar, JSON_NUMERIC_CHECK); 
+
+
     }
-    
 
     public function obtenerTarjetas(){
 
@@ -56,4 +62,10 @@ class Tarjetas extends CI_Controller{
         }
         echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
     }
+
+
+
+
+
 }
+?>

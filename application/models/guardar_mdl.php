@@ -7,14 +7,13 @@ class Guardar_mdl extends CI_Model{
 
         $this->load->database();
     }
-
     public function crearTarjetas($datosTarjeta){
-        $this->db->insert("recamara",$datosTarjeta);
+        $this->db->insert("recamaras",$datosTarjeta);
         return $this->db->insert_id();
     }
 
     public function leerTarjetas(){
-        $query = $this->db->get("recamara");
+        $query = $this->db->get("recamaras");
         if($query->num_rows()>0){
             $datos = array();
 
@@ -29,7 +28,12 @@ class Guardar_mdl extends CI_Model{
             return array();
         }
 
-    }    
+    }
+
+    
+
+
+    
 }
 
 ?>    

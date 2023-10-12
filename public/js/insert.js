@@ -28,20 +28,18 @@ function loadImage() {
 }
 
 function registroTarjetas() {
-    var formData = new FormData();
-    formData.append("image", $("#image")[0].files[0]);
-    var price =$("#price").val();
-    var tittle=$("#tittle").val();
-
-		var tarjetas = {
-			image : image,
-			price : price,
-			tittle : tittle,
-		}
-    enviarDatos(formData);
-	
-	
+	var titulo = $("#titulo").val();
+	var precio = $("#precio").val();
+	var image = $("#image").val();
+	var datosTarjeta = new FormData($("#dataTarjeta")[0]);
+	var tarjeta = {
+		image: image,
+		titulo: titulo,
+		precio: precio
+	};
+	enviarDatos(datosTarjeta);
 }
+
 
 function enviarDatos(jsonTarjeta) {
 	$.ajax({
@@ -81,7 +79,7 @@ function renderTarjetas(tarjetas) {
 			$("<img  src='" + base_url + valor.image + "'>"),
 			$("<div class='custom-card-content'>").append(
 				$("<h5 class='custom-card-price'>").text(valor.price),
-				$("<p class='custom-card-tittle'>").text(valor.tittle),
+				$("<p class='custom-card-tittle'>").text(valor.titulo),
 			)
 		
 		);

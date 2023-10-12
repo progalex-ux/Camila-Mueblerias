@@ -28,7 +28,9 @@
     </header>
     <main>
         <section>
+       
             <div class="container">
+            <form id="dataTarjeta" method="post" enctype="multipart/form-data">
                 <div class="tittle">
                     <h3>Formulario para agregar contenido</h3>
                 </div>
@@ -41,15 +43,16 @@
                     <input type="file" name="image" id="image" onchange="loadImage()" required>
                 </div>
                 <div class="data">
-                    <label for="price">Precio</label>
-                    <input type="number" name="price" id="price" required>
-                    <label for="tittle">Titulo</label>
-                    <input type="text" name="tittle" id="tittle" required>
+                    <label for="precio">Precio</label>
+                    <input type="number" name="precio" id="precio" required>
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" id="titulo" required>
                 </div>
                 <div class="send">
                     <button type="button" class="btn btn-light border" onclick="registroTarjetas()">Agregar</button>
                 </div>
             </div>
+
         </section>
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
