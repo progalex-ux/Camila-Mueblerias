@@ -27,28 +27,52 @@
             <div class="categorias">
                 <div class="menu">
                     <button class="menu-button" onclick="toggleMenu()">Categorias
-                        <i id="menu-icon" onclick="toggleiconMenu()" class="bi bi-chevron-down"></i>
+                        <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
                     <div class="menu-content" id="myDropdown">
-                        <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
-                        <div class="menu-content" id="subMenuRecamaras">
-                            <a href="<?= base_url() ?>index.php/principal/submenu/recamara1">Recamara 1</a>
-                            <a href="<?= base_url() ?>index.php/principal/submenu/recamara2">Recamara 2</a>
+
+                        <a href="">Recamaras</a>
+                        <div class="subdropdown" id="subdropdown-recamaras">
+                            <div class="seccion-1">
+                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Colchones</a></span>
+                                <span><a href="<?= base_url() ?>index.php/principal/buros">Buros</a></span>
+                                <span><a href="<?= base_url() ?>index.php/principal/buros">Cabeceras</a></span>
+                            </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
                         <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
+                        <div class="subdropdown" id="subdropdown-cocinas">
+                            <div class="seccion-1">
+                                <span><a href="">Cocinas</a></span>
+                                <span><a href="<?= base_url() ?>">Alacenas</a></span>
+                            </div>
+                        </div>
+                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Salas</a>
+                        <div class="subdropdown" id="subdropdown-salas">
+                            <div class="seccion-1">
+                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Esquinera</a></span>
+                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Esquinera</a></span>
+                            </div>
+                        </div>
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
+                        <div class="subdropdown" id="subdropdown-electrodomesticos">
+                            <div class="seccion-1">
+                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Licuadoras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/principal/buros">Secadoras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/principal/buros">Lavadora</a></span>
+                            </div>
+                        </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
+                        <div class="subdropdown" id="subdropdown-electronica">
+                            <div class="seccion-1">
+                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Computadoras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/principal/buros">Televisiones</a></span>
+                                <span><a href="<?= base_url() ?>index.php/principal/buros">Telefonos</a></span>
+                            </div>
+                        </div>
                         <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
+
                     </div>
-                    <div class="menu-content" id="myDropdownicon">
-                        <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
-                        <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
-                        <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
-                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
-                        <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
-                        <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
