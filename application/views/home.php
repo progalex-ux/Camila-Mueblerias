@@ -22,10 +22,10 @@
         <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
                 class="bi bi-instagram px-2  fs-5"></i></a>
     </header>
-    <nav id="sticky-header">
+    <nav id="sticky-header" class="position-relative">
         <div class="secciones">
             <div class="categorias">
-                <div class="menu">
+                <div class="menu ">
                     <button class="menu-button" onclick="toggleMenu()">Categorias
                         <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
@@ -87,7 +87,7 @@
             </button>
         </div>
         <div class="logo">
-            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-white.png"
+            <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1" src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"

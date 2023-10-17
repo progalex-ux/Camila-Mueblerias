@@ -219,9 +219,7 @@
                     <div class="col py-3">
 
                         <div class="content">
-                            <div class="titulo">
-                                <h3>ELECTRONICA</h3>
-                            </div>
+                           
                         
                             <div class="botones">
                                 <button class="btn btn-light border">Telefonos</button>
@@ -268,7 +266,7 @@
 
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <div class="card">
-                                        <img src="<?= base_url() ?>public/img/electronica/tv2.jpg" alt="Imagen">
+                                        <img src="<?= base_url() ?>public/img/electronica/tele.jpg" alt="Imagen">
                                         <div class="custom-card-content">
                                             <h5 class="custom-card-title">Televisiones</h5>
                                             <a href="<?= base_url() ?>index.php/secciones/televisiones"><button
