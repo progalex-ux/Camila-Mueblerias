@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/electronica.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/selec.css">
 </head>
 
 <body>
-    <nav id="sticky-header">
-        <div class="secciones">
-            <div class="categorias">
-                <div class="menu">
-                    <button class="menu-button" onclick="toggleMenu()">Categorias
-                        <i id="menu-icon" class="bi bi-chevron-down"></i>
+<nav id="sticky-header" class="position-relative d-flex justify-content-around" style="height:100px; background-color:#EE7323;" >
+        <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
+            <div class="categorias" style="width:44%;">
+                <div class="menu position-relative d-inline-block">
+                    <button style="background-color: transparent; color:#fff;"class="menu-button pt-4 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
+                        <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="menu-content" id="myDropdown">
+                    <div class="menu-content z-3 position-absolute justify-content-center" id="myDropdown">
 
                         <a href="">Recamaras</a>
-                        <div class="subdropdown" id="subdropdown-recamaras">
+                        <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/principal/colchones">Colchones</a></span>
                                 <span><a href="<?= base_url() ?>index.php/principal/buros">Buros</a></span>
@@ -65,22 +65,22 @@
                         <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
 
                     </div>
-
+                    
                 </div>
             </div>
         </div>
-        <div class="buton">
-            <button class="d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        <div class="buton" >
+            <button class="d-lg-none border border-0"  style="background-color:transparent;"type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
                 aria-controls="staticBackdrop">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
-                    viewBox="0 0 16 16">
+                    viewBox="0 0 16 16" style="color:white;">
                     <path fill-rule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
             </button>
         </div>
-        <div class="logo">
-            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-white.png"
+        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; width:55%;">
+            <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -164,7 +164,7 @@
         <section>
             <div class="container-fluid">
                 <div class="row flex-nowrap">
-                    <div class="sidebar col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white v-line">
+                    <div class="sidebar d-flex justify-content-start col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-white v-line">
                         <div id="sticky-sidebar"
                             class="sidebar  d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
 
@@ -219,7 +219,6 @@
                     <div class="col py-3">
 
                         <div class="content">
-                           
                         
                             <div class="botones">
                                 <button class="btn btn-light border">Telefonos</button>
@@ -281,21 +280,19 @@
                 </div>
             </div>
     </main>
-    <footer>
-        <div class="ctn-f-f">
+    <footer class="d-block justify-content-center align-middle w=100" style="height: 10vh;  background-color:#FF7216;">
+        <div class="ctn-f-f w=100" style="height:20%;">
         </div>
-        <div class="ctn-f">
-            <h6>Copyright&copy;Camila Mueblerias 1973-2023</h6>
+        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%" >
+            <h6 class="text-white" style="font-size:11px;">Derechos Reservados &copy;Camila Mueblerias 2023</h6>
         </div>
-        <div class="ctn-f-s">
-            <h6>Tarimoro, Guanajuato Mexico.</h6>
+        <div class="ctn-f-s w=100 d-flex justify-content-center" style="height:20%;">
+            <h6 class="text-white" style="font-size:11px;">Tarimoro, Guanajuato Mexico.</h6>
         </div>
-        <div class="ctn-f-user">
-            <button onclick=login()><i class="bi bi-person-circle px-2  fs-6"></i></button>
+        <div class="ctn-f-user w=100 d-flex justify-content-end" style="height:30%;">
+            <button class="border border-0" style="background-color:transparent;" onclick=login()><i class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
         </div>
-        <div class="ctn-f-free">
-
-        </div>
+        <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>

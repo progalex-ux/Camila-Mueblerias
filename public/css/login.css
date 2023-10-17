@@ -21,7 +21,7 @@ section{
     background-color: white;
     display: flex;
     border-radius: 7px;
-    box-shadow:
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
 .imagen-login{
     width: 50%;

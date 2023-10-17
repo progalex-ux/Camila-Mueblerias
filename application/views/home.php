@@ -14,25 +14,25 @@
     <title>Camila Mueblerias</title>
 </head>
 
-<body>
+<body class="m-0 p-0">
 
-    <header>
+    <header class="100w d-none d-lg-flex justify-content-center align-middle" style="height:30px; background-color:#474545; ">
         <a href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
-                class="bi bi-facebook px-2  fs-5"></i></a>
+                class="bi bi-facebook px-2  fs-5" style="color:white;"></i></a>
         <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
-                class="bi bi-instagram px-2  fs-5"></i></a>
+                class="bi bi-instagram px-2  fs-5" style="color:white;"></i></a>
     </header>
-    <nav id="sticky-header" class="position-relative">
-        <div class="secciones">
-            <div class="categorias">
-                <div class="menu ">
-                    <button class="menu-button" onclick="toggleMenu()">Categorias
+    <nav id="sticky-header" class="position-relative w=100  d-flex justify-content-around" style="height:100px; background-color:#EE7323;" >
+        <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
+            <div class="categorias" style="width:44%;">
+                <div class="menu position-relative d-inline-block">
+                    <button style="background-color: transparent; color:#fff;"class="menu-button pt-4 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
                         <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="menu-content" id="myDropdown">
+                    <div class="menu-content z-3 position-absolute justify-content-center" id="myDropdown">
 
                         <a href="">Recamaras</a>
-                        <div class="subdropdown" id="subdropdown-recamaras">
+                        <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/principal/colchones">Colchones</a></span>
                                 <span><a href="<?= base_url() ?>index.php/principal/buros">Buros</a></span>
@@ -76,18 +76,18 @@
                 </div>
             </div>
         </div>
-        <div class="buton">
-            <button class="d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        <div class="buton" >
+            <button class="d-lg-none border border-0"  style="background-color:transparent;"type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
                 aria-controls="staticBackdrop">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
-                    viewBox="0 0 16 16">
+                    viewBox="0 0 16 16" style="color:white;">
                     <path fill-rule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
             </button>
         </div>
-        <div class="logo">
-            <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1" src="<?= base_url() ?>public/img/Logo-white.png"
+        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; width:55%;">
+            <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -167,8 +167,8 @@
             </div>
         </div>
     </nav>
-    <main>
-        <section>
+    <main class="d-flex justify-content-center">
+        <section class="d-block justify-content-center ">
             <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
@@ -180,21 +180,21 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active c-item" data-bs-interval="5000">
-                        <img src="<?= base_url() ?>public/img/recamaras/portada.webp" class="d-block w-100 c-image"
+                        <img src="<?= base_url() ?>public/img/recamaras/portada.webp" class="d-block w-100 c-image object-fit-cover"
                             alt="item1">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Ofreciendo amor a los tuyos</h5>
                         </div>
                     </div>
                     <div class="carousel-item c-item" data-bs-interval="3000">
-                        <img src="<?= base_url() ?>public/img/salas/portada.webp" class="d-block w-100 c-image"
+                        <img src="<?= base_url() ?>public/img/salas/portada.webp" class="d-block w-100 c-image object-fit-cover"
                             alt="item2">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Crea un hogar que refleje tu personalidad</h5>
                         </div>
                     </div>
                     <div class="carousel-item c-item">
-                        <img src="<?= base_url() ?>public/img/cocinas/portada.webp" class="d-block w-100 c-image"
+                        <img src="<?= base_url() ?>public/img/cocinas/portada.webp" class="d-block w-100 c-image object-fit-cover"
                             alt="item3">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Transforma tu espacio, transforma tu vida</h5>
@@ -215,11 +215,11 @@
             </div>
             </div>
 
-            <div class="content">
+            <div class="content d-flex justify-content-center">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card">
-                            <img src="<?= base_url() ?>public/img/salas/portada-s.webp" alt="Imagen">
+                        <div class="card rounded-3">
+                            <img src="<?= base_url() ?>public/img/salas/portada-s.webp" class="object-fit-contain" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Salas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/salas"><button
@@ -229,8 +229,8 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card">
-                            <img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" alt="Imagen">
+                        <div class="card rounded-3">
+                            <img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" class="object-fit-contain" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Recamaras</h5>
                                 <a href="<?= base_url() ?>index.php/principal/recamaras"><button
@@ -240,8 +240,8 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card">
-                            <img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" alt="Imagen">
+                        <div class="card rounded-3">
+                            <img src="<?= base_url() ?>public/img/cocinas/portada-c.webp"class="object-fit-contain" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Cocinas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/cocinas"><button
@@ -251,8 +251,8 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card">
-                            <img src="<?= base_url() ?>public/img/electronica/portada.webp" alt="Imagen">
+                        <div class="card rounded-3">
+                            <img src="<?= base_url() ?>public/img/electronica/portada.webp" class="object-fit-contain" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electronica</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electronica"><button
@@ -262,8 +262,8 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card">
-                            <img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp" alt="Imagen">
+                        <div class="card rounded-3">
+                            <img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp" class="object-fit-contain" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electrodomesticos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electrodomesticos"><button
@@ -273,8 +273,8 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card">
-                            <img src="<?= base_url() ?>public/img/motos/portada.webp" alt="Imagen">
+                        <div class="card rounded-3">
+                            <img src="<?= base_url() ?>public/img/motos/portada.webp"  class="object-fit-contain" alt="Imagen">
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Motos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/motos"><button
@@ -286,21 +286,19 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="ctn-f-f">
+    <footer class="d-block justify-content-center align-middle w=100" style="height: 12vh;  background-color:#FF7216;">
+        <div class="ctn-f-f w=100" style="height:20%;">
         </div>
-        <div class="ctn-f">
-            <h6>Copyright&copy;Camila Mueblerias 1973-2023</h6>
+        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%" >
+            <h6 class="text-white" style="font-size:11px;">Derechos Reservados &copy;Camila Mueblerias 2023</h6>
         </div>
-        <div class="ctn-f-s">
-            <h6>Tarimoro, Guanajuato Mexico.</h6>
+        <div class="ctn-f-s w=100 d-flex justify-content-center" style="height:25%;">
+            <h6 class="text-white" style="font-size:11px;">Tarimoro, Guanajuato Mexico.</h6>
         </div>
-        <div class="ctn-f-user">
-            <button onclick=login()><i class="bi bi-person-circle px-2  fs-6"></i></button>
+        <div class="ctn-f-user w=100 d-flex justify-content-end" style="height:30%;">
+            <button class="border border-0" style="background-color:transparent;" onclick=login()><i class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
         </div>
-        <div class="ctn-f-free">
-
-        </div>
+        <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
 
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>

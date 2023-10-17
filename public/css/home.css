@@ -1,101 +1,29 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-header{
-    width: 100%;
-    background-color:#474545;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: cambioColor 50s linear infinite;
-}
-header i{
-    color: white;
-}
-nav{
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    background-color:#EE7323;
-    
-}
-nav button{
-    border: none;
-    background-color: transparent;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-.container-fluid{
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-}
-.logo{
-    width: 56%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    background-color: transparent;
-}
-.logo img{
-
-    object-fit: cover;
-    max-width: 100%;
-    height: 100%;
+.buton{
+    width: 0%;
 }
 .secciones{
-    width: 44%;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-}
-.categorias{
-    width:44%;
-}
-.buton svg{
-    color: #fff;
-}
-.menu {
-    position: relative;
-    display: inline-block;
+    width: 46%;
 }
 
-.menu-button {
-    background-color: transparent;
-    color: #fff;
-    padding: 0px 0px 0px 0px;
-    cursor: pointer;
-}
-.menu-button i{
-    color: #fff;
-}
 .menu-content {
     display: none;
-    position: absolute;
     background-color: #fff;
-    top: 62px;
-    z-index: 100;
-    left: -70%; 
+    top: 100%;   
     width: 300px; 
     transition: 0.3s left ease;
 }
 
 .menu-content a {
     display: block;
+    justify-content: center;
     padding: 10px 20px;
     text-decoration: none;
     color: #000;
 }
 
 .menu-content a:hover {
-    border-left:1px solid rgba(0, 0, 0, 0.295);
-    border-right:1px solid rgba(0, 0, 0, 0.322);
-    border-bottom: 3px solid #EE7323;
+    color:#f87d2b;
+    border-right:2px solid #EE7323;
 }
 .subdropdown {
     display: none;
@@ -105,7 +33,7 @@ nav button{
     left: 100%;
     width: 450px;
     z-index: 100;
-    height: 267px;
+    height: 264px;
 }
 
 .subdropdown a {
@@ -120,16 +48,12 @@ nav button{
     width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
 }
-
 .subdropdown a:hover {
     border:none;
     border-left: 3px solid white;
     color: #f87d2b;
 }
-
-
 .linked{
     color:grey;
 }
@@ -140,27 +64,17 @@ nav button{
 main{
     width: 100%;
     min-height:100vh;
-    display: flex;
-    justify-content: center;
     background-color: #F2F3F4;
 }
 section{
     height: 100%;
     width: 100%;
-    display: block;
-    justify-content: center;
-}
-
-.content{
-    display: flex;
-    justify-content: center;
 }
 .c-item{
     height: 480px;
 }
 .c-image{
     height: 100%;
-    object-fit: cover;
     filter: brightness(0.4);
 }
 .redes{
@@ -174,77 +88,19 @@ section{
     max-width: 100%;    
 }
 .card {
-    border-radius: 7px;
     height: 360px;
     margin: 15px 5px 20px 5px;
 }
 .card img {
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
     height: 70%;
     width: 100%;
-    object-fit: contain;
-}
-.custom-card-button{
-    margin-top: 2px;
-    color: black;
-    border-radius: 12px;
-    background-color: white;
-    border-color: white;
-    width: 75px;
-    height: 35px;
-    margin-bottom: 2px;
 }
 .custom-card-content {
     padding: 15px;
     display: block;
     height: 30%;
 }
- footer{
-    width: 100%;
-    height: 16vh;
-    background-color:#FF8A3D;
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
- footer h6{
-    font-size: 11px;
-    color: #fff;
-}
-.ctn-f-user{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: end;
-}
- .ctn-f-user button{
-    border: none;
-    background-color: transparent;
-}
-.ctn-f-user i{
-    color: #f87d2b;
-}
-.ctn-f{
-width: 100%;
-height: 20%;
-display: flex;
-justify-content: center;
-}
-.ctn-f-s{
-width: 100%;
-height: 25%;
-display: flex;
-justify-content: center;
-}
-.ctn-f-f{
-    width: 100%;
-    height: 22%;
-}
-.ctn-f-free{
-    width:100%;
-    height: 3%;
-}
+
 @media(min-width:1967px){
     .menu-content {
         left: -169%; 
@@ -259,7 +115,7 @@ justify-content: center;
 }
 @media(max-width:1572px){
     .menu-content {
-        left: -110%; 
+        left: -100%; 
         width: 300px; 
     }
 }
