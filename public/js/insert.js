@@ -50,7 +50,8 @@ function enviarDatos(jsonTarjeta) {
 		contentType: false,
 		processData: false,
 		success: function (datos, estado, jhrx) {
-			
+            alert("Producto insertado correctamente!");
+			location.reload();
 		},
 		error: function (jhrx, estado, error) {},
 	});

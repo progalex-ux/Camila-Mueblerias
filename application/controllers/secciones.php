@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class tablets extends CI_Controller {
+class Secciones extends CI_Controller {
 
 
 
@@ -15,6 +15,9 @@ class tablets extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('home');
+	}
+	public function estufas(){
+		$this->load->view('estufas');
 	}
 	public function telefonos(){
 		$this->load->view('telefonos');

@@ -8,7 +8,7 @@
     width: 0%;
 }
 .secciones{
-    width: 46%;
+    width: 40%;
 }
 
 .menu-content {
@@ -65,7 +65,9 @@
     border-left: 3px solid white;
     color: #f87d2b;
 }
-
+section img{
+    width: 100%;
+}
 
 .linked{
     color:grey;
@@ -83,47 +85,14 @@ section{
     height: 70%;
     width: 100%;
 }
-aside{
-    width: 30%;
-    height: 100vh;
-    top: 0;
-    position:sticky;
-    border-right: 1px solid rgba(0, 0, 0, 0.13);
-}
-
-.sidebar-tittle{
-    width: 100%;
-    height: 9%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
-   
-}
-.categorias-tecno a{
-    color: #000;
-}
-.categorias-tecno a:hover{
-    color:#f87d2b;
-    
-}
-
-.botones{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-    max-width: 100%;
-}
-.botones button{
-    margin:0px 0px 0px 20px;
-    border-radius: 10px;
-}
 
 .c-item{
-    height: 480px;
+    height: 350px;
 }
 .c-image{
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(0.4);
+    filter: brightness(0.5);
 }
 .redes{
     display: flex;
@@ -132,24 +101,16 @@ aside{
 .redes i{
     color: dodgerblue;
 }
-.row{
-    max-width: 100%;    
-}
 .card {
-
     height: 270px;
     margin: 15px 5px 20px 5px;
     transition: transform 0.2s;
-    
 }
 .card:hover{
     cursor: pointer;
     transform: scale(1.04);
   }   
-
 .card img {
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
     height: 60%;
     width: 100%;
     object-fit:cover;
@@ -167,7 +128,25 @@ aside{
     display: block;
     height: 40%;
 }
- 
+
+.sellos{
+    width: 100%;
+    height: 190px;
+    align-items: center;
+}
+.sello{
+    height: 70px;
+    width: 70px;
+    background-color:#FC924D;
+}
+.botun{
+    color: #fff;
+    background-color:#DC7633;
+}
+.botun:hover{
+    background-color: #f87d2b;
+    color: #fff;
+}
 @media(min-width:1967px){
     .menu-content {
         left: -169%; 

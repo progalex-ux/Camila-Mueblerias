@@ -7,11 +7,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Motos-Camila Mueblerias</title>
+    <title>Motos | Camila Mueblerias</title>
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/salas.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/productos.css">
 </head>
 
 <body>
@@ -190,170 +190,15 @@
                                 </li>
                             </ul>
                             <hr>
-                        </div>    
+                        </div>
+                        
                     </div>
                     <div class="col py-3">
                         <div class="content">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="row" id="tarjetas">
                                 
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card">
-                                        <img src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt="Imagen">
-                                        <div class="custom-card-content">
-                                            <h5 class="custom-card-price">$42,990</h5>
-                                            <p class="custom-card-tittle">Cuatrimoto dinamo 150cc</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                             </div>
                         </div>
@@ -377,8 +222,10 @@
 
         </div>
     </footer>
+    <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+    <script src="<?= base_url() ?>public/js/insert.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
+    
 </body>
 
 </html>

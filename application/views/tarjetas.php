@@ -10,7 +10,7 @@
     <title>Admin | Camila Mueblerias</title>
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/tarjetas.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/card.css">
 </head>
 
 <body>
