@@ -195,7 +195,7 @@
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
                                     <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Sofa camas</button>
+                                        style="width:100%; height:100%;"></button>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                                 <div class="boton" style="width:100%; height:15%;">
                                 
                                     <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Sala Modular</button>
+                                        style="width:100%; height:100%;"></button>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
                                     <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Sofas</button>
+                                        style="width:100%; height:100%;"></button>
                                 </div>
                             </div>
                         </div>

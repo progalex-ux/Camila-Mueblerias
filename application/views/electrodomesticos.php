@@ -197,12 +197,12 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href=""><img class="object-fit-contain"
+                                <a href="<?= base_url() ?>index.php/secciones/estufas"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/card-estufa.webp" alt=""></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Estufas</button>
+                                <a href="<?= base_url() ?>index.php/secciones/estufas"><button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Estufas</button></a>
                                 </div>
                             </div>
                         </div>

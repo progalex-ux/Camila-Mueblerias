@@ -7,22 +7,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Electronica | Camila Mueblerias</title>
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/selec.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/prueba.css">
+    <title>Electronica | Camila Mueblerias</title>
 </head>
 
 <body>
-    <nav id="sticky-header" class="position-relative d-flex justify-content-around"
-        style="height:87px; background-color:#EE7323;">
+    <nav id="sticky-header" class="position-relative w=100  d-flex justify-content-around"
+        style="height:100px; background-color:#EE7323;">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
                     <button style="background-color: transparent; color:#fff;"
-                        class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block"
-                        onclick="toggleMenu()">Categorías
+                        class="menu-button pt-4 pe-4 border border-0 d-none d-lg-block"
+                        onclick="toggleMenu()">Categorias
                         <i id="menu-icon" class="bi bi-chevron-down"></i>
                     </button>
                     <div class="menu-content z-3 position-absolute justify-content-center" id="myDropdown">
@@ -163,83 +163,120 @@
             </div>
         </div>
     </nav>
-    <main class="d-flex justify-content-start aling-middle">
-        <aside class="sidebar d-none d-lg-block">
-            <div class="sidebar-tittle d-flex ps-2 ">
-            <i class="bi bi-dash-circle fs-6 pt-4"></i>&nbsp<h6 class="pt-4">Tecnologia</h6>
-            </div>
-            <div class="categorias-tecno d-flex justify-content-start" style="width:100%; height:15%;">
-                <ul class="d-flex flex-column ">
-                    <a class="pt-1 ps-1" style="font-size:14px;" href="">Celulares</a>
-                    <a class="pt-1 ps-1" style="font-size:14px;" href="">Tablets</a>
-                    <a class="pt-1 ps-1" style="font-size:14px;" href="">Computacion</a>
-                    <a class="pt-1 ps-1" style="font-size:14px;" href="">Televisiones</a>
-                    <a class="pt-1 ps-1" style="font-size:14px;" href="">Audio</a>
-                </ul>
-            </div>
-        </aside>
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="card rounded-3">
-                            <div class="image">
-                                <a href="<?= base_url() ?>index.php/principal/celulares"><img src="<?= base_url() ?>public/img/electronica/celulares-portada.png" class="object-fit-contain" alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Celulares</h5>
-                                <a href="<?= base_url() ?>index.php/principal/motos"><button class='btn btn-light border-dark mt-1 rounded-5'>Ver mas</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="card rounded-3">
-                            <div class="image">
-                            <a href="<?= base_url() ?>index/principal/televisores"><img src="<?= base_url() ?>public/img/electronica/tablet-portada.avif" class="object-fit-contain" alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Tablets</h5>
-                                <a href="<?= base_url() ?>index.php/principal/motos"><button class='btn btn-light border-dark mt-1 rounded-5'>Ver mas</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="card rounded-3">
-                            <div class="image">
-                            <a href="<?= base_url() ?>index/principal/televisores"> <img src="<?= base_url() ?>public/img/electronica/laptop.png" class="object-fit-contain" alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Laptops</h5>
-                                <a href="<?= base_url() ?>index.php/principal/motos"><button class='btn btn-light border-dark mt-1 rounded-5'>Ver mas</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="card rounded-3">
-                            <div class="image">
-                                <a href="<?= base_url() ?>index/principal/televisores"><img src="<?= base_url() ?>public/img/electronica/tv.webp" class="object-fit-contain" alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Televisores</h5>
-                                <a href="<?= base_url() ?>index.php/principal/televisores"><button class='btn btn-light border-dark mt-1 rounded-5'>Ver mas</button></a>
-                            </div>
+    <main class="d-flex justify-content-center ">
+        <section class="">
+            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-item" data-bs-interval="5000">
+                        <img src="<?= base_url() ?>public/img/electronica/electronica-carousel.webp"
+                            class="d-block w-100 c-image object-fit-cover" alt="item1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Electronica</h3>
+
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="sellos d-flex justify-content-center " style="background-color:#F2F3F4;">
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/estufas"><img src="<?= base_url() ?>public/img/electronica/sello-phone.webp"
+                        alt=""></div></a>
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/microondas"><img src="<?= base_url() ?>public/img/electronica/sello-ipad.webp" alt=""></a></div>
+
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/licuadoras"><img src="<?= base_url() ?>public/img/electronica/sello-laptop.webp"
+                        alt=""></a></div>
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/parrillas"><img src="<?= base_url() ?>public/img/electronica/sello-tv.png"
+                        alt=""></a></div>
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/secadoras"><img src="<?= base_url() ?>public/img/electronica/sello-bocina.png"
+                        alt=""></a></div>
+            
+            </div>
+            <div class="content-p d-flex justify-content-center" style="width:100%; height:auto; ">
+                <div class="content" style="width:88%; height:auto;">
+                    <div class="row" style="max-width: 100%;">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <div class="card">
+                                <div class="image" style="width:100%; height:85%;">
+                                <a href=""><img class="object-fit-contain"
+                                        src="<?= base_url() ?>public/img/electronica/sello-phone.webp" alt=""></a>
+                                </div>
+                                <div class="boton" style="width:100%; height:15%;">
+                                    <button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Celulares</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <div class="card">
+                                <div class="image" style="width:100%; height:85%;">
+                                <a href=""><img class="object-fit-contain"
+                                        src="<?= base_url() ?>public/img/electronica/sello-ipad.webp"></a>
+                                </div>
+                                <div class="boton" style="width:100%; height:15%;">
+                                
+                                    <button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Tablets</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="image" style="width:100%; height:85%;">
+                                <a href=""><img class="object-fit-contain"
+                                        src="<?= base_url() ?>public/img/electronica/sello-laptop.webp"></a>
+                                </div>
+                                <div class="boton" style="width:100%; height:15%;">
+                                    <button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Laptops</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="image" style="width:100%; height:85%;">
+                                <a href=""><img class="object-fit-contain"
+                                        src="<?= base_url() ?>public/img/electronica/sello-tv.png"></a>
+                                </div>
+                                <div class="boton" style="width:100%; height:15%;">
+                                    <button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Televisiones</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="image" style="width:100%; height:85%;">
+                                    <a href=""><img class="object-fit-contain"
+                                        src="<?= base_url() ?>public/img/electronica/sello-bocina.png"></a>
+                                </div>
+                                <div class="boton" style="width:100%; height:15%;">
+                                    <button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Bocinas</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="d-block justify-content-center align-middle w=100" style="height: 10vh;  background-color:#FF7216;">
+    <footer class="d-block justify-content-center align-middle w=100" style="height: 12vh;  background-color:#FF7216;">
         <div class="ctn-f-f w=100" style="height:20%;">
         </div>
-        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%">
+        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%" >
             <h6 class="text-white" style="font-size:11px;">Derechos Reservados &copy;Camila Mueblerias 2023</h6>
         </div>
-        <div class="ctn-f-s w=100 d-flex justify-content-center" style="height:20%;">
+        <div class="ctn-f-s w=100 d-flex justify-content-center" style="height:25%;">
             <h6 class="text-white" style="font-size:11px;">Tarimoro, Guanajuato Mexico.</h6>
         </div>
         <div class="ctn-f-user w=100 d-flex justify-content-end" style="height:30%;">
-            <button class="border border-0" style="background-color:transparent;" onclick=login()><i
-                    class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
+            <button class="border border-0" style="background-color:transparent;" onclick=login()><i class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>

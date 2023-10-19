@@ -171,7 +171,7 @@
                         <img src="<?= base_url() ?>public/img/salas/sala-carousel.avif"
                             class="d-block w-100 c-image object-fit-cover" alt="item1">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3>Recamaras</h3>
+                            <h3>Salas</h3>
 
                         </div>
                     </div>
@@ -185,8 +185,8 @@
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto;">
                 <div class="content" style="width:88%; height:auto;">
-                    <div class="column" style="max-width: 100%;">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
+                    <div class="row" style="max-width: 100%;">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href=""><img class="object-fit-contain"
@@ -199,7 +199,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href=""><img class="object-fit-contain"
@@ -213,7 +213,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href=""><img class="object-fit-contain"
