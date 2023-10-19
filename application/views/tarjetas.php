@@ -77,7 +77,7 @@
                         <img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Electrodomesticos</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert/"><button
+                            <a href="<?= base_url() ?>index.php/admin/insertEstufas/"><button
                             type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>

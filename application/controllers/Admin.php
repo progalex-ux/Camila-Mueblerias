@@ -16,6 +16,9 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+	public function insertEstufas(){
+        $this->load->view("insertEstufas");
+    }
 	public function insert(){
 		$this->load->view('insert');
 	}

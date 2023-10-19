@@ -29,16 +29,16 @@ class Secciones extends CI_Controller {
 		$this->load->view('licuadoras');
 	}
 	public function microondas(){
-		$his->load->view('microondas');
+		$this->load->view('microondas');
 	}
 	public function parrillas(){
-		$his->load->view('parrillas');
+		$this->load->view('parrillas');
 	}
 	public function secadoras(){
-		$his->load->view('secadoras');
+		$this->load->view('secadoras');
 	}
 	public function lavadoras(){
-		$his->load->view('lavadoras');
+		$this->load->view('lavadoras');
 	}
 //VISTAS ELECTRONICA
 	public function telefonos(){

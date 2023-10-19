@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/productos.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/prod.css">
 </head>
 
 <body>
@@ -205,6 +205,7 @@
                     </div>
                 </div>
             </div>
+</section>
     </main>
     <footer>
         <div class="ctn-f-f">

@@ -210,26 +210,12 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href=""><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/electrodomesticos/licuadora.png"></a>
-                                </div>
-                                <div class="boton" style="width:100%; height:15%;">
-                                
-                                    <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Licuadoras</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
-                                <div class="image" style="width:100%; height:85%;">
-                                <a href=""><img class="object-fit-contain"
+                                <a href="<?= base_url() ?>index.php/secciones/microondas"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/card-microondas.webp"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Microondas</button>
+                                    <a href="<?= base_url() ?>index.php/secciones/microondas"><button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Microondas</button></a>
                                 </div>
                             </div>
                         </div>
@@ -237,12 +223,12 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href=""><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/electrodomesticos/card-parrilla.webp"></a>
+                                <a href="<?= base_url() ?>index.php/secciones/licuadoras"><img class="object-fit-contain"
+                                        src="<?= base_url() ?>public/img/electrodomesticos/licuadora.png"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Parrillas</button>
+                                    <a href="<?= base_url() ?>index.php/secciones/licuadoras"><button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Licuadoras</button></a>
                                 </div>
                             </div>
                         </div>
@@ -252,12 +238,27 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                    <a href=""><img class="object-fit-contain"
+                                <a href="<?= base_url() ?>index.php/secciones/parrillas"><img class="object-fit-contain"
+                                        src="<?= base_url() ?>public/img/electrodomesticos/card-parrilla.webp"></a>
+                                </div>
+                                <div class="boton" style="width:100%; height:15%;">
+                                    <a href="<?= base_url() ?>index.php/secciones/parrillas"><button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Parrillas</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="image" style="width:100%; height:85%;">
+                                    <a href="<?= base_url() ?>index.php/secciones/secadoras"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/card-secadora.webp"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Secadoras</button>
+                                    <a href="<?= base_url() ?>index.php/secciones/secadoras"><button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Secadoras</button></a>
                                 </div>
                             </div>
                         </div>
@@ -265,12 +266,12 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href=""><img class="object-fit-contain"
+                                <a href="<?= base_url() ?>index.php/secciones/lavadoras"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/card-lavadora.webp"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Lavadoras</button>
+                                    <a href="<?= base_url() ?>index.php/secciones/lavadoras"><button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Lavadoras</button></a>
                                 </div>
                             </div>
                         </div>
