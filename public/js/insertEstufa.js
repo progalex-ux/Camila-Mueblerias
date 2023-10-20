@@ -1,5 +1,8 @@
 const base_url="http://localhost/CamilaMueblerias/";
 
+function returns(){
+    window.location.href = base_url+"index.php/admin/cardsElectrodomesticos";
+}
 function loadImage() {
     const input = document.getElementById('image');
     const preview = document.getElementById('preview-image');
@@ -17,7 +20,7 @@ function loadImage() {
     }
   }
   
-  function registroTarjetas() {
+  function registroTarjeta() {
       var titulo = $("#titulo").val();
       var precio = $("#precio").val();
       var image = $("#image").val();

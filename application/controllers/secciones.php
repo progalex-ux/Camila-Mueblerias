@@ -60,8 +60,8 @@ class Secciones extends CI_Controller {
 	public function colchones(){
 		$this->load->view('colchones');
 	}
-	public function bases_cama(){
-		$this->load->view('bases_cama');
+	public function basescama(){
+		$this->load->view('basescama');
 	}
 	public function buros(){
 		$this->load->view('buros');
@@ -72,15 +72,15 @@ class Secciones extends CI_Controller {
 	public function cabeceras(){
 		$this->load->view('cabeceras');
 	}
-	public function recamaras(){
-		$this->load->view('recamaras');
+	public function recamarasS(){
+		$this->load->view('recamarasS');
 	}
 //VISTAS SALAS
-	public function sofa_cama(){
-		$this->load->view('sofa_cama');
+	public function sofacama(){
+		$this->load->view('sofacama');
 	}
-	public function sala_modular(){
-		$this->load->view('sala_modular');
+	public function salamodular(){
+		$this->load->view('salamodular');
 	}
 	public function sofas(){
 		$this->load->view('sofas');

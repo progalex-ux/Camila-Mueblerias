@@ -6,6 +6,9 @@ function login(){
 function home(){
   window.location.href = base_url+"index.php/principal/";
 }
+function returnHome(){
+  window.location.href = base_url+"index.php/admin/tarjetas";
+}
 function loginUser(){
     var usuario =$("#usuario").val();
     var contrasena=$("#contrasena").val();

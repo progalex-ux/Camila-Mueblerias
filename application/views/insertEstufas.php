@@ -18,7 +18,7 @@
     <header>
         <div class="logo">
             <div class="boton">
-                <button onclick="returnHome()" class="btn btn-dark">Regresar</button>
+                <button onclick="returns()" class="btn btn-dark">Regresar</button>
             </div>
 
         </div>
@@ -56,8 +56,11 @@
         </section>
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+    
     <script src="<?= base_url() ?>public/js/insertEstufa.js"></script>
+   
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
+    
     
 </body>
 

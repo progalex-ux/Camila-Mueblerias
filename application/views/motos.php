@@ -15,19 +15,81 @@
 </head>
 
 <body>
-    <header id="sticky-header">
-        <div class="buton">
-            <button class="d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+<nav id="sticky-nav" class="position-relative w=100  d-flex justify-content-around" style="height:100px; background-color:#EE7323;" >
+        <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
+            <div class="categorias" style="width:44%;">
+                <div class="menu position-relative d-inline-block">
+                    <button style="background-color: transparent; color:#fff;"class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
+                        <i id="menu-icon"  class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="menu-content z-3 position-absolute justify-content-center" id="myDropdown">
+
+                        <a href="">Recamaras</a>
+                        <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
+                            <div class="seccion-1">
+                                <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases para cama</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/buros">Buros</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/roperos">Roperos</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/cabeceras">Cabeceras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/recamaras">Recamaras</a></span>
+                            </div>
+                        </div>
+                        <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
+                        <div class="subdropdown" id="subdropdown-cocinas">
+                            <div class="seccion-1">
+                                <span><a href="">Cocinas</a></span>
+                                <span><a href="<?= base_url() ?>">Alacenas</a></span>
+                            </div>
+                        </div>
+                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Salas</a>
+                        <div class="subdropdown" id="subdropdown-salas">
+                            <div class="seccion-1">
+                            <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
+                            <span><a href="<?= base_url() ?>index.php/secciones/salamodular">Sala Modular</a></span>
+                            <span><a href="<?= base_url() ?>index.php/secciones/sofas">Sofas</a></span>
+                            </div>
+                        </div>
+                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
+                        <div class="subdropdown" id="subdropdown-electrodomesticos">
+                            <div class="seccion-1">
+                                <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/parrrillas">Parrillas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a></span>
+                            </div>
+                        </div>
+                        <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
+                        <div class="subdropdown" id="subdropdown-electronica">
+                            <div class="seccion-1">
+                                <span><a href="<?= base_url() ?>index.php/secciones/celulares">Celulares</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/laptop">Laptops</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/bocinas">Bocinas</a></span>
+                            </div>
+                        </div>
+                        <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="buton" >
+            <button class="d-lg-none border border-0"  style="background-color:transparent;"type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
                 aria-controls="staticBackdrop">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
-                    viewBox="0 0 16 16">
+                    viewBox="0 0 16 16" style="color:white;">
                     <path fill-rule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
             </button>
         </div>
-        <div class="logo">
-            <a href="<?= base_url() ?>index.php/principal/"><img src="<?= base_url() ?>public/img/Logo-white.png"
+        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; width:55%;">
+            <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -97,7 +159,7 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="redes d-lg-none py-3 d-sm-flex">
+                <div class="redes d-lg-none py-3">
                     <a href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
                             class="bi bi-facebook px-2  fs-2"></i></a>
                     <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
@@ -106,7 +168,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
     <main>
         <section >
             <div class="container-fluid">

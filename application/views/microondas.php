@@ -180,51 +180,11 @@
         </aside>
         <section>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card rounded-3 border-0">
-                            <div class="image">
-                                <a href="<?= base_url() ?>index.php/principal/celulares"><img src="<?= base_url() ?>public/img/electronica/celulares-portada.png" class="object-fit-contain" alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Celulares</h5>
-                                <a href="<?= base_url() ?>index.php/principal/motos"><button class='btn btn-light border-dark mt-1 rounded-5'>Ver mas</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card rounded-3 border-0">
-                            <div class="image">
-                            <a href="<?= base_url() ?>index/principal/televisores"><img src="<?= base_url() ?>public/img/electronica/tablet-portada.avif" class="object-fit-contain" alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Tablets</h5>
-                                <a href="<?= base_url() ?>index.php/principal/motos"><button class='btn btn-light border-dark mt-1 rounded-5'>Ver mas</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card rounded-3 border-0">
-                            <div class="image">
-                            <a href="<?= base_url() ?>index/principal/televisores"> <img src="<?= base_url() ?>public/img/electronica/laptop.png" class="object-fit-contain" alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Laptops</h5>
-                                <a href="<?= base_url() ?>index.php/principal/motos"><button class='btn btn-light border-dark mt-1 rounded-5'>Ver mas</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card rounded-3 border-0">
-                            <div class="image">
-                                <a href="<?= base_url() ?>index/principal/televisores"><img src="<?= base_url() ?>public/img/electronica/tv.webp" class="object-fit-contain" alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Televisores</h5>
-                                <a href="<?= base_url() ?>index.php/principal/televisores"><button class='btn btn-light border-dark mt-1 rounded-5'>Ver mas</button></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="tarjetas">
+                    
+                
+                    
+                    
                 </div>
             </div>
     </main>
@@ -243,6 +203,8 @@
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
+    <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+    <script src="<?= base_url() ?>public/js/insertMicroondas.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>
     <script src="<?= base_url() ?>public/js/home.js"></script>

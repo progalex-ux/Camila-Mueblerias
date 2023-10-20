@@ -33,8 +33,7 @@
                         <img src="<?= base_url() ?>public/img/salas/portada-s.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Salas</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert/"><button
-                            type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <a href="<?= base_url() ?>index.php/admin/cardsSalas/"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -44,8 +43,7 @@
                         <img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Recamaras</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert/"><button
-                                    type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <a href="<?= base_url() ?>index.php/admin/cardsRecamaras/"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -55,8 +53,7 @@
                         <img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Cocinas</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert"><button type="button" class="btn btn-dark">Agregar
-                                    contenido</button></a>
+                            <a href="<?= base_url() ?>index.php/admin/insert"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +63,7 @@
                         <img src="<?= base_url() ?>public/img/electronica/portada.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Electronica</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insert/"><button
+                            <a href="<?= base_url() ?>index.php/admin/cardsElectronica/"><button
                             type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>
@@ -77,7 +74,7 @@
                         <img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp" alt="Imagen">
                         <div class="custom-card-content">
                             <h5 class="custom-card-title">Electrodomesticos</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertEstufas/"><button
+                            <a href="<?= base_url() ?>index.php/admin/cardsElectrodomesticos/"><button
                             type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
                     </div>

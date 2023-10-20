@@ -22,11 +22,11 @@
         <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
                 class="bi bi-instagram px-2  fs-5" style="color:white;"></i></a>
     </header>
-    <nav id="sticky-header" class="position-relative w=100  d-flex justify-content-around" style="height:100px; background-color:#EE7323;" >
+    <nav id="sticky-nav" class="position-relative w=100  d-flex justify-content-around" style="height:100px; background-color:#EE7323;" >
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
-                    <button style="background-color: transparent; color:#fff;"class="menu-button pt-4 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
+                    <button style="background-color: transparent; color:#fff;"class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
                         <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
                     <div class="menu-content z-3 position-absolute justify-content-center" id="myDropdown">
@@ -34,9 +34,12 @@
                         <a href="">Recamaras</a>
                         <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Colchones</a></span>
-                                <span><a href="<?= base_url() ?>index.php/principal/buros">Buros</a></span>
-                                <span><a href="<?= base_url() ?>index.php/principal/buros">Cabeceras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases para cama</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/buros">Buros</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/roperos">Roperos</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/cabeceras">Cabeceras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/recamaras">Recamaras</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
@@ -49,24 +52,30 @@
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Salas</a>
                         <div class="subdropdown" id="subdropdown-salas">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Esquinera</a></span>
-                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Esquinera</a></span>
+                            <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
+                            <span><a href="<?= base_url() ?>index.php/secciones/salamodular">Sala Modular</a></span>
+                            <span><a href="<?= base_url() ?>index.php/secciones/sofas">Sofas</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
                         <div class="subdropdown" id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Licuadoras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/principal/buros">Secadoras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/principal/buros">Lavadora</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/parrrillas">Parrillas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
                         <div class="subdropdown" id="subdropdown-electronica">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/principal/colchones">Computadoras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/principal/buros">Televisiones</a></span>
-                                <span><a href="<?= base_url() ?>index.php/principal/buros">Telefonos</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/celulares">Celulares</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/laptop">Laptops</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/bocinas">Bocinas</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
