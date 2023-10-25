@@ -16,12 +16,12 @@
     <header>
         <div class="logo">
             <div class="boton">
-                <button onclick="returnHome()" class="btn btn-dark">Regresar</button>
+                <button onclick="returnHome()" class="btn btn-dark " style="background-color:#db600e; border-color:#db600e;">Regresar</button>
             </div>
             
         </div>
         <div class="titulo">
-            <h1>Admin</h1>
+            <h1 style="color:#db600e;">Admin</h1>
         </div>
     </header>
     <section>
@@ -31,8 +31,8 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/salas/card-sofacama.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Sofa Cama</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertEstufas/"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <h5 class="custom-card-title" style="color:#db600e;">Sofa Cama</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insertSofacama/"><button type="button" class="btn btn-dark" style="background-color:#db600e; border-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/salas/card-salamodular.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Sala Modular</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertMicroondas/"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <h5 class="custom-card-title" style="color:#db600e;">Sala Modular</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insertSalamodular/"><button type="button" class="btn btn-dark"  style="background-color:#db600e; border-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -51,8 +51,8 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/salas/card-sofa.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Sofas</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertLicuadoras"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <h5 class="custom-card-title" style="color:#db600e;">Sofas</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insertSofas"><button type="button" class="btn btn-dark"  style="background-color:#db600e; border-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>

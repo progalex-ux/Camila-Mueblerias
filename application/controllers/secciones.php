@@ -85,5 +85,16 @@ class Secciones extends CI_Controller {
 	public function sofas(){
 		$this->load->view('sofas');
 	}
+
+// Cocinas
+public function vitrinas(){
+	$this->load->view('vitrinas');
+}
+public function sillas(){
+	$this->load->view('sillas');
+}
+public function comedores(){
+	$this->load->view('comedores');
+}
 }
 	

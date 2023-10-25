@@ -16,12 +16,12 @@
     <header>
         <div class="logo">
             <div class="boton">
-                <button onclick="returnHome()" class="btn btn-dark">Regresar</button>
+                <button onclick="returnHome()" class="btn btn-dark border-0" style="background-color:#db600e;">Regresar</button>
             </div>
             
         </div>
         <div class="titulo">
-            <h1>Admin</h1>
+            <h1 style="color:#db600e;">Admin</h1>
         </div>
     </header>
     <section>
@@ -31,8 +31,8 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electronica/sello-phone.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Celulares</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertTelefonos/"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <h5 class="custom-card-title" style="color:#db600e;">Celulares</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insertTelefonos/"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electronica/sello-ipad.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Tablets</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertTablets/"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <h5 class="custom-card-title" style="color:#db600e;">Tablets</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insertTablets/"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -51,8 +51,8 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electronica/sello-laptop.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Laptops</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertLaptop"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <h5 class="custom-card-title" style="color:#db600e;">Laptops</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insertLaptop"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -61,9 +61,9 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electronica/sello-tv.png" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Televisiones</h5>
+                            <h5 class="custom-card-title" style="color:#db600e;">Televisiones</h5>
                             <a href="<?= base_url() ?>index.php/admin/insertTelevisiones/"><button
-                            type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -72,9 +72,9 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electronica/sello-bocina.png" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Bocinas</h5>
+                            <h5 class="custom-card-title" style="color:#db600e;">Bocinas</h5>
                             <a href="<?= base_url() ?>index.php/admin/insertBocinas/"><button
-                            type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>

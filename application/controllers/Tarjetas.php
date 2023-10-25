@@ -15,24 +15,6 @@ class Tarjetas extends CI_Controller{
     public function index(){
         $this->load->view("insert");
     }
-    public function insertEstufas(){
-        $this->load->view("insertEstufas");
-    }
-    public function insertMicroondas(){
-        $this->load->view("insertMicroondas");
-    }
-    public function insertLicuadoras(){
-        $this->load->view("insertLicuadoras");
-    }
-    public function insertParrillas(){
-        $this->load->view("insertParrillas");
-    }
-    public function insertSecadoras(){
-        $this->load->view("insertSecadoras");
-    }
-    public function insertLavadoras(){
-        $this->load->view("insertLavadoras");
-    }
 
     public function guardarTarjetas(){
 
@@ -768,7 +750,7 @@ class Tarjetas extends CI_Controller{
         echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
     }
     
-
+    
     public function getCardRecamarasS(){
 
         $tarjetas = $this->guardar_mdl->readCardRecamarasS();
@@ -781,5 +763,256 @@ class Tarjetas extends CI_Controller{
         }
         echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
     }
+
+    public function saveCardSalamodular(){
+        $titulo    = $this->input->post("titulo");
+        $precio = $this->input->post("precio");
+        $image = $this->input->post("image");
+    
+        $this->upload->do_upload("file");
+        $rutaArchivo = "public/img/";
+        $nombreArchivo = $_FILES["image"]["name"];
+        $pathFile = $rutaArchivo.$nombreArchivo;
+    
+        move_uploaded_file($_FILES["image"]["tmp_name"], $pathFile);
+    
+        $datosTarjeta = array(
+            'image' => $pathFile,
+            'titulo' => $titulo,
+            'precio' => $precio
+        );
+    
+        $idTarjeta = $this->guardar_mdl->cardSalamodular($datosTarjeta);
+    
+        $datosEnviar = array();
+        $datosEnviar['mensaje'] = "registro con éxito";
+        $datosEnviar['idUsuario'] = $idTarjeta;
+    
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+    
+    
+    public function getCardSalamodular(){
+
+        $tarjetas = $this->guardar_mdl->readCardSalamodular();
+        $datosEnviar = array();
+        if($tarjetas){
+            $datosEnviar["status"] = 'success';
+            $datosEnviar["tarjetas"] = $tarjetas;
+        }else{
+            $datosEnviar["status"] = 'error';
+        }
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+
+    public function saveCardSofacama(){
+        $titulo    = $this->input->post("titulo");
+        $precio = $this->input->post("precio");
+        $image = $this->input->post("image");
+    
+        $this->upload->do_upload("file");
+        $rutaArchivo = "public/img/";
+        $nombreArchivo = $_FILES["image"]["name"];
+        $pathFile = $rutaArchivo.$nombreArchivo;
+    
+        move_uploaded_file($_FILES["image"]["tmp_name"], $pathFile);
+    
+        $datosTarjeta = array(
+            'image' => $pathFile,
+            'titulo' => $titulo,
+            'precio' => $precio
+        );
+    
+        $idTarjeta = $this->guardar_mdl->cardSofacama($datosTarjeta);
+    
+        $datosEnviar = array();
+        $datosEnviar['mensaje'] = "registro con éxito";
+        $datosEnviar['idUsuario'] = $idTarjeta;
+    
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+    
+    
+    public function getCardSofacama(){
+
+        $tarjetas = $this->guardar_mdl->readCardSofacama();
+        $datosEnviar = array();
+        if($tarjetas){
+            $datosEnviar["status"] = 'success';
+            $datosEnviar["tarjetas"] = $tarjetas;
+        }else{
+            $datosEnviar["status"] = 'error';
+        }
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+
+
+    public function saveCardSofas(){
+        $titulo    = $this->input->post("titulo");
+        $precio = $this->input->post("precio");
+        $image = $this->input->post("image");
+    
+        $this->upload->do_upload("file");
+        $rutaArchivo = "public/img/";
+        $nombreArchivo = $_FILES["image"]["name"];
+        $pathFile = $rutaArchivo.$nombreArchivo;
+    
+        move_uploaded_file($_FILES["image"]["tmp_name"], $pathFile);
+    
+        $datosTarjeta = array(
+            'image' => $pathFile,
+            'titulo' => $titulo,
+            'precio' => $precio
+        );
+    
+        $idTarjeta = $this->guardar_mdl->cardSofas($datosTarjeta);
+    
+        $datosEnviar = array();
+        $datosEnviar['mensaje'] = "registro con éxito";
+        $datosEnviar['idUsuario'] = $idTarjeta;
+    
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+    
+    
+    public function getCardSofas(){
+
+        $tarjetas = $this->guardar_mdl->readCardSofas();
+        $datosEnviar = array();
+        if($tarjetas){
+            $datosEnviar["status"] = 'success';
+            $datosEnviar["tarjetas"] = $tarjetas;
+        }else{
+            $datosEnviar["status"] = 'error';
+        }
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+
+    //Cocinas
+    public function saveCardComedores(){
+        $titulo    = $this->input->post("titulo");
+        $precio = $this->input->post("precio");
+        $image = $this->input->post("image");
+    
+        $this->upload->do_upload("file");
+        $rutaArchivo = "public/img/";
+        $nombreArchivo = $_FILES["image"]["name"];
+        $pathFile = $rutaArchivo.$nombreArchivo;
+    
+        move_uploaded_file($_FILES["image"]["tmp_name"], $pathFile);
+    
+        $datosTarjeta = array(
+            'image' => $pathFile,
+            'titulo' => $titulo,
+            'precio' => $precio
+        );
+    
+        $idTarjeta = $this->guardar_mdl->cardComedores($datosTarjeta);
+    
+        $datosEnviar = array();
+        $datosEnviar['mensaje'] = "registro con éxito";
+        $datosEnviar['idUsuario'] = $idTarjeta;
+    
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+    
+    
+    public function getCardComedores(){
+
+        $tarjetas = $this->guardar_mdl->readCardComedores();
+        $datosEnviar = array();
+        if($tarjetas){
+            $datosEnviar["status"] = 'success';
+            $datosEnviar["tarjetas"] = $tarjetas;
+        }else{
+            $datosEnviar["status"] = 'error';
+        }
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+
+
+    public function saveCardSillas(){
+        $titulo    = $this->input->post("titulo");
+        $precio = $this->input->post("precio");
+        $image = $this->input->post("image");
+    
+        $this->upload->do_upload("file");
+        $rutaArchivo = "public/img/";
+        $nombreArchivo = $_FILES["image"]["name"];
+        $pathFile = $rutaArchivo.$nombreArchivo;
+    
+        move_uploaded_file($_FILES["image"]["tmp_name"], $pathFile);
+    
+        $datosTarjeta = array(
+            'image' => $pathFile,
+            'titulo' => $titulo,
+            'precio' => $precio
+        );
+    
+        $idTarjeta = $this->guardar_mdl->cardSillas($datosTarjeta);
+    
+        $datosEnviar = array();
+        $datosEnviar['mensaje'] = "registro con éxito";
+        $datosEnviar['idUsuario'] = $idTarjeta;
+    
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+    
+    
+    public function getCardSillas(){
+
+        $tarjetas = $this->guardar_mdl->readCardSillas();
+        $datosEnviar = array();
+        if($tarjetas){
+            $datosEnviar["status"] = 'success';
+            $datosEnviar["tarjetas"] = $tarjetas;
+        }else{
+            $datosEnviar["status"] = 'error';
+        }
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+
+    public function saveCardVitrinas(){
+        $titulo    = $this->input->post("titulo");
+        $precio = $this->input->post("precio");
+        $image = $this->input->post("image");
+    
+        $this->upload->do_upload("file");
+        $rutaArchivo = "public/img/";
+        $nombreArchivo = $_FILES["image"]["name"];
+        $pathFile = $rutaArchivo.$nombreArchivo;
+    
+        move_uploaded_file($_FILES["image"]["tmp_name"], $pathFile);
+    
+        $datosTarjeta = array(
+            'image' => $pathFile,
+            'titulo' => $titulo,
+            'precio' => $precio
+        );
+    
+        $idTarjeta = $this->guardar_mdl->cardVitrinas($datosTarjeta);
+    
+        $datosEnviar = array();
+        $datosEnviar['mensaje'] = "registro con éxito";
+        $datosEnviar['idUsuario'] = $idTarjeta;
+    
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+    
+    
+    public function getCardVitrinas(){
+
+        $tarjetas = $this->guardar_mdl->readCardVitrinas();
+        $datosEnviar = array();
+        if($tarjetas){
+            $datosEnviar["status"] = 'success';
+            $datosEnviar["tarjetas"] = $tarjetas;
+        }else{
+            $datosEnviar["status"] = 'error';
+        }
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
+
+
 }
 ?>

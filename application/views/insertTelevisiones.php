@@ -18,49 +18,50 @@
     <header>
         <div class="logo">
             <div class="boton">
-                <button onclick="returnse()" class="btn btn-dark">Regresar</button>
+                <button onclick="returnse()" class="btn btn-dark border-0"
+                    style="background-color:#db600e;">Regresar</button>
             </div>
 
         </div>
         <div class="titulo">
-            <h1>Admin</h1>
+            <h1 style="color:#db600e;">Admin</h1>
         </div>
     </header>
     <main>
         <section>
-       
+
             <div class="container">
-            <form id="dataTarjeta" method="post" enctype="multipart/form-data">
-                <div class="tittle">
-                    <h3>Formulario para agregar contenido</h3>
-                </div>
-                <div class="selected-image">
-                    <div id="image-container">
-                        <img id="preview-image" src="" alt="">
+                <form id="dataTarjeta" method="post" enctype="multipart/form-data">
+                    <div class="tittle">
+                        <h3>Formulario para agregar contenido</h3>
                     </div>
-                </div>
-                <div class="image">
-                    <input type="file" name="image" id="image" onchange="loadImage()" required>
-                </div>
-                <div class="data">
-                    <label for="precio">Precio</label>
-                    <input type="number" name="precio" id="precio" required>
-                    <label for="titulo">Titulo</label>
-                    <input type="text" name="titulo" id="titulo" required>
-                </div>
-                <div class="send">
-                    <button type="button" class="btn btn-light border" onclick="registroTarjetas()">Agregar</button>
-                </div>
+                    <div class="selected-image">
+                        <div id="image-container">
+                            <img id="preview-image" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="image">
+                        <input type="file" name="image" id="image" onchange="loadImage()" required>
+                    </div>
+                    <div class="data">
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" id="precio" required>
+                        <label for="titulo">Titulo</label>
+                        <input type="text" name="titulo" id="titulo" required>
+                    </div>
+                    <div class="send">
+                        <button type="button" class="btn btn-light border" onclick="registroTarjetas()">Agregar</button>
+                    </div>
             </div>
 
         </section>
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
- 
+
     <script src="<?= base_url() ?>public/js/insertTelevisiones.js"></script>
-    
+
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    
+
 </body>
 
 </html>

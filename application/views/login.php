@@ -32,12 +32,12 @@
                     <div class="vacio"></div>
                     <div class="datos-login">
                         <label for="usuario">Usuario</label>
-                        <input type="text" name="usuario" id="usuario">
+                        <input type="text" name="usuario" id="usuario" class="form-control">
                         <label for="contrasena">Contraseña</label>
-                        <input type="password" name="contrasena" id="contrasena">
+                        <input type="password" name="contrasena" id="contrasena" class="form-control">
                     </div>
                     <div class="boton">
-                            <button class="btn btn-dark" onclick="loginUser()">Ingresar</button>
+                            <button class="btn btn-dark" onclick="loginUser()" style="background-color:#db600e; border-color:#db600e;">Ingresar</button>
                     </div>
                     <div class="empty"></div>
                     <div class="empty"></div>

@@ -22,7 +22,7 @@
         <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
                 class="bi bi-instagram px-2  fs-5" style="color:white;"></i></a>
     </header>
-    <nav id="sticky-nav" class="position-relative w=100  d-flex justify-content-around" style="height:100px; background-color:#EE7323;" >
+    <nav id="sticky-nav" class="d-flex justify-content-around">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
@@ -31,7 +31,7 @@
                     </button>
                     <div class="menu-content z-3 position-absolute justify-content-center" id="myDropdown">
 
-                        <a href="">Recamaras</a>
+                        <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
@@ -49,7 +49,7 @@
                                 <span><a href="<?= base_url() ?>">Alacenas</a></span>
                             </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Salas</a>
+                        <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
                         <div class="subdropdown" id="subdropdown-salas">
                             <div class="seccion-1">
                             <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
@@ -231,7 +231,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Salas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/salas"><button
-                                        class='btn btn-light border'>Ver mas </button></a>
+                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -242,7 +242,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Recamaras</h5>
                                 <a href="<?= base_url() ?>index.php/principal/recamaras"><button
-                                        class='btn btn-light border'>Ver mas </button></a>
+                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Cocinas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/cocinas"><button
-                                        class='btn btn-light border'>Ver mas </button></a>
+                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -264,7 +264,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electronica</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electronica"><button
-                                        class='btn btn-light border'>Ver mas </button></a>
+                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -275,7 +275,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electrodomesticos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electrodomesticos"><button
-                                        class='btn btn-light border'>Ver mas </button></a>
+                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -286,7 +286,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Motos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/motos"><button
-                                        class='btn btn-light border'>Ver mas</button></a>
+                                        class='btn btn-light border rounded-pill'>Ver mas</button></a>
                             </div>
                         </div>
                     </div>

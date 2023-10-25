@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/prueba.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/categorias.css">
     <title>Salas | Camila Mueblerias</title>
 </head>
 
 <body>
-<nav id="sticky-nav" class="position-relative w=100  d-flex justify-content-around" style="height:100px; background-color:#EE7323;" >
+<nav id="sticky-nav" class="d-flex justify-content-around">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
@@ -24,7 +24,7 @@
                     </button>
                     <div class="menu-content z-3 position-absolute justify-content-center" id="myDropdown">
 
-                        <a href="">Recamaras</a>
+                        <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
@@ -42,7 +42,7 @@
                                 <span><a href="<?= base_url() ?>">Alacenas</a></span>
                             </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Salas</a>
+                        <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
                         <div class="subdropdown" id="subdropdown-salas">
                             <div class="seccion-1">
                             <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
@@ -184,9 +184,9 @@
                 </div>
             </div>
             <div class="sellos d-flex justify-content-center" style="background-color:#E5E7E9 ;">
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/estufas"><img src="<?= base_url() ?>public/img/salas/sofacama1.png"></div></a>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/microondas"><img src="<?= base_url() ?>public/img/salas/salamodu.webp" alt=""></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/licuadoras"><img src="<?= base_url() ?>public/img/salas/sofa.webp"></a></div>
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/sofacama"><img src="<?= base_url() ?>public/img/salas/sofacama1.png"></div></a>
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/salamodular"><img src="<?= base_url() ?>public/img/salas/salamodu.webp" alt=""></a></div>
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/sofas"><img src="<?= base_url() ?>public/img/salas/sofa.webp"></a></div>
     
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto;">
@@ -195,12 +195,12 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href=""><img class="object-fit-contain"
+                                <a href="<?= base_url() ?>index.php/secciones/sofacama"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/salas/card-sofacama.webp" alt=""></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Sofa camas</button>
+                                    <a href="<?= base_url() ?>index.php/secciones/sofacama"><button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Sofa camas</button></a>
                                 </div>
                             </div>
                         </div>
@@ -208,13 +208,13 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href=""><img class="object-fit-contain"
+                                <a href="<?= base_url() ?>index.php/secciones/salamodular"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/salas/card-salamodular.webp"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
                                 
-                                    <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Sala Modular</button>
+                                   <a href="<?= base_url() ?>index.php/secciones/salamodular"> <button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Sala Modular</button></a>
                                 </div>
                             </div>
                         </div>
@@ -222,12 +222,12 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href=""><img class="object-fit-contain"
+                                <a href="<?= base_url() ?>index.php/secciones/sofas"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/salas/card-sofa.webp"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Sofas</button>
+                                    <a href="<?= base_url() ?>index.php/secciones/sofas"><button class="btn botun btn-rounded"
+                                        style="width:100%; height:100%;">Sofas</button></a>
                                 </div>
                             </div>
                         </div>

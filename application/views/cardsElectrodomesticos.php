@@ -16,12 +16,12 @@
     <header>
         <div class="logo">
             <div class="boton">
-                <button onclick="returnHome()" class="btn btn-dark">Regresar</button>
+                <button onclick="returnHome()" class="btn btn-dark border-0" style="background-color:#db600e;">Regresar</button>
             </div>
             
         </div>
         <div class="titulo">
-            <h1>Admin</h1>
+            <h1 style=" color:#db600e;">Admin</h1>
         </div>
     </header>
     <section>
@@ -31,8 +31,8 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electrodomesticos/card-estufa.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Estufas</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertEstufas/"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <h5 class="custom-card-title" style="color:#db600e;">Estufas</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insertEstufas/"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electrodomesticos/card-microondas.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Microondas</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertMicroondas/"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <h5 class="custom-card-title" style="color:#db600e;">Microondas</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insertMicroondas/"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -51,8 +51,8 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electrodomesticos/card-licuadora.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Licuadoras</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertLicuadoras"><button type="button" class="btn btn-dark">Agregar contenido</button></a>
+                            <h5 class="custom-card-title" style="color:#db600e;">Licuadoras</h5>
+                            <a href="<?= base_url() ?>index.php/admin/insertLicuadoras"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electrodomesticos/card-parrilla.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Parrillas</h5>
+                            <h5 class="custom-card-title" style="color:#db600e;">Parrillas</h5>
                             <a href="<?= base_url() ?>index.php/admin/insertParrillas/"><button
                             type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
@@ -72,7 +72,7 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electrodomesticos/card-secadora.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Secadoras</h5>
+                            <h5 class="custom-card-title" style="color:#db600e;">Secadoras</h5>
                             <a href="<?= base_url() ?>index.php/admin/insertSecadoras/"><button
                             type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>
@@ -83,7 +83,7 @@
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/electrodomesticos/card-lavadora.webp" alt="Imagen">
                         <div class="custom-card-content">
-                            <h5 class="custom-card-title">Lavadoras</h5>
+                            <h5 class="custom-card-title" style="color:#db600e;">Lavadoras</h5>
                             <a href="<?= base_url() ?>index.php/admin/insertLavadoras/"><button
                             type="button" class="btn btn-dark">Agregar contenido</button></a>
                         </div>

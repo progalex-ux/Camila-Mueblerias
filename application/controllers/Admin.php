@@ -16,6 +16,29 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+	public function tarjetas(){
+		$this->load->view('tarjetas');
+	}
+
+    public function login()
+    {
+        $usuario =$this->input->post('usuario');
+        $contrasena=$this->input->post('contrasena');
+
+        $checkUser=$this->login->leerUser($usuario,$contrasena);
+
+		if($checkUser){
+			$data=array(
+				'usuario'=>$checkUser->usuario,
+				'status'=>'true'
+			);
+		} else{
+			$data= array('Status'=>'False');
+		}
+		echo json_encode($data,JSON_NUMERIC_CHECK);
+    }
+
+	/////////////////////////////////////////////////
 	public function cardsElectrodomesticos(){
 		$this->load->view('cardsElectrodomesticos');
 	}
@@ -88,28 +111,29 @@ class Admin extends CI_Controller {
 	public function insertRecamarasS(){
 		$this->load->view('insertRecamarasS');
 	}
-	//
+//Salas
+public function insertSofacama(){
+	$this->load->view('insertSofacama');
+}
+public function insertSalamodular(){
+	$this->load->view('insertSalamodular');
+}
+public function insertSofas(){
+	$this->load->view('insertSofas');
+}
 
-	public function tarjetas(){
-		$this->load->view('tarjetas');
-	}
+//Cocinas
+public function insertVitrinas(){
+	$this->load->view('insertVitrinas');
+}
+public function insertSillas(){
+	$this->load->view('insertSillas');
+}
+public function insertComedores(){
+	$this->load->view('insertComedores');
+}
+	
 
-    public function login()
-    {
-        $usuario =$this->input->post('usuario');
-        $contrasena=$this->input->post('contrasena');
-
-        $checkUser=$this->login->leerUser($usuario,$contrasena);
-
-		if($checkUser){
-			$data=array(
-				'usuario'=>$checkUser->usuario,
-				'status'=>'true'
-			);
-		} else{
-			$data= array('Status'=>'False');
-		}
-		echo json_encode($data,JSON_NUMERIC_CHECK);
-    }
+	
 }
 	

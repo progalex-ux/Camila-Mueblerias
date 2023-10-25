@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/prueba.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/categorias.css">
     <title>Recamaras | Camila Mueblerias</title>
 </head>
 
 <body>
-<nav id="sticky-nav" class="position-relative w=100  d-flex justify-content-around" style="height:100px; background-color:#EE7323;" >
+<nav id="sticky-nav" class="d-flex justify-content-around">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
@@ -24,7 +24,7 @@
                     </button>
                     <div class="menu-content z-3 position-absolute justify-content-center" id="myDropdown">
 
-                        <a href="">Recamaras</a>
+                        <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
@@ -42,7 +42,7 @@
                                 <span><a href="<?= base_url() ?>">Alacenas</a></span>
                             </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Salas</a>
+                        <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
                         <div class="subdropdown" id="subdropdown-salas">
                             <div class="seccion-1">
                             <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>

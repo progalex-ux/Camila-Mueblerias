@@ -15,15 +15,15 @@
 </head>
 
 <body>
-    <header>
+<header>
         <div class="logo">
             <div class="boton">
-                <button onclick="returns()" class="btn btn-dark">Regresar</button>
+                <button onclick="returns()" class="btn btn-dark border-0" style="background-color:#db600e;">Regresar</button>
             </div>
 
         </div>
         <div class="titulo">
-            <h1>Admin</h1>
+            <h1 style="color:#db600e;">Admin</h1>
         </div>
     </header>
     <main>

@@ -416,6 +416,147 @@ public function readCardRoperos(){
 
 }
 
+//Salas 
+public function cardSalamodular($datosTarjeta){
+    $this->db->insert("salamodular", $datosTarjeta);
+    return $this->db->insert_id();
+}
+
+public function readCardSalamodular(){
+    $query = $this->db->get("salamodular");
+    if($query->num_rows()>0){
+        $datos = array();
+
+        foreach( $query->result() as $fila){
+            $datos[] = $fila;
+        }
+
+        return $datos;
+
+    }else{
+
+        return array();
+    }
+
+}
+
+
+public function cardSofacama($datosTarjeta){
+    $this->db->insert("sofacama", $datosTarjeta);
+    return $this->db->insert_id();
+}
+
+public function readCardSofacama(){
+    $query = $this->db->get("sofacama");
+    if($query->num_rows()>0){
+        $datos = array();
+
+        foreach( $query->result() as $fila){
+            $datos[] = $fila;
+        }
+
+        return $datos;
+
+    }else{
+
+        return array();
+    }
+
+}
+
+public function cardSofas($datosTarjeta){
+    $this->db->insert("sofas", $datosTarjeta);
+    return $this->db->insert_id();
+}
+
+public function readCardSofas(){
+    $query = $this->db->get("sofas");
+    if($query->num_rows()>0){
+        $datos = array();
+
+        foreach( $query->result() as $fila){
+            $datos[] = $fila;
+        }
+
+        return $datos;
+
+    }else{
+
+        return array();
+    }
+
+}
+
+//Cocinas
+public function cardComedores($datosTarjeta){
+    $this->db->insert("comedores", $datosTarjeta);
+    return $this->db->insert_id();
+}
+
+public function readCardComedores(){
+    $query = $this->db->get("comedores");
+    if($query->num_rows()>0){
+        $datos = array();
+
+        foreach( $query->result() as $fila){
+            $datos[] = $fila;
+        }
+
+        return $datos;
+
+    }else{
+
+        return array();
+    }
+
+}
+
+public function cardSillas($datosTarjeta){
+    $this->db->insert("sillas", $datosTarjeta);
+    return $this->db->insert_id();
+}
+
+public function readCardSillas(){
+    $query = $this->db->get("sillas");
+    if($query->num_rows()>0){
+        $datos = array();
+
+        foreach( $query->result() as $fila){
+            $datos[] = $fila;
+        }
+
+        return $datos;
+
+    }else{
+
+        return array();
+    }
+
+}
+
+public function cardVitrinas($datosTarjeta){
+    $this->db->insert("vitrinas", $datosTarjeta);
+    return $this->db->insert_id();
+}
+
+public function readCardVitrinas(){
+    $query = $this->db->get("vitrinas");
+    if($query->num_rows()>0){
+        $datos = array();
+
+        foreach( $query->result() as $fila){
+            $datos[] = $fila;
+        }
+
+        return $datos;
+
+    }else{
+
+        return array();
+    }
+
+}
+
 }
 
 ?>    
