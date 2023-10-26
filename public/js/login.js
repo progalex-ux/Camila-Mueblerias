@@ -32,7 +32,7 @@ function checkLogin(jsonLogin){
         console.log(datos);
         
         if(datos.status=="true"){
-           window.location.href =base_url+"index.php/admin/tarjetas";
+           window.location.href =base_url+"index.php/admin/selection";
 
            
         } else {

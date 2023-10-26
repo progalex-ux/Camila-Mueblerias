@@ -19,6 +19,12 @@ class Admin extends CI_Controller {
 	public function tarjetas(){
 		$this->load->view('tarjetas');
 	}
+	public function changeData(){
+		$this->load->view('changeData');
+	}
+	public function selection(){
+		$this->load->view('selection');
+	}
 
     public function login()
     {
