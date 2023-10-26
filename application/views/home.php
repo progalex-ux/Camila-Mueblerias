@@ -29,24 +29,25 @@
                     <button style="background-color: transparent; color:#fff;"class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
                         <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="menu-content z-3 position-absolute justify-content-center" id="myDropdown">
+                    <div class="menu-content z-3 position-absolute justify-content-center rounded-1" id="myDropdown">
 
                         <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases para cama</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases Cama</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/buros">Buros</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/roperos">Roperos</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/cabeceras">Cabeceras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/recamaras">Recamaras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/recamarasS">Recamaras</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
                         <div class="subdropdown" id="subdropdown-cocinas">
                             <div class="seccion-1">
-                                <span><a href="">Cocinas</a></span>
-                                <span><a href="<?= base_url() ?>">Alacenas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/comedores">Comedores</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/sillas">Sillas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/vitrinas">Vitrinas</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
@@ -71,7 +72,7 @@
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
                         <div class="subdropdown" id="subdropdown-electronica">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/celulares">Celulares</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/telefonos">Celulares</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/laptop">Laptops</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
@@ -95,7 +96,7 @@
                 </svg>
             </button>
         </div>
-        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; width:55%;">
+        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; ">
             <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>

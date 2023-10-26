@@ -17,8 +17,8 @@
     background-color: #fff;
     top: 100%;
     z-index: 100;
-    left: -70%; 
-    width: 300px; 
+    left: -50%; 
+    width: 180px; 
     transition: 0.3s left ease;
 }
 
@@ -167,7 +167,6 @@ aside{
     display: block;
     height: 40%;
 }
- 
 @media(min-width:1967px){
     .menu-content {
         left: -169%; 
@@ -182,7 +181,7 @@ aside{
 }
 @media(max-width:1572px){
     .menu-content {
-        left: -110%; 
+        left: -100%; 
         width: 300px; 
     }
 }
@@ -195,14 +194,11 @@ aside{
 @media(max-width: 991px){
     #sticky-nav{
         position: sticky;
-        top: 0; 
+        top: 0;
         z-index: 100;
-        height: 87px;
+        
     }
     header{
-        display: none;
-    }
-    .sidebar{
         display: none;
     }
     nav{
@@ -215,7 +211,7 @@ aside{
     }
 
     .logo{
-        width: 55%;
+        width: 90%;
         display: flex;
         justify-content: start;
     }
@@ -233,28 +229,13 @@ aside{
     footer{
         height: 11vh;
     }
-    .titulo{
-        display: none;
-    }
     
-    .botones{
-        display: none;
-    }
 }  
 @media(max-width:767px){
     .c-item{
         height: 30vh;
     }
-    .logo{
-        width: 60%;
-        display: flex;
-        justify-content: start;
-    }
-    .buton{
-        width: 40%;
-        display: flex;
-        justify-content: start;
-    }
+
 }
 @media(max-width:574px){
     #hero-carousel{
@@ -267,28 +248,4 @@ aside{
    .c-image{
         border-radius: 8px;
    }
-}
-@media(max-width:340px){
-    .logo{
-        width: 70%;
-        display: flex;
-        justify-content: start;
-    }
-    .buton{
-        width: 30%;
-        display: flex;
-        justify-content: start;
-    }
-}
-@media(max-width:150px){
-    .logo{
-        width: 80%;
-        display: flex;
-        justify-content: start;
-    }
-    .buton{
-        width: 20%;
-        display: flex;
-        justify-content: start;
-    }
 }

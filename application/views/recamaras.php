@@ -28,18 +28,19 @@
                         <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases para cama</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases Cama</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/buros">Buros</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/roperos">Roperos</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/cabeceras">Cabeceras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/recamaras">Recamaras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/recamarasS">Recamaras</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
                         <div class="subdropdown" id="subdropdown-cocinas">
                             <div class="seccion-1">
-                                <span><a href="">Cocinas</a></span>
-                                <span><a href="<?= base_url() ?>">Alacenas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/comedores">Comedores</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/sillas">Sillas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/vitrinas">Vitrinas</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
@@ -64,7 +65,7 @@
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
                         <div class="subdropdown" id="subdropdown-electronica">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/celulares">Celulares</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/telefonos">Celulares</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/laptop">Laptops</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
@@ -88,7 +89,7 @@
                 </svg>
             </button>
         </div>
-        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; width:55%;">
+        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; ">
             <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>
@@ -176,7 +177,7 @@
                     <div class="carousel-item active c-item" data-bs-interval="5000">
                         <img src="<?= base_url() ?>public/img/recamaras/recamara-carousel.jpg"
                             class="d-block w-100 c-image object-fit-cover" alt="item1">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block">
                             <h3>Recamaras</h3>
 
                         </div>
@@ -187,9 +188,17 @@
                 <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/colchones"><img src="<?= base_url() ?>public/img/recamaras/sello-colchon.png"></div></a>
                 <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/basescama"><img src="<?= base_url() ?>public/img/recamaras/basecama-sello.webp" alt=""></a></div>
                 <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/buros"><img src="<?= base_url() ?>public/img/recamaras/sello-buro.png"></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/roperos"><img src="<?= base_url() ?>public/img/recamaras/sello-ropero.png"></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/cabeceras"><img src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp"></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/recamarasS"><img src="<?= base_url() ?>public/img/recamaras/sello-recamara.png"></a></div>
+                <div class="sello d-none d-md-block ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/roperos"><img src="<?= base_url() ?>public/img/recamaras/sello-ropero.png"></a></div>
+                <div class="sello d-none d-md-block ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/cabeceras"><img src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp"></a></div>
+                <div class="sello d-none d-md-block ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/recamarasS"><img src="<?= base_url() ?>public/img/recamaras/sello-recamara.png"></a></div>
+
+
+            </div>
+            <div class="sellos d-md-none d-flex justify-content-center" style="background-color:#E5E7E9 ;">
+               
+                <div class="sello  d-md-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/roperos"><img src="<?= base_url() ?>public/img/recamaras/sello-ropero.png"></a></div>
+                <div class="sello  d-md-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/cabeceras"><img src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp"></a></div>
+                <div class="sello  d-md-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/recamarasS"><img src="<?= base_url() ?>public/img/recamaras/sello-recamara.png"></a></div>
 
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto;">

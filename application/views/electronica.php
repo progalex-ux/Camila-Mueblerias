@@ -28,18 +28,19 @@
                         <div class="subdropdown z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases para cama</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases Cama</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/buros">Buros</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/roperos">Roperos</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/cabeceras">Cabeceras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/recamaras">Recamaras</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/recamarasS">Recamaras</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
                         <div class="subdropdown" id="subdropdown-cocinas">
                             <div class="seccion-1">
-                                <span><a href="">Cocinas</a></span>
-                                <span><a href="<?= base_url() ?>">Alacenas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/comedores">Comedores</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/sillas">Sillas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/vitrinas">Vitrinas</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
@@ -64,7 +65,7 @@
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
                         <div class="subdropdown" id="subdropdown-electronica">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/celulares">Celulares</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/telefonos">Celulares</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/laptop">Laptops</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
@@ -88,7 +89,7 @@
                 </svg>
             </button>
         </div>
-        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; width:55%;">
+        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; ">
             <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"
                     alt=""></a>
         </div>
@@ -176,7 +177,7 @@
                     <div class="carousel-item active c-item" data-bs-interval="5000">
                         <img src="<?= base_url() ?>public/img/electronica/electronica-carousel.webp"
                             class="d-block w-100 c-image object-fit-cover" alt="item1">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block ">
                             <h3>Electronica</h3>
 
                         </div>
@@ -184,17 +185,28 @@
                 </div>
             </div>
             <div class="sellos d-flex justify-content-center " style="background-color:#F2F3F4;">
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/telefonos"><img src="<?= base_url() ?>public/img/electronica/sello-phone.webp"
-                        alt=""></div></a>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/tablets"><img src="<?= base_url() ?>public/img/electronica/sello-ipad.webp" alt=""></a></div>
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/telefonos"><img
+                            src="<?= base_url() ?>public/img/electronica/sello-phone.webp" alt=""></div></a>
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/tablets"><img
+                            src="<?= base_url() ?>public/img/electronica/sello-ipad.webp" alt=""></a></div>
 
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/laptop"><img src="<?= base_url() ?>public/img/electronica/sello-laptop.webp"
-                        alt=""></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/televisiones"><img src="<?= base_url() ?>public/img/electronica/sello-tv.png"
-                        alt=""></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/bocinas"><img src="<?= base_url() ?>public/img/electronica/sello-bocina.png"
-                        alt=""></a></div>
-            
+                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/laptop"><img
+                            src="<?= base_url() ?>public/img/electronica/sello-laptop.webp" alt=""></a></div>
+                <div class="sello d-none d-md-flex ms-5 rounded-5"><a
+                        href="<?= base_url() ?>index.php/secciones/televisiones"><img
+                            src="<?= base_url() ?>public/img/electronica/sello-tv.png" alt=""></a></div>
+                <div class="sello d-none d-md-flex ms-5 rounded-5"><a
+                        href="<?= base_url() ?>index.php/secciones/bocinas"><img
+                            src="<?= base_url() ?>public/img/electronica/sello-bocina.png" alt=""></a></div>
+
+            </div>
+            <div class="sellosd d-md-none d-flex justify-content-center" style="background-color:#F2F3F4;">
+                <div class="content-sello d-flex" style="width:70%;">
+                    <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/televisiones"><img
+                                src="<?= base_url() ?>public/img/electronica/sello-tv.png" alt=""></a></div>
+                    <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/bocinas"><img
+                                src="<?= base_url() ?>public/img/electronica/sello-bocina.png" alt=""></a></div>
+                </div>
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto; ">
                 <div class="content" style="width:88%; height:auto;">
@@ -202,12 +214,14 @@
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/telefonos"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/electronica/sello-phone.webp" alt=""></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/telefonos"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/electronica/sello-phone.webp" alt=""></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <a href="<?= base_url() ?>index.php/secciones/telefonos"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Celulares</button></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/telefonos"><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Celulares</button></a>
                                 </div>
                             </div>
                         </div>
@@ -215,13 +229,15 @@
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/tablets"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/electronica/sello-ipad.webp"></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/tablets"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/electronica/sello-ipad.webp"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                
-                                    <a href="<?= base_url() ?>index.php/secciones/tablets"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Tablets</button></a>
+
+                                    <a href="<?= base_url() ?>index.php/secciones/tablets"><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Tablets</button></a>
                                 </div>
                             </div>
                         </div>
@@ -229,12 +245,14 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/laptop"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/electronica/sello-laptop.webp"></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/laptop"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/electronica/sello-laptop.webp"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <a href="<?= base_url() ?>index.php/secciones/laptop"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Laptops</button></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/laptop"><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Laptops</button></a>
                                 </div>
                             </div>
                         </div>
@@ -242,27 +260,31 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/televisiones"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/electronica/sello-tv.png"></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/televisiones"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/electronica/sello-tv.png"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <a href="<?= base_url() ?>index.php/secciones/televisiones"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Televisiones</button></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/televisiones"><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Televisiones</button></a>
                                 </div>
                             </div>
                         </div>
 
-                        
+
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                    <a href="<?= base_url() ?>index.php/electronica/bocinas"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/electronica/sello-bocina.png"></a>
+                                    <a href="<?= base_url() ?>index.php/electronica/bocinas"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/electronica/sello-bocina.png"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <a href="<?= base_url() ?>index.php/electronica/bocinas"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Bocinas</button></a>
+                                    <a href="<?= base_url() ?>index.php/electronica/bocinas"><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Bocinas</button></a>
                                 </div>
                             </div>
                         </div>
@@ -275,14 +297,15 @@
     <footer class="d-block justify-content-center align-middle w=100" style="height: 12vh;  background-color:#FF7216;">
         <div class="ctn-f-f w=100" style="height:20%;">
         </div>
-        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%" >
+        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%">
             <h6 class="text-white" style="font-size:11px;">Derechos Reservados &copy;Camila Mueblerias 2023</h6>
         </div>
         <div class="ctn-f-s w=100 d-flex justify-content-center" style="height:25%;">
             <h6 class="text-white" style="font-size:11px;">Tarimoro, Guanajuato Mexico.</h6>
         </div>
         <div class="ctn-f-user w=100 d-flex justify-content-end" style="height:30%;">
-            <button class="border border-0" style="background-color:transparent;" onclick=login()><i class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
+            <button class="border border-0" style="background-color:transparent;" onclick=login()><i
+                    class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
