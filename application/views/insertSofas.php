@@ -40,13 +40,13 @@
                     </div>
                 </div>
                 <div class="image">
-                    <input type="file" name="image" id="image" onchange="loadImage()" required>
+                    <input class="form-control" type="file" name="image" id="image" onchange="loadImage()" required>
                 </div>
                 <div class="data">
                     <label for="precio">Precio</label>
-                    <input type="number" name="precio" id="precio" required>
+                    <input  class="form-control" type="number" name="precio" id="precio" required>
                     <label for="titulo">Titulo</label>
-                    <input type="text" name="titulo" id="titulo" required>
+                    <input  class="form-control" type="text" name="titulo" id="titulo" required>
                 </div>
                 <div class="send">
                     <button type="button" class="btn btn-light border" onclick="registroTarjetas()">Agregar</button>

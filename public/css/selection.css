@@ -1,3 +1,6 @@
+main{
+    background-color: white;
+}
 .card{
     height: 370px;
 }
@@ -7,4 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.c-item{
+    height: 350px;
+}
+.c-image{
+    height: 100%;
+    width: 100%;
 }

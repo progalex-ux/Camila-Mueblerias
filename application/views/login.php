@@ -22,9 +22,14 @@
                     <img src="<?= base_url() ?>public/img/recamaras/portada.webp" alt="">
                 </div>
                 <div class="login">
+                    <div class="empty d-flex justify-content-end"><a href="<?= base_url() ?>index.php/principal/"><button class="btn btn-light border-0"><i class="bi bi-house fs-4"></i></button></a></div>
                     <div class="empty"></div>
                     <div class="imagen">
                         <img src="<?= base_url() ?>public/img/user.png" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            
+                            
+                        </div>
                     </div>
                     <div class="tittle">
                         <h4>Admin</h4>
@@ -37,9 +42,9 @@
                         <input type="password" name="contrasena" id="contrasena" class="form-control">
                     </div>
                     <div class="boton">
-                            <button class="btn btn-dark" onclick="loginUser()" style="background-color:#db600e; border-color:#db600e;">Ingresar</button>
+                        <button class="btn btn-dark" onclick="loginUser()"
+                            style="background-color:#db600e; border-color:#db600e;">Ingresar</button>
                     </div>
-                    <div class="empty"></div>
                     <div class="empty"></div>
                 </div>
             </div>
