@@ -15,14 +15,17 @@
 </head>
 
 <body>
-<nav id="sticky-nav" class="d-flex justify-content-around">
+    <nav id="sticky-nav" class="d-flex justify-content-around">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
-                    <button style="background-color: transparent; color:#fff;"class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
-                        <i id="menu-icon"  class="bi bi-chevron-down"></i>
+                    <button style="background-color: transparent; color:#fff;"
+                        class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block"
+                        onclick="toggleMenu()">Categorias
+                        <i id="menu-icon" class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="menu-content z-3 position-absolute justify-content-center rounded-start" id="myDropdown">
+                    <div class="menu-content z-3 position-absolute justify-content-center rounded-start"
+                        id="myDropdown">
 
                         <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown rounded-end z-3 position-absolute" id="subdropdown-recamaras">
@@ -46,9 +49,9 @@
                         <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
                         <div class="subdropdown rounded-end" id="subdropdown-salas">
                             <div class="seccion-1">
-                            <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
-                            <span><a href="<?= base_url() ?>index.php/secciones/salamodular">Sala Modular</a></span>
-                            <span><a href="<?= base_url() ?>index.php/secciones/sofas">Sofas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/salamodular">Sala Modular</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/sofas">Sofas</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
@@ -68,20 +71,21 @@
                                 <span><a href="<?= base_url() ?>index.php/secciones/telefonos">Celulares</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/laptop">Laptops</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
+                                <span><a
+                                        href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/bocinas">Bocinas</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
 
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        <div class="buton" >
-            <button class="d-lg-none border border-0"  style="background-color:transparent;"type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-                aria-controls="staticBackdrop">
+        <div class="buton">
+            <button class="d-lg-none border border-0" style="background-color:transparent;" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
                     viewBox="0 0 16 16" style="color:white;">
                     <path fill-rule="evenodd"
@@ -90,8 +94,8 @@
             </button>
         </div>
         <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; ">
-            <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"
-                    alt=""></a>
+            <a href="<?= base_url() ?>index.php/principal/"><img class="py-1 object-fit-cover" style="height: 100%;"
+                    src="<?= base_url() ?>public/img/Logo-white.png" alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
             aria-labelledby="staticBackdropLabel">
@@ -178,27 +182,39 @@
                         <img src="<?= base_url() ?>public/img/recamaras/recamara-carousel.jpg"
                             class="d-block w-100 c-image object-fit-cover" alt="item1">
                         <div class="carousel-caption d-block">
-                            <h3>Recamaras</h3>
+                            <h3>Recamaras </h3>
 
                         </div>
                     </div>
                 </div>
             </div>
             <div class="sellos d-flex justify-content-center" style="background-color:#E5E7E9 ;">
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/colchones"><img src="<?= base_url() ?>public/img/recamaras/sello-colchon.png"></div></a>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/basescama"><img src="<?= base_url() ?>public/img/recamaras/basecama-sello.webp" alt=""></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/buros"><img src="<?= base_url() ?>public/img/recamaras/sello-buro.png"></a></div>
-                <div class="sello d-none d-md-block ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/roperos"><img src="<?= base_url() ?>public/img/recamaras/sello-ropero.png"></a></div>
-                <div class="sello d-none d-md-block ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/cabeceras"><img src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp"></a></div>
-                <div class="sello d-none d-md-block ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/recamarasS"><img src="<?= base_url() ?>public/img/recamaras/sello-recamara.png"></a></div>
+                <div class="sello ms-5 rounded-5 " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Colchones"><a href="<?= base_url() ?>index.php/secciones/colchones"><img src="<?= base_url() ?>public/img/recamaras/sello-colchon.png"></div></a>
+                
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Bases cama"><a href="<?= base_url() ?>index.php/secciones/basescama"><img src="<?= base_url() ?>public/img/recamaras/basecama-sello.webp" alt=""></a></div>
+                
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Buros"><a href="<?= base_url() ?>index.php/secciones/buros"><img src="<?= base_url() ?>public/img/recamaras/sello-buro.png"></a></div>
+                
+                <div class="sello d-none d-md-block ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Roperos"><a href="<?= base_url() ?>index.php/secciones/roperos"><img src="<?= base_url() ?>public/img/recamaras/sello-ropero.png"></a></div>
+                
+                <div class="sello d-none d-md-block ms-5 rounded-5"  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cabeceras"><a href="<?= base_url() ?>index.php/secciones/cabeceras"><img src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp"></a></div>
+                
+                <div class="sello d-none d-md-block ms-5 rounded-5"  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Recamaras"><a href="<?= base_url() ?>index.php/secciones/recamarasS" ><img src="<?= base_url() ?>public/img/recamaras/sello-recamara.png"></a></div>
+                            
 
 
             </div>
             <div class="sellos d-md-none d-flex justify-content-center" style="background-color:#E5E7E9 ;">
-               
-                <div class="sello  d-md-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/roperos"><img src="<?= base_url() ?>public/img/recamaras/sello-ropero.png"></a></div>
-                <div class="sello  d-md-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/cabeceras"><img src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp"></a></div>
-                <div class="sello  d-md-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/recamarasS"><img src="<?= base_url() ?>public/img/recamaras/sello-recamara.png"></a></div>
+
+                <div class="sello  d-md-none d-sm-flex ms-5 rounded-5"><a
+                        href="<?= base_url() ?>index.php/secciones/roperos"><img
+                            src="<?= base_url() ?>public/img/recamaras/sello-ropero.png"></a></div>
+                <div class="sello  d-md-none d-sm-flex ms-5 rounded-5"><a
+                        href="<?= base_url() ?>index.php/secciones/cabeceras"><img
+                            src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp"></a></div>
+                <div class="sello  d-md-none d-sm-flex ms-5 rounded-5"><a
+                        href="<?= base_url() ?>index.php/secciones/recamarasS"><img
+                            src="<?= base_url() ?>public/img/recamaras/sello-recamara.png"></a></div>
 
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto;">
@@ -207,12 +223,14 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/colchones"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/recamaras/sello-colchon.png" alt=""></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/colchones"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/recamaras/sello-colchon.png" alt=""></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                    <a href="<?= base_url() ?>index.php/secciones/colchones"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Colchones</button></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/colchones"><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Colchones</button></a>
                                 </div>
                             </div>
                         </div>
@@ -220,13 +238,15 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/basescama"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/recamaras/basecama-sello.webp"></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/basescama"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/recamaras/basecama-sello.webp"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                
-                                <a href="<?= base_url() ?>index.php/secciones/basescama"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Bases de Cama</button></a>
+
+                                    <a href="<?= base_url() ?>index.php/secciones/basescama"><button
+                                            class="btn botun btn-rounded" style="width:100%; height:100%;">Bases de
+                                            Cama</button></a>
                                 </div>
                             </div>
                         </div>
@@ -234,12 +254,13 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/buros"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/recamaras/sello-buro.png"></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/buros"><img class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/recamaras/sello-buro.png"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                <a href="<?= base_url() ?>index.php/secciones/buros"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Burós</button></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/buros"><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Burós</button></a>
                                 </div>
                             </div>
                         </div>
@@ -247,12 +268,14 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/roperos"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/recamaras/sello-ropero.png" alt=""></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/roperos"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/recamaras/sello-ropero.png" alt=""></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                <a href="<?= base_url() ?>index.php/secciones/roperos"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Roperos</button></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/roperos"><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Roperos</button></a>
                                 </div>
                             </div>
                         </div>
@@ -260,13 +283,15 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/cabeceras"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp"></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/cabeceras"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                
-                                <a href="<?= base_url() ?>index.php/secciones/cabeceras"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Cabeceras</button></a>
+
+                                    <a href="<?= base_url() ?>index.php/secciones/cabeceras"><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Cabeceras</button></a>
                                 </div>
                             </div>
                         </div>
@@ -274,12 +299,14 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card">
                                 <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/recamarasS"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/recamaras/sello-recamara.png"></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/recamarasS"><img
+                                            class="object-fit-contain"
+                                            src="<?= base_url() ?>public/img/recamaras/sello-recamara.png"></a>
                                 </div>
                                 <div class="boton" style="width:100%; height:15%;">
-                                <a href="<?= base_url() ?>index.php/secciones/recamarasS"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Recamaras</button></a>
+                                    <a href="<?= base_url() ?>index.php/secciones/recamarasS" ><button
+                                            class="btn botun btn-rounded"
+                                            style="width:100%; height:100%;">Recamaras</button></a>
                                 </div>
                             </div>
                         </div>
@@ -292,20 +319,26 @@
     <footer class="d-block justify-content-center align-middle w=100" style="height: 12vh;  background-color:#FF7216;">
         <div class="ctn-f-f w=100" style="height:20%;">
         </div>
-        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%" >
+        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%">
             <h6 class="text-white" style="font-size:11px;">Derechos Reservados &copy;Camila Mueblerias 2023</h6>
         </div>
         <div class="ctn-f-s w=100 d-flex justify-content-center" style="height:25%;">
             <h6 class="text-white" style="font-size:11px;">Tarimoro, Guanajuato Mexico.</h6>
         </div>
         <div class="ctn-f-user w=100 d-flex justify-content-end" style="height:30%;">
-            <button class="border border-0" style="background-color:transparent;" onclick=login()><i class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
+            <button class="border border-0" style="background-color:transparent;" onclick=login()><i
+                    class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
-    <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="<?= base_url() ?>public/js/home.js"></script>
+    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
 </body>
 
 </html>

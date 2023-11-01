@@ -185,19 +185,12 @@
                 </div>
             </div>
             <div class="sellos d-flex justify-content-center " style="background-color:#F2F3F4;">
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/telefonos"><img
-                            src="<?= base_url() ?>public/img/electronica/sello-phone.webp" alt=""></div></a>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/tablets"><img
-                            src="<?= base_url() ?>public/img/electronica/sello-ipad.webp" alt=""></a></div>
-
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/laptop"><img
-                            src="<?= base_url() ?>public/img/electronica/sello-laptop.webp" alt=""></a></div>
-                <div class="sello d-none d-md-flex ms-5 rounded-5"><a
-                        href="<?= base_url() ?>index.php/secciones/televisiones"><img
-                            src="<?= base_url() ?>public/img/electronica/sello-tv.png" alt=""></a></div>
-                <div class="sello d-none d-md-flex ms-5 rounded-5"><a
-                        href="<?= base_url() ?>index.php/secciones/bocinas"><img
-                            src="<?= base_url() ?>public/img/electronica/sello-bocina.png" alt=""></a></div>
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Celulares" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/telefonos"><img src="<?= base_url() ?>public/img/electronica/sello-phone.webp" alt=""></div></a>
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tablets" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/tablets"><img src="<?= base_url() ?>public/img/electronica/sello-ipad.webp" alt=""></a></div>
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Laptops" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/laptop"><img src="<?= base_url() ?>public/img/electronica/sello-laptop.webp" alt=""></a></div>
+                <div class="sello d-none d-md-flex ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Televisiones" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/televisiones"><img src="<?= base_url() ?>public/img/electronica/sello-tv.png" alt=""></a></div>
+                <div class="sello d-none d-md-flex ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Bocinas" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/bocinas"><img src="<?= base_url() ?>public/img/electronica/sello-bocina.png" alt=""></a></div>
+                
 
             </div>
             <div class="sellosd d-md-none d-flex justify-content-center" style="background-color:#F2F3F4;">
@@ -309,9 +302,13 @@
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
-    <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="<?= base_url() ?>public/js/home.js"></script>
+    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>

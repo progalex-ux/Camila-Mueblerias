@@ -232,7 +232,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Salas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/salas"><button
-                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-black rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -243,7 +243,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Recamaras</h5>
                                 <a href="<?= base_url() ?>index.php/principal/recamaras"><button
-                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-black rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Cocinas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/cocinas"><button
-                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-black rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -265,7 +265,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electronica</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electronica"><button
-                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-black rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -276,7 +276,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electrodomesticos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electrodomesticos"><button
-                                        class='btn btn-light border rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-black rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -287,7 +287,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Motos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/motos"><button
-                                        class='btn btn-light border rounded-pill'>Ver mas</button></a>
+                                        class='btn btn-light border-black rounded-pill'>Ver mas</button></a>
                             </div>
                         </div>
                     </div>

@@ -75,7 +75,7 @@
 main{
     width: 100%;
     min-height:100vh;
-    background-color: #F2F3F4;
+    background-color: #fff;
 }
 section{
     height: 100%;
@@ -99,7 +99,7 @@ section{
     max-width: 100%;    
 }
 .card {
-    height: 360px;
+    height: 350px;
     margin: 15px 5px 20px 5px;
 }
 .card img {

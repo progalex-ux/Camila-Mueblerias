@@ -185,9 +185,9 @@
                 </div>
             </div>
             <div class="sellos d-flex justify-content-center" style="background-color:#E5E7E9 ;">
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/sofacama"><img src="<?= base_url() ?>public/img/salas/sofacama1.png"></div></a>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/salamodular"><img src="<?= base_url() ?>public/img/salas/salamodu.webp" alt=""></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/sofas"><img src="<?= base_url() ?>public/img/salas/sofa.webp"></a></div>
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Sofa camas"><a href="<?= base_url() ?>index.php/secciones/sofacama"><img src="<?= base_url() ?>public/img/salas/sofacama1.png"></div></a>
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Salas modulares"><a href="<?= base_url() ?>index.php/secciones/salamodular"><img src="<?= base_url() ?>public/img/salas/salamodu.webp" alt=""></a></div>
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Sofas"><a href="<?= base_url() ?>index.php/secciones/sofas" ><img src="<?= base_url() ?>public/img/salas/sofa.webp"></a></div>
     
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto;">
@@ -252,9 +252,13 @@
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
-    <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="<?= base_url() ?>public/js/home.js"></script>
+    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>

@@ -1,11 +1,11 @@
 *{
-    font-family:'Poppins', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 main{
     width: 100%;
-    height: calc(100vh - 0px);
+    height: calc(100vh - 10px);
 }
 section{
     width: 100%;
@@ -16,11 +16,6 @@ section{
 
 }
 .login-contenedor{
-    width: 95%;
-    height: 85%;
-    background-color: white;
-    display: flex;
-    border-radius: 7px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
 .imagen-login{
@@ -87,7 +82,7 @@ section{
     margin: 0 auto;
     width: 50%;
     height: 20%;
-    background-color:#E5E7E9;
+    
     border-radius: 15px;
     border:1px solid transparent;
 }

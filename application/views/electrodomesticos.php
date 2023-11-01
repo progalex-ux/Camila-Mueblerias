@@ -185,26 +185,17 @@
                 </div>
             </div>
             <div class="sellos d-flex justify-content-center " style="background-color:#F2F3F4;">
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/estufas"><img src="<?= base_url() ?>public/img/electrodomesticos/estufa.png"
-                        alt=""></div></a>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/microondas"><img
-                        src="<?= base_url() ?>public/img/electrodomesticos/microondas.png" alt=""></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/licuadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/licuadora.png"
-                        alt=""></a></div>
-                <div class="sello d-none d-md-block ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/parrillas"><img src="<?= base_url() ?>public/img/electrodomesticos/parrilla.png"
-                        alt=""></a></div>
-                <div class="sello d-none d-md-block ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/secadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/secadora.png"
-                        alt=""></a></div>
-                <div class="sello d-none d-md-block ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/lavadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/lavadora.png"
-                        alt=""></a></div>
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Estufas"><a href="<?= base_url() ?>index.php/secciones/estufas"><img src="<?= base_url() ?>public/img/electrodomesticos/estufa.png" alt=""></div></a>
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Microondas"><a href="<?= base_url() ?>index.php/secciones/microondas"><img src="<?= base_url() ?>public/img/electrodomesticos/microondas.png" alt=""></a></div>
+                <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Licuadoras"><a href="<?= base_url() ?>index.php/secciones/licuadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/licuadora.png" alt=""></a></div>
+                <div class="sello d-none d-md-block ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Parrillas"><a href="<?= base_url() ?>index.php/secciones/parrillas"><img src="<?= base_url() ?>public/img/electrodomesticos/parrilla.png" alt=""></a></div>
+                <div class="sello d-none d-md-block ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Secadoras"><a href="<?= base_url() ?>index.php/secciones/secadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/secadora.png" alt=""></a></div>
+                <div class="sello d-none d-md-block ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Lavadoras"><a href="<?= base_url() ?>index.php/secciones/lavadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/lavadora.png" alt=""></a></div>
             </div>
             <div class="sellos d-md-none d-flex justify-content-center " style="background-color:#F2F3F4;">
-                <div class="sello d-lg-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/parrillas"><img src="<?= base_url() ?>public/img/electrodomesticos/parrilla.png"
-                        alt=""></a></div>
-                <div class="sello d-lg-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/secadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/secadora.png"
-                        alt=""></a></div>
-                <div class="sello d-lg-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/lavadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/lavadora.png"
-                        alt=""></a></div>
+                <div class="sello d-lg-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/parrillas"><img src="<?= base_url() ?>public/img/electrodomesticos/parrilla.png" alt=""></a></div>
+                <div class="sello d-lg-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/secadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/secadora.png" alt=""></a></div>
+                <div class="sello d-lg-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/lavadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/lavadora.png" alt=""></a></div>
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto; ">
                 <div class="content" style="width:88%; height:auto;">
@@ -309,9 +300,13 @@
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
-    <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="<?= base_url() ?>public/js/home.js"></script>
+    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>>
 </body>
 
 </html>

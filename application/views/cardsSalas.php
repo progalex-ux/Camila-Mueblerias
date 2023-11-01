@@ -25,9 +25,9 @@
         </div>
     </header>
     <section>
-        <div class="content">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/salas/card-sofacama.webp" alt="Imagen">
                         <div class="custom-card-content">
@@ -37,7 +37,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/salas/card-salamodular.webp" alt="Imagen">
                         <div class="custom-card-content">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="card">
                         <img src="<?= base_url() ?>public/img/salas/card-sofa.webp" alt="Imagen">
                         <div class="custom-card-content">
