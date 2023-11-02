@@ -27,21 +27,7 @@ function registroTarjetas() {
 }
 
 
-function enviarDatos(jsonTarjeta) {
-  $.ajax({
-      url: base_url+"index.php/tarjetas/saveCardColchones",
-      dataType: "json",
-      type: "post",
-      data: jsonTarjeta,
-      contentType: false,
-      processData: false,
-      success: function (datos, estado, jhrx) {
-          alert("Producto insertado correctamente!");
-          location.reload();
-      },
-      error: function (jhrx, estado, error) {},
-  });
-}
+
 reloadCardColchones();
   
   function reloadCardColchones() {
@@ -104,3 +90,66 @@ function deleteCard(id) {
         }
     });
 }
+
+function editCard(id) {
+    // Realiza una solicitud AJAX para obtener los datos de la tarjeta con el ID especificado
+    $.ajax({
+      url: base_url + 'index.php/tarjetas/getCard/' + id,
+      dataType: 'json',
+      type: 'GET',
+      success: function (data) {
+        if (data && data.status === 'success') {
+          const cardData = data.card;
+          // Llena el formulario con los datos de la tarjeta
+          $("#titulo").val(cardData.titulo);
+          $("#precio").val(cardData.precio);
+  
+          // Actualiza la imagen en el formulario
+          if (cardData.image) {
+            // Asigna la URL de la imagen a la vista previa
+            $("#preview-image").attr('src', base_url + cardData.image);
+          }
+  
+          // Guarda el ID de la tarjeta que se está editando
+          cardIdBeingEdited = id;
+        } else {
+          console.log('Respuesta JSON no válida:', data);
+        }
+      },
+      error: function (jhrx, estado, error) {
+        console.log(error);
+      }
+    });
+  }
+  
+  function actualizarCard() {
+    const titulo = $("#titulo").val();
+    const precio = $("#precio").val();
+  
+    const formData = new FormData();
+    formData.append('titulo', titulo);
+    formData.append('precio', precio);
+    formData.append('image', $('#image')[0].files[0]);
+  
+    if (cardIdBeingEdited !== null) {
+      $.ajax({
+        url: base_url + 'index.php/tarjetas/updateCard/' + cardIdBeingEdited,
+        dataType: 'json',
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (data) {
+          if (data && data.status === 'success') {
+            location.reload();
+          } else {
+            console.log('Respuesta JSON no válida:', data);
+          }
+        },
+        error: function (jhrx, estado, error) {
+          console.log(error);
+        }
+      });
+    }
+  }
+  

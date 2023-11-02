@@ -14,5 +14,23 @@ class change extends CI_Model {
             $this->db->where('id', $id);
             $this->db->delete('colchones'); 
         }
+
+        public function getCardData($id) {
+          
+            $query = $this->db->get_where('colchones', array('id' => $id));
+            return $query->row_array();
+          }
+
+          public function updateColchon($id, $titulo, $precio) {
+     
+            $data = array(
+              'titulo' => $titulo,
+              'precio' => $precio
+
+            );
+          
+            $this->db->where('id', $id);
+            return $this->db->update('colchones', $data);
+          }
 }
 	

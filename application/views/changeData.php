@@ -69,7 +69,7 @@
             </div>
 
             <div class="column" id="tarjetas">
-                <form action="">
+                <form id="dataTarjeta" method="post" enctype="multipart/form-data">
                 <div class="container text-center d-flex " style="width:100%">
                     <div class="d-flex justify-content-center align-items-center"
                         style="width:5%; height:100px; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
@@ -103,7 +103,7 @@
         <aside style="width:30%; height:100%; border-left:1px solid  rgba(0, 0, 0, 0.192);">
 
             <div class="formulario">
-                <form action="">
+                <form id="dataTarjeta" method="post" enctype="multipart/form-data">
                     <div class="tittle d-flex justify-content-center"
                         style="width:100%; height:10%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
                         <h3>Actualizar contenido</h3>
@@ -126,7 +126,7 @@
                     </div>
                     <div class="send d-flex justify-content-center">
                         <button style="width:85%;" type="button" class="btn btn-success border mt-4"
-                            onclick="registroTarjetas()">Guardar</button>
+                            onclick="actualizarCard()">Guardar</button>
                     </div>
 
                 </form>
@@ -135,34 +135,33 @@
     </main>
     <footer>
         <div class="formulario">
-            <form action="">
-                <div class="tittle d-flex justify-content-center"
-                    style="width:100%; height:10%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
-                    <h3>Actualizar contenido</h3>
-                </div>
-                <div class="selected-image">
-                    <div id="image-container">
-                        <img id="preview-image" src="" alt="">
+        <form id="dataTarjeta" method="post" enctype="multipart/form-data">
+                    <div class="tittle d-flex justify-content-center"
+                        style="width:100%; height:10%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
+                        <h3>Actualizar contenido</h3>
                     </div>
-                </div>
-                <div class="image">
-                    <input class="form-control" type="file" name="image" id="image" onchange="loadImage()" required>
-                </div>
-                <div class="data d-flex flex-column mt-3" style="width:90%;">
-                    <label class="ps-2" for="precio">Precio:</label>
-                    <input type="number" name="precio" id="precio" class="form-control ms-2 border-secondary-subtle"
-                        required>
-                    <label class="ps-2" for="titulo">Titulo:</label>
-                    <input type="text" name="titulo" id="titulo" class="form-control ms-2 border-secondary-subtle"
-                        required>
-                </div>
-                <div class="send d-flex justify-content-center">
-                    <button style="width:85%;" type="button" class="btn btn-success border mt-4"
-                        onclick="actualizarCard()">Guardar</button>
-                        
-                </div>
+                    <div class="selected-image">
+                        <div id="image-container">
+                            <img id="preview-image" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="image">
+                        <input class="form-control" type="file" name="image" id="image" onchange="loadImage()" required>
+                    </div>
+                    <div class="data d-flex flex-column mt-3" style="width:90%;">
+                        <label class="ps-2" for="precio">Precio:</label>
+                        <input type="number" name="precio" id="precio" class="form-control ms-2 border-secondary-subtle"
+                            required>
+                        <label class="ps-2" for="titulo">Titulo:</label>
+                        <input type="text" name="titulo" id="titulo" class="form-control ms-2 border-secondary-subtle"
+                            required>
+                    </div>
+                    <div class="send d-flex justify-content-center">
+                        <button style="width:85%;" type="button" class="btn btn-success border mt-4"
+                            onclick="actualizarCard()">Guardar</button>
+                    </div>
 
-            </form>
+                </form>
         </div>
     </footer>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>

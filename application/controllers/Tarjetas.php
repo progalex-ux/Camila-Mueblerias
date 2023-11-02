@@ -80,7 +80,33 @@ public function deleteCard($id) {
 
 //EDIT CARDS
 
+public function getCard($id) {
 
+    $this->load->model('Change');
+    $cardData = $this->Change->getCardData($id);
+
+    echo json_encode(array('status' => 'success', 'card' => $cardData));
+  }
+
+  public function updateCard($id) {
+   
+    $this->load->model('Change');
+  
+    $titulo = $this->input->post('titulo');
+    $precio = $this->input->post('precio');
+  
+  
+    $success = $this->Change->updateColchon($id, $titulo, $precio);
+  
+    if ($success) {
+     
+      echo json_encode(array('status' => 'success', 'message' => 'Datos actualizados con éxito'));
+    } else {
+  
+      echo json_encode(array('status' => 'error', 'message' => 'No se pudo actualizar los datos'));
+    }
+  }
+  
 
 //////////////////////////////////////
 
