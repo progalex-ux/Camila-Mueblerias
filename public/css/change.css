@@ -43,9 +43,14 @@ footer{
   display: none;
 }
 
-.custom-tooltip {
-  --bs-tooltip-bg: var(--bd-violet-bg);
-  --bs-tooltip-color: var(--bs-white);
+.imagen{
+  height: 100px;
+
+}
+.imagen img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 @media(max-width:821px){
   aside{

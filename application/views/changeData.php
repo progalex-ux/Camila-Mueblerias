@@ -28,24 +28,16 @@
             </div>
             <div>
                 <a class="link-offset-2 link-underline link-underline-opacity-0" href="<?= base_url() ?>index.php/admin/tarjetas" >
-                    <button class="btn btn-light custom-tooltip" data-toggle="tooltip" data-placement="top"
+                    <button class="btn btn-light custom-tooltip" data-bs-toggle="tooltip" data-placement="bottom"
                         title="Agregar contenido" data-bs-custom-class="custom-tooltip">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                         </svg>
                     </button>
                 </a>
-                <a href="<?= base_url() ?>index.php/admin/changedata">
-                    <button class="btn btn-light custom-tooltip" data-toggle="tooltip" data-placement="top"
-                        title="Modificar contenido">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-tools" viewBox="0 0 16 16">
-                            <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.960 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Z M9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z" />
-                        </svg>
-                    </button>
-                    
-                </a>
+        
             </div>
         </div>
     </header>
@@ -76,7 +68,8 @@
                 </div>
             </div>
 
-            <div class="column">
+            <div class="column" id="tarjetas">
+                <form action="">
                 <div class="container text-center d-flex " style="width:100%">
                     <div class="d-flex justify-content-center align-items-center"
                         style="width:5%; height:100px; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
@@ -90,18 +83,19 @@
                         style="width:20%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
                         <span>Precio</span>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center"
+                    <div class="imagen d-flex justify-content-center align-items-center"
                         style="width:35%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
                         <span>Imagen</span>
                     </div>
                     <div class="d-flex justify-content-center align-items-center"
                         style="width:15%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
-                        <span><button class="btn btn-dark border me-1" data-toggle="tooltip" data-placement="top"
+                        <span><button onclick="deleteCards()" class="btn btn-dark border me-1" data-bs-toggle="tooltip" data-placement="top"
                                 title="Borrar"><i class="bi bi-x-circle"></i></button><button class="btn btn-dark"
-                                data-toggle="tooltip" data-placement="top" title="Editar"><i
+                                data-bs-toggle="tooltip" data-placement="top" title="Editar"><i
                                     class="bi bi-pencil-square"></i></button></span>
                     </div>
                 </div>
+                </form>
             </div>
 
 
@@ -164,14 +158,18 @@
                 </div>
                 <div class="send d-flex justify-content-center">
                     <button style="width:85%;" type="button" class="btn btn-success border mt-4"
-                        onclick="registroTarjetas()">Guardar</button>
+                        onclick="actualizarCard()">Guardar</button>
+                        
                 </div>
 
             </form>
         </div>
     </footer>
+    <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    <script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
+    <script src="<?= base_url() ?>public/js/insert.js"></script>
+    <script>
     function loadImage() {
         const input = document.getElementById('image');
         const preview = document.getElementById('preview-image');
@@ -189,7 +187,10 @@
         }
     }
     </script>
-        
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>>
 </body>
 
 </html>

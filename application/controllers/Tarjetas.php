@@ -62,6 +62,28 @@ class Tarjetas extends CI_Controller{
         }
         echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
     }
+
+// DELETE CARDS
+
+public function deleteCard($id) {
+
+    $this->load->model('change');
+    $this->change->deleteCard($id);
+
+
+    $response = array('status' => 'success', 'message' => 'Tarjeta eliminada con éxito');
+    echo json_encode($response);
+}
+
+
+////////////////////////////////////////////
+
+//EDIT CARDS
+
+
+
+//////////////////////////////////////
+
     //ELECTRODOMESTICOS
     public function saveCardEstufa(){
         $titulo    = $this->input->post("titulo");
