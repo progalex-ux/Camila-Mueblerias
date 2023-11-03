@@ -99,7 +99,7 @@ section{
     border-radius: 15px;
 }
 
-@media(max-width: 768px){
+@media(max-width: 822px){
     .login-contenedor{
         width: 95%;
         height: 85%;

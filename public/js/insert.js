@@ -63,7 +63,7 @@ reloadCardColchones();
         );
         var col5 = $("<div class='d-flex justify-content-center align-items-center' style='width:15%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").append(
             $("<button onclick='deleteCard(" + valor.id + ")' class='btn btn-dark border me-1' data-bs-toggle='tooltip' data-placement='top' data-card-id='" + valor.id + "'><i class='bi bi-x-circle'></i></button>"),
-            $("<button onclick='editCard(" + valor.id + ")' class='btn btn-dark' data-bs-toggle='tooltip' data-placement='top' title='Editar'><i class='bi bi-pencil-square'></i></button>")
+            $("<a href='#formul'><button onclick='editCard(" + valor.id + ")' class='btn btn-dark' data-bs-toggle='tooltip' data-placement='top' title='Editar'><i class='bi bi-pencil-square'></i></button></a>")
         );
 
         cardContainer.append(col1, col2, col3, col4, col5);
@@ -92,7 +92,7 @@ function deleteCard(id) {
 }
 
 function editCard(id) {
-    // Realiza una solicitud AJAX para obtener los datos de la tarjeta con el ID especificado
+    
     $.ajax({
       url: base_url + 'index.php/tarjetas/getCard/' + id,
       dataType: 'json',
@@ -100,17 +100,17 @@ function editCard(id) {
       success: function (data) {
         if (data && data.status === 'success') {
           const cardData = data.card;
-          // Llena el formulario con los datos de la tarjeta
+
           $("#titulo").val(cardData.titulo);
           $("#precio").val(cardData.precio);
   
-          // Actualiza la imagen en el formulario
+         
           if (cardData.image) {
-            // Asigna la URL de la imagen a la vista previa
+
             $("#preview-image").attr('src', base_url + cardData.image);
           }
   
-          // Guarda el ID de la tarjeta que se está editando
+         
           cardIdBeingEdited = id;
         } else {
           console.log('Respuesta JSON no válida:', data);
@@ -141,7 +141,8 @@ function editCard(id) {
         contentType: false,
         success: function (data) {
           if (data && data.status === 'success') {
-            location.reload();
+            
+            console.log($('#image')[0].files[0]);
           } else {
             console.log('Respuesta JSON no válida:', data);
           }
@@ -152,4 +153,3 @@ function editCard(id) {
       });
     }
   }
-  

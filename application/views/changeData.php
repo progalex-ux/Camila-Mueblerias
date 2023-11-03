@@ -19,7 +19,7 @@
         <div class="logo" style="width:45%;">
             <div class="mt-2 ms-1"><a class="icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0" href="<?= base_url() ?>index.php/admin/"
                     style="color:black;"><button class="btn btn-light border-0 rounded-pill mt-1 ms-1"><i
-                            class="bi bi-arrow-left" style="color:black;"></i> Cerrar sesión</button></a> </div>
+                            class="bi bi-arrow-left" style="color:black;"></i> Cerrar sesión</button></a></div>
 
         </div>
         <div class="titulo d-flex justify-content-between" style="width:55%;">
@@ -37,12 +37,11 @@
                         </svg>
                     </button>
                 </a>
-        
             </div>
         </div>
     </header>
     <main class="d-flex" style="width:100%; height:100vh;">
-        <section style=" height:100%;">
+        <section>
             <div class="column">
                 <div class="container text-center d-flex mt-3" style="width:100%">
                     <div class="d-flex justify-content-center align-items-center"
@@ -58,54 +57,21 @@
                         <span>Precio</span>
                     </div>
                     <div class="d-flex justify-content-center align-items-center"
-                        style="width:35%; border:1px solid white; background-color:#17202A; color:white;">
+                        style="width:30%; border:1px solid white; background-color:#17202A; color:white;">
                         <span>Imagen</span>
                     </div>
                     <div class="d-flex justify-content-center align-items-center"
-                        style="width:15%; border:1px solid white; background-color:#17202A; color:white;">
+                        style="width:20%; border:1px solid white; background-color:#17202A; color:white;">
                         <span>Accion</span>
-                    </div>
+                    </div>  
                 </div>
             </div>
-
-            <div class="column" id="tarjetas">
-                <form id="dataTarjeta" method="post" enctype="multipart/form-data">
-                <div class="container text-center d-flex " style="width:100%">
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="width:5%; height:100px; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
-                        <span>1</span>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="width:25%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
-                        <span>Titulo</span>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="width:20%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
-                        <span>Precio</span>
-                    </div>
-                    <div class="imagen d-flex justify-content-center align-items-center"
-                        style="width:35%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
-                        <span>Imagen</span>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="width:15%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
-                        <span><button onclick="deleteCards()" class="btn btn-dark border me-1" data-bs-toggle="tooltip" data-placement="top"
-                                title="Borrar"><i class="bi bi-x-circle"></i></button><button class="btn btn-dark"
-                                data-bs-toggle="tooltip" data-placement="top" title="Editar"><i
-                                    class="bi bi-pencil-square"></i></button></span>
-                    </div>
-                </div>
-                </form>
-            </div>
-
-
+            <div class="column" id="tarjetas"></div>
         </section>
-        <aside style="width:30%; height:100%; border-left:1px solid  rgba(0, 0, 0, 0.192);">
-
-            <div class="formulario">
+        <aside style="border-left:1px solid  rgba(0, 0, 0, 0.192);">
+            <div class="formulario" id="formul">
                 <form id="dataTarjeta" method="post" enctype="multipart/form-data">
-                    <div class="tittle d-flex justify-content-center"
-                        style="width:100%; height:10%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
+                    <div class="tittle d-flex justify-content-center" style="width:100%; height:10%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
                         <h3>Actualizar contenido</h3>
                     </div>
                     <div class="selected-image">
@@ -128,47 +94,15 @@
                         <button style="width:85%;" type="button" class="btn btn-success border mt-4"
                             onclick="actualizarCard()">Guardar</button>
                     </div>
-
                 </form>
             </div>
         </aside>
-    </main>
-    <footer>
-        <div class="formulario">
-        <form id="dataTarjeta" method="post" enctype="multipart/form-data">
-                    <div class="tittle d-flex justify-content-center"
-                        style="width:100%; height:10%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
-                        <h3>Actualizar contenido</h3>
-                    </div>
-                    <div class="selected-image">
-                        <div id="image-container">
-                            <img id="preview-image" src="" alt="">
-                        </div>
-                    </div>
-                    <div class="image">
-                        <input class="form-control" type="file" name="image" id="image" onchange="loadImage()" required>
-                    </div>
-                    <div class="data d-flex flex-column mt-3" style="width:90%;">
-                        <label class="ps-2" for="precio">Precio:</label>
-                        <input type="number" name="precio" id="precio" class="form-control ms-2 border-secondary-subtle"
-                            required>
-                        <label class="ps-2" for="titulo">Titulo:</label>
-                        <input type="text" name="titulo" id="titulo" class="form-control ms-2 border-secondary-subtle"
-                            required>
-                    </div>
-                    <div class="send d-flex justify-content-center">
-                        <button style="width:85%;" type="button" class="btn btn-success border mt-4"
-                            onclick="actualizarCard()">Guardar</button>
-                    </div>
-
-                </form>
-        </div>
-    </footer>
-    <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
-    <script src="<?= base_url() ?>public/js/insert.js"></script>
-    <script>
+    </main>   
+<script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
+<script src="<?= base_url() ?>public/js/insert.js"></script>
+<script>
     function loadImage() {
         const input = document.getElementById('image');
         const preview = document.getElementById('preview-image');
@@ -185,11 +119,10 @@
             preview.src = '';
         }
     }
-    </script>
-    <script>
+</script>
+<script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>>
+</script>
 </body>
-
 </html>

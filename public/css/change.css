@@ -38,6 +38,11 @@
 }
 section{
   width:70%;
+  height:100%;
+}
+aside{
+  width: 30%;
+  height:100%; 
 }
 footer{
   display: none;
@@ -53,13 +58,19 @@ footer{
   object-fit: cover;
 }
 @media(max-width:821px){
-  aside{
-    width: 0;
-    height:0;
-    display:none;
+  main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   }
+  
   section{
     width: 100%;
+    min-height: 99vh;
+  }
+  aside{
+    width: 100%;
+    min-height: 1vh;
   }
   footer{
     display: block;

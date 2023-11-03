@@ -82,30 +82,51 @@ public function deleteCard($id) {
 
 public function getCard($id) {
 
-    $this->load->model('Change');
-    $cardData = $this->Change->getCardData($id);
+    $this->load->model('change');
+    $cardData = $this->change->getCardData($id);
 
     echo json_encode(array('status' => 'success', 'card' => $cardData));
   }
 
   public function updateCard($id) {
-   
     $this->load->model('Change');
   
     $titulo = $this->input->post('titulo');
     $precio = $this->input->post('precio');
-  
-  
-    $success = $this->Change->updateColchon($id, $titulo, $precio);
-  
-    if ($success) {
-     
-      echo json_encode(array('status' => 'success', 'message' => 'Datos actualizados con éxito'));
+    $image = $this->input->post('image'); 
+
+    
+    if (!empty($image['name'])) {
+        
+        $config['upload_path'] = 'public/img/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = 2048; 
+
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload('image')) {
+      
+            $error = array('error' => $this->upload->display_errors());
+            echo json_encode(array('status' => 'error', 'message' => 'Error al subir la imagen', 'error' => $error));
+            return;
+        } else {
+            $uploaded_data = $this->upload->data();
+            $image_name = $uploaded_data['file_name'];
+        }
     } else {
-  
-      echo json_encode(array('status' => 'error', 'message' => 'No se pudo actualizar los datos'));
+        
+        $image_name = ''; 
     }
-  }
+
+    $success = $this->Change->updateColchon($id, $titulo, $precio, $image_name);
+
+    if ($success) {
+        echo json_encode(array('status' => 'success', 'message' => 'Datos actualizados con éxito'));
+    } else {
+        echo json_encode(array('status' => 'error', 'message' => 'No se pudo actualizar los datos'));
+    }
+}
+
   
 
 //////////////////////////////////////

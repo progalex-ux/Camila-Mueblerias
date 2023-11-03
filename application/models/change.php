@@ -21,16 +21,19 @@ class change extends CI_Model {
             return $query->row_array();
           }
 
-          public function updateColchon($id, $titulo, $precio) {
-     
+          public function updateColchon($id, $titulo, $precio, $image_name) {
             $data = array(
-              'titulo' => $titulo,
-              'precio' => $precio
-
+                'titulo' => $titulo,
+                'precio' => $precio
             );
-          
+        
+            if (!empty($image_name)) {
+                $data['imagen'] = $image_name;
+            }
+        
             $this->db->where('id', $id);
             return $this->db->update('colchones', $data);
-          }
+        }
+        
 }
 	
