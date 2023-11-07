@@ -60,7 +60,7 @@
                                 <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/parrrillas">Parrillas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/parrillas">Parrillas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a></span>
                             </div>
@@ -76,9 +76,7 @@
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
-
                     </div>
-
                 </div>
             </div>
         </div>

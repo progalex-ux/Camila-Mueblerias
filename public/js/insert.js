@@ -1,18 +1,4 @@
 const base_url="http://localhost/CamilaMueblerias/";
-
-function returnHome(){
-  window.location.href = base_url+"index.php/admin/tarjetas";
-}
-function home(){
-  window.location.href = base_url+"index.php/principal/";
-}
-function login(){
-	window.location.href = base_url+"index.php/admin/";
-  }
-function returns(){
-    window.location.href = base_url+"index.php/admin/cardsElectrodomesticos";
-}
-
 function registroTarjetas() {
   var titulo = $("#titulo").val();
   var precio = $("#precio").val();
@@ -25,14 +11,11 @@ function registroTarjetas() {
   };
   enviarDatos(datosTarjeta);
 }
-
-
-
-reloadCardColchones();
+reloadCardSalas();
   
-  function reloadCardColchones() {
+  function reloadCardSalas() {
       $.ajax({
-          url: base_url + "index.php/tarjetas/getCardColchones",
+          url: base_url + "index.php/tarjetas/getCardSalas",
           dataType: "json",
           type: "post",
           data: {},
@@ -47,7 +30,7 @@ reloadCardColchones();
   }
   function renderTarjetas(tarjetas) {
     var tarjetasContainer = $("#tarjetas");
-    tarjetasContainer.empty(); // Limpia el contenedor antes de agregar las nuevas tarjetas
+    tarjetasContainer.empty(); 
 
     function formatearNumeroConComas(numero) {
         return numero.toLocaleString();
@@ -61,7 +44,7 @@ reloadCardColchones();
         var col4 = $("<div class='imagen d-flex justify-content-center align-items-center' style='width:35%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").append(
             $("<img src='" + base_url + valor.image + "'>")
         );
-        var col5 = $("<div class='d-flex justify-content-center align-items-center' style='width:15%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").append(
+        var col5 = $("<div class='d-flex justify-content-center align-items-center' style='width:20%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").append(
             $("<button onclick='deleteCard(" + valor.id + ")' class='btn btn-dark border me-1' data-bs-toggle='tooltip' data-placement='top' data-card-id='" + valor.id + "'><i class='bi bi-x-circle'></i></button>"),
             $("<a href='#formul'><button onclick='editCard(" + valor.id + ")' class='btn btn-dark' data-bs-toggle='tooltip' data-placement='top' title='Editar'><i class='bi bi-pencil-square'></i></button></a>")
         );
@@ -70,8 +53,6 @@ reloadCardColchones();
         tarjetasContainer.append(cardContainer);
     });
 }
-
-
 function deleteCard(id) {
     $.ajax({
         url: base_url + 'index.php/tarjetas/deleteCard/' + id,
@@ -90,9 +71,7 @@ function deleteCard(id) {
         }
     });
 }
-
-function editCard(id) {
-    
+function editCard(id) {    
     $.ajax({
       url: base_url + 'index.php/tarjetas/getCard/' + id,
       dataType: 'json',
@@ -100,17 +79,12 @@ function editCard(id) {
       success: function (data) {
         if (data && data.status === 'success') {
           const cardData = data.card;
-
           $("#titulo").val(cardData.titulo);
           $("#precio").val(cardData.precio);
-  
-         
           if (cardData.image) {
 
             $("#preview-image").attr('src', base_url + cardData.image);
-          }
-  
-         
+          }        
           cardIdBeingEdited = id;
         } else {
           console.log('Respuesta JSON no válida:', data);
@@ -121,7 +95,6 @@ function editCard(id) {
       }
     });
   }
-  
   function actualizarCard() {
     const titulo = $("#titulo").val();
     const precio = $("#precio").val();
@@ -141,8 +114,8 @@ function editCard(id) {
         contentType: false,
         success: function (data) {
           if (data && data.status === 'success') {
-            
-            console.log($('#image')[0].files[0]);
+       
+            location.reload();
           } else {
             console.log('Respuesta JSON no válida:', data);
           }

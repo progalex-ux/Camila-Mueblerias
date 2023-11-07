@@ -28,12 +28,14 @@ class change extends CI_Model {
             );
         
             if (!empty($image_name)) {
-                $data['imagen'] = $image_name;
+                $data['image'] = $image_name; 
             }
         
             $this->db->where('id', $id);
             return $this->db->update('colchones', $data);
         }
+        
+        
         
 }
 	

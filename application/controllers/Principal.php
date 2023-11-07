@@ -44,9 +44,5 @@ class Principal extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
-	public function ubicacion()
-	{
-		$this->load->view('ubicacion');
-	}
 }
 	
