@@ -126,21 +126,8 @@ public function getCard($id) {
         echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
     }
 
-    public function mostrarSofaCamas() {
-        $data['tarjetas'] = $this->guardar_mdl->getTarjetasPorIdentificador('SCA');
-        $this->load->view('sofacama', $data);
-    }
     
-    public function mostrarSofas() {
-        $data['tarjetas'] = $this->guardar_mdl->getTarjetasPorIdentificador('SO');
-        $this->load->view('sofas', $data);
-    }
-    
-    public function mostrarSalaModular() {
-        $data['tarjetas'] = $this->guardar_mdl->getTarjetasPorIdentificador('SA');
-        $this->load->view('salamodular', $data);
-    }
-    
+
     
 }
 ?>

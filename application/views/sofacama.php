@@ -209,7 +209,11 @@
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
+    
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+    <script>
+  identificadorVista = 'SCA'; 
+</script>
     <script src="<?= base_url() ?>public/js/insertSalas.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>

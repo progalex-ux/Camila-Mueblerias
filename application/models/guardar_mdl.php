@@ -27,12 +27,7 @@ class Guardar_mdl extends CI_Model{
 
     }
     
-    public function getTarjetasPorIdentificador($identificador) {
-        $this->db->where('identificador', $identificador);
-        $query = $this->db->get('salas');
-        return $query->result();
-    }
-    
+  
 
 }
 

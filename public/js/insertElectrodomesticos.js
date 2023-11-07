@@ -1,9 +1,7 @@
 const base_url="http://localhost/CamilaMueblerias/";
-function returns(){
-    window.location.href = base_url+"index.php/admin/cardsElectrodomesticos";
-}
-function returnse(){
-    window.location.href = base_url+"index.php/admin/cardsElectronica";
+
+function returnr(){
+    window.location.href = base_url+"index.php/admin/cardsRecamaras";
 }
 function loadImage() {
     const input = document.getElementById('image');
@@ -38,7 +36,7 @@ function loadImage() {
   
   function enviarDatos(jsonTarjeta) {
       $.ajax({
-          url: base_url+"index.php/tarjetas/saveCardTablets",
+          url: base_url+"index.php/tarjetas/saveCardBasescama",
           dataType: "json",
           type: "post",
           data: jsonTarjeta,
@@ -51,11 +49,11 @@ function loadImage() {
           error: function (jhrx, estado, error) {},
       });
   }
-  reloadCardTablets();
+  reloadCardBasescama();
   
-  function reloadCardTablets() {
+  function reloadCardBasescama() {
       $.ajax({
-          url: base_url + "index.php/tarjetas/getCardTablets",
+          url: base_url + "index.php/tarjetas/getCardBasescama",
           dataType: "json",
           type: "post",
           data: {},

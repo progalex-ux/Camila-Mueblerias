@@ -36,7 +36,7 @@ function loadImage() {
   
   function enviarDatos(jsonTarjeta) {
       $.ajax({
-          url: base_url+"index.php/tarjetas/saveCardColchones",
+          url: base_url+"index.php/tarjetas/saveCardBasescama",
           dataType: "json",
           type: "post",
           data: jsonTarjeta,
@@ -49,11 +49,11 @@ function loadImage() {
           error: function (jhrx, estado, error) {},
       });
   }
-  reloadCardColchones();
+  reloadCardBasescama();
   
-  function reloadCardColchones() {
+  function reloadCardBasescama() {
       $.ajax({
-          url: base_url + "index.php/tarjetas/getCardColchones",
+          url: base_url + "index.php/tarjetas/getCardBasescama",
           dataType: "json",
           type: "post",
           data: {},
