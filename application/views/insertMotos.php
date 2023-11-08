@@ -48,9 +48,9 @@
                     <label for="titulo">Titulo</label>
                     <input class="form-control" type="text" name="titulo" id="titulo" required>
                     <label class="pt-1" for="">Categorias</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1" name="MO" id="MO">Motos</option>
-                            <option value="2" name="CU" id="CU">Cuatrimotos</option>
+                        <select class="form-select" aria-label="Default select example" id="identificador" name="identificador">
+                            <option value="MO" name="MO" id="MO">Motos</option>
+                            <option value="CU" name="CU" id="CU">Cuatrimotos</option>
                         </select>
                 </div>
                 <div class="send">
@@ -62,7 +62,7 @@
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     
-    <script src="<?= base_url() ?>public/js/insertMotos.js"></script>
+    <script src="<?= base_url() ?>public/js/categorias.js"></script>
     
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     

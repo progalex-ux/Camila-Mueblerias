@@ -43,22 +43,17 @@ public function getCard($id) {
 
   public function updateCard($id) {
     $this->load->model('Change');
-  
     $titulo = $this->input->post('titulo');
     $precio = $this->input->post('precio');
-    $image = $this->input->post('image'); 
 
-    
-    if (!empty($image['name'])) {
-        
+    $image_name = '';
+    if (!empty($_FILES['image']['name'])) {
         $config['upload_path'] = 'public/img/';
-        $config['allowed_types'] = 'gif|jpg|png';
-        $config['max_size'] = 2048; 
-
+       
+        
         $this->load->library('upload', $config);
 
         if (!$this->upload->do_upload('image')) {
-      
             $error = array('error' => $this->upload->display_errors());
             echo json_encode(array('status' => 'error', 'message' => 'Error al subir la imagen', 'error' => $error));
             return;
@@ -66,9 +61,6 @@ public function getCard($id) {
             $uploaded_data = $this->upload->data();
             $image_name = $uploaded_data['file_name'];
         }
-    } else {
-        
-        $image_name = ''; 
     }
 
     $success = $this->Change->updateColchon($id, $titulo, $precio, $image_name);
@@ -83,7 +75,7 @@ public function getCard($id) {
   
 
 //////////////////////////////////////
-    public function saveCardSalas(){
+    public function saveCardCategorias(){
         $titulo = $this->input->post("titulo");
         $precio = $this->input->post("precio");
         $image = $this->input->post("image");
@@ -91,7 +83,7 @@ public function getCard($id) {
         
     
         $this->upload->do_upload("file");
-        $rutaArchivo = "public/img/";
+        $rutaArchivo = "public/img/productos";
         $nombreArchivo = $_FILES["image"]["name"];
         $pathFile = $rutaArchivo.$nombreArchivo;
     
@@ -104,7 +96,7 @@ public function getCard($id) {
             'identificador' => $identificador 
         );
     
-        $idTarjeta = $this->guardar_mdl->cardSalas($datosTarjeta);
+        $idTarjeta = $this->guardar_mdl->cardCategorias($datosTarjeta);
     
         $datosEnviar = array();
         $datosEnviar['mensaje'] = "Registro con éxito";
@@ -113,9 +105,9 @@ public function getCard($id) {
         echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
     }
     
-    public function getCardSalas(){
+    public function getCardCategorias(){
 
-        $tarjetas = $this->guardar_mdl->readCardSalas();
+        $tarjetas = $this->guardar_mdl->readCardCategorias();
         $datosEnviar = array();
         if($tarjetas){
             $datosEnviar["status"] = 'success';

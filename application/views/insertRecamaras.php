@@ -40,21 +40,21 @@
                     </div>
                 </div>
                 <div class="image">
-                    <input type="file" name="image" id="image" onchange="loadImage()" required>
+                    <input class="form-control" type="file" name="image" id="image" onchange="loadImage()" required>
                 </div>
                 <div class="data">
                     <label for="precio">Precio</label>
-                    <input type="number" name="precio" id="precio" required>
+                    <input class="form-control" type="number" name="precio" id="precio" required>
                     <label for="titulo">Titulo</label>
-                    <input type="text" name="titulo" id="titulo" required>
+                    <input class="form-control" type="text" name="titulo" id="titulo" required>
                     <label class="pt-1" for="">Categorias</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1" name="CO" id="CO">Colchones</option>
-                            <option value="2" name="CA" id="CA">Cabeceras</option>
-                            <option value="1" name="BA" id="BA">Bases Cama</option>
-                            <option value="2" name="BU" id="BU">Buros</option>
-                            <option value="1" name="RO" id="RO">Roperos</option>
-                            <option value="2" name="RE" id="RE">Recamaras</option>
+                        <select class="form-select" aria-label="Default select example" id="identificador" name="identificador">
+                            <option value="CO" name="CO" id="CO">Colchones</option>
+                            <option value="CA" name="CA" id="CA">Cabeceras</option>
+                            <option value="BA" name="BA" id="BA">Bases Cama</option>
+                            <option value="BU" name="BU" id="BU">Buros</option>
+                            <option value="RO" name="RO" id="RO">Roperos</option>
+                            <option value="RE" name="RE" id="RE">Recamaras</option>
                         </select>
                 </div>
                 <div class="send">
@@ -65,8 +65,7 @@
         </section>
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+    <script src="<?= base_url() ?>public/js/categorias.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/Recamaras.js"></script>
 </body>
-
 </html>

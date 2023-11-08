@@ -211,9 +211,9 @@
     </footer>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script>
-  identificadorVista = 'SO'; 
-</script>
-    <script src="<?= base_url() ?>public/js/insertSalas.js"></script>
+        identificadorVista = 'SO'; 
+    </script>
+    <script src="<?= base_url() ?>public/js/categorias.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>
     <script src="<?= base_url() ?>public/js/home.js"></script>

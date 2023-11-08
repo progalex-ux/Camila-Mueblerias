@@ -48,13 +48,13 @@
                     <label for="titulo">Titulo</label>
                     <input class="form-control" type="text" name="titulo" id="titulo" required>
                     <label class="pt-1" for="">Categorias</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1" name="MI" id="MI">Microondas</option>
-                            <option value="2" name="LI" id="LI">Licuadoras</option>
-                            <option value="1" name="ES" id="ES">Estufas</option>
-                            <option value="2" name="PA" id="PA">Parrillas</option>
-                            <option value="1" name="SE" id="SE">Secadoras</option>
-                            <option value="2" name="LA" id="LA">Lavadoras</option>
+                        <select class="form-select" aria-label="Default select example" id="identificador" name="identificador">
+                            <option value="MI" name="MI" id="MI">Microondas</option>
+                            <option value="LI" name="LI" id="LI">Licuadoras</option>
+                            <option value="ES" name="ES" id="ES">Estufas</option>
+                            <option value="PA" name="PA" id="PA">Parrillas</option>
+                            <option value="SE" name="SE" id="SE">Secadoras</option>
+                            <option value="LAV" name="LAV" id="LAV">Lavadoras</option>
                         </select>
                 </div>
                 <div class="send">
@@ -66,7 +66,7 @@
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     
-    <script src="<?= base_url() ?>public/js/insertElectrodomesticos.js"></script>
+    <script src="<?= base_url() ?>public/js/categorias.js"></script>
     
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     

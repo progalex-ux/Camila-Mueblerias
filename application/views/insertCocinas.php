@@ -48,10 +48,10 @@
                         <label for="titulo">Titulo</label>
                         <input class="form-control" type="text" name="titulo" id="titulo" required>
                         <label class="pt-1" for="">Categorias</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1" name="CO" id="CO">Comedores</option>
-                            <option value="2" name="SI" id="SI">Sillas</option>
-                            <option value="3" name="VI" id="VI">Vitrinas</option>
+                        <select class="form-select" aria-label="Default select example" id="identificador" name="identificador">
+                            <option value="COM" name="COM" id="COM">Comedores</option>
+                            <option value="SI" name="SI" id="SI">Sillas</option>
+                            <option value="VI" name="VI" id="VI">Vitrinas</option>
                         </select>
                     </div>
                     <div class="send">
@@ -63,7 +63,7 @@
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
 
-    <script src="<?= base_url() ?>public/js/insertCocinas.js"></script>
+    <script src="<?= base_url() ?>public/js/categorias.js"></script>
 
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
 

@@ -12,12 +12,12 @@ class change extends CI_Model {
    
         public function deleteCard($id) {
             $this->db->where('id', $id);
-            $this->db->delete('colchones'); 
+            $this->db->delete('categorias'); 
         }
 
         public function getCardData($id) {
           
-            $query = $this->db->get_where('colchones', array('id' => $id));
+            $query = $this->db->get_where('categorias', array('id' => $id));
             return $query->row_array();
           }
 
@@ -32,7 +32,7 @@ class change extends CI_Model {
             }
         
             $this->db->where('id', $id);
-            return $this->db->update('colchones', $data);
+            return $this->db->update('categorias', $data);
         }
         
         

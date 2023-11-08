@@ -65,7 +65,7 @@
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
 
-    <script src="<?= base_url() ?>public/js/insertSalas.js"></script>
+    <script src="<?= base_url() ?>public/js/categorias.js"></script>
 
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
 

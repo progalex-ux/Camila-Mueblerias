@@ -15,7 +15,7 @@ reloadCardSalas();
   
   function reloadCardSalas() {
       $.ajax({
-          url: base_url + "index.php/tarjetas/getCardSalas",
+          url: base_url + "index.php/tarjetas/getCardCategorias",
           dataType: "json",
           type: "post",
           data: {},
@@ -98,31 +98,30 @@ function editCard(id) {
   function actualizarCard() {
     const titulo = $("#titulo").val();
     const precio = $("#precio").val();
-  
     const formData = new FormData();
     formData.append('titulo', titulo);
     formData.append('precio', precio);
     formData.append('image', $('#image')[0].files[0]);
-  
+
     if (cardIdBeingEdited !== null) {
-      $.ajax({
-        url: base_url + 'index.php/tarjetas/updateCard/' + cardIdBeingEdited,
-        dataType: 'json',
-        type: 'POST',
-        data: formData,
-        processData: false,
-        contentType: false,
-        success: function (data) {
-          if (data && data.status === 'success') {
-       
-            location.reload();
-          } else {
-            console.log('Respuesta JSON no válida:', data);
-          }
-        },
-        error: function (jhrx, estado, error) {
-          console.log(error);
-        }
-      });
+        $.ajax({
+            url: base_url + 'index.php/tarjetas/updateCard/' + cardIdBeingEdited,
+            dataType: 'json',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                if (data && data.status === 'success') {
+                    location.reload();
+                } else {
+                    console.log('Respuesta JSON no válida:', data);
+                   
+                }
+            },
+            error: function (jhrx, estado, error) {
+                console.log(error);
+            }
+        });
     }
-  }
+}

@@ -42,8 +42,6 @@ class Admin extends CI_Controller {
 		echo json_encode($data,JSON_NUMERIC_CHECK);
     }
 
-
-	//CARDS ELECTRODOMESTICOS
 	public function insertElectronica(){
         $this->load->view("insertElectronica");
     }

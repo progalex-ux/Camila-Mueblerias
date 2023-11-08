@@ -213,7 +213,10 @@
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
-    <script src="<?= base_url() ?>public/js/insertParrillas.js"></script>
+    <script>
+        identificadorVista = 'PA'; 
+    </script>
+    <script src="<?= base_url() ?>public/js/categorias.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>
     <script src="<?= base_url() ?>public/js/home.js"></script>

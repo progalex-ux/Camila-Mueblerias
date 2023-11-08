@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-11-2023 a las 21:57:42
+-- Tiempo de generación: 08-11-2023 a las 19:36:37
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -24,96 +24,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cocinas`
+-- Estructura de tabla para la tabla `categorias`
 --
 
-CREATE TABLE `cocinas` (
-  `id` int(11) NOT NULL,
-  `image` int(255) NOT NULL,
-  `precio` int(9) NOT NULL,
-  `titulo` int(50) NOT NULL,
-  `identificador` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `electrodomesticos`
---
-
-CREATE TABLE `electrodomesticos` (
+CREATE TABLE `categorias` (
   `id` int(11) NOT NULL,
   `image` varchar(255) NOT NULL,
   `precio` varchar(9) NOT NULL,
   `titulo` varchar(50) NOT NULL,
-  `identificador` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `electronica`
---
-
-CREATE TABLE `electronica` (
-  `id` int(11) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  `precio` varchar(9) NOT NULL,
-  `titulo` varchar(50) NOT NULL,
-  `descripccion` varchar(200) NOT NULL,
-  `identificador` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `motos`
---
-
-CREATE TABLE `motos` (
-  `id` int(11) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  `precio` varchar(9) NOT NULL,
-  `titulo` varchar(50) NOT NULL,
-  `identificador` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `recamaras`
---
-
-CREATE TABLE `recamaras` (
-  `id` int(11) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  `precio` varchar(9) NOT NULL,
-  `titulo` varchar(50) NOT NULL,
-  `identificador` varchar(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `salas`
---
-
-CREATE TABLE `salas` (
-  `id` int(11) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  `precio` varchar(9) NOT NULL,
-  `titulo` varchar(50) NOT NULL,
-  `identificador` varchar(10) NOT NULL
+  `identificador` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `salas`
+-- Volcado de datos para la tabla `categorias`
 --
 
-INSERT INTO `salas` (`id`, `image`, `precio`, `titulo`, `identificador`) VALUES
-(1, 'public/img/sofacama1.png', '4999', 'Sofa Cama', 'SCA'),
-(2, 'public/img/card-sofa.webp', '6999', 'Sofa gris', 'SO'),
-(3, 'public/img/salamodu.webp', '14999', 'Sala Modular Cafe', 'SA');
+INSERT INTO `categorias` (`id`, `image`, `precio`, `titulo`, `identificador`) VALUES
+(1, 'public/img/salamodu.webp', '13999', 'Sala Modular Cafe', 'SA'),
+(2, 'public/img/card-sofa.webp', '4999', 'Sofa gris', 'SO'),
+(3, 'public/img/sofacama1.png', '9700', 'Sofa cama', 'SCA'),
+(5, 'public/img/colchon.jpg', '3499', 'Colchon Matrimonial Restonic', 'CO');
 
 -- --------------------------------------------------------
 
@@ -139,39 +69,9 @@ INSERT INTO `usuarios` (`id`, `usuario`, `contrasena`) VALUES
 --
 
 --
--- Indices de la tabla `cocinas`
+-- Indices de la tabla `categorias`
 --
-ALTER TABLE `cocinas`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `electrodomesticos`
---
-ALTER TABLE `electrodomesticos`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `electronica`
---
-ALTER TABLE `electronica`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `motos`
---
-ALTER TABLE `motos`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `recamaras`
---
-ALTER TABLE `recamaras`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `salas`
---
-ALTER TABLE `salas`
+ALTER TABLE `categorias`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -185,40 +85,10 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `cocinas`
+-- AUTO_INCREMENT de la tabla `categorias`
 --
-ALTER TABLE `cocinas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `electrodomesticos`
---
-ALTER TABLE `electrodomesticos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `electronica`
---
-ALTER TABLE `electronica`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `motos`
---
-ALTER TABLE `motos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `recamaras`
---
-ALTER TABLE `recamaras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `salas`
---
-ALTER TABLE `salas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `categorias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

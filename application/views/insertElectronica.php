@@ -48,12 +48,12 @@
                     <label for="titulo">Titulo</label>
                     <input class="form-control" type="text" name="titulo" id="titulo" required>
                     <label class="pt-1" for="">Categorias</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1" name="CE" id="CE">Celulares</option>
-                            <option value="2" name="TA" id="TA">Tablets</option>
-                            <option value="1" name="LA" id="LA">Laptops</option>
-                            <option value="2" name="TE" id="TE">Televisiones</option>
-                            <option value="1" name="BO" id="BO">Bocinas</option>
+                        <select class="form-select" aria-label="Default select example" id="identificador" name="identificador">
+                            <option value="CE" name="CE" id="CE">Celulares</option>
+                            <option value="TA" name="TA" id="TA">Tablets</option>
+                            <option value="LA" name="LA" id="LA">Laptops</option>
+                            <option value="TE" name="TE" id="TE">Televisiones</option>
+                            <option value="BO" name="BO" id="BO">Bocinas</option>
                         </select>
                 </div>
                 <div class="send">
@@ -65,7 +65,7 @@
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
 
-    <script src="<?= base_url() ?>public/js/insertElectronica.js"></script>
+    <script src="<?= base_url() ?>public/js/categorias.js"></script>
     
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     

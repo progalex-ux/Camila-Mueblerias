@@ -9,12 +9,12 @@ class Guardar_mdl extends CI_Model{
     }
   
 
-    public function cardSalas($datosTarjeta){
-        $this->db->insert("salas", $datosTarjeta);
+    public function cardCategorias($datosTarjeta){
+        $this->db->insert("categorias", $datosTarjeta);
         return $this->db->insert_id();
     }
-    public function readCardSalas(){
-        $query = $this->db->get("salas");
+    public function readCardCategorias(){
+        $query = $this->db->get("categorias");
         if($query->num_rows()>0){
             $datos = array();
             foreach( $query->result() as $fila){
