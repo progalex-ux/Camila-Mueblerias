@@ -31,16 +31,14 @@
 
 .menu-content a:hover {
     color:#f87d2b;
-    border-right:2px solid #EE7323;
+    background-color: #f3f2f2;
 }
 .subdropdown {
     display: none;
-    position: absolute;
     background-color: #fff;
     top: 0;
-    left: 100%;
+    left: 98%;
     width: 450px;
-    z-index: 100;
     height: 264px;
 }
 

@@ -25,7 +25,7 @@
                         onclick="toggleMenu()">Categorías
                         <i id="menu-icon" class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="menu-content z-3 position-absolute justify-content-center rounded-start" id="myDropdown">
+                    <div class="menu-content z-3 position-absolute justify-content-center rounded" id="myDropdown">
 
                         <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown rounded-end z-3 position-absolute" id="subdropdown-recamaras">
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
-                        <div class="subdropdown rounded-end" id="subdropdown-cocinas">
+                        <div class="subdropdown rounded-end position-absolute" id="subdropdown-cocinas">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/comedores">Comedores</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/sillas">Sillas</a></span>
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Salas</a>
-                        <div class="subdropdown rounded-end" id="subdropdown-salas">
+                        <div class="subdropdown rounded-end position-absolute" id="subdropdown-salas">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/salamodular">Sala Modular</a></span>
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
-                        <div class="subdropdown rounded-end" id="subdropdown-electrodomesticos">
+                        <div class="subdropdown rounded-end position-absolute" id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
-                        <div class="subdropdown rounded-end" id="subdropdown-electronica">
+                        <div class="subdropdown rounded-end position-absolute" id="subdropdown-electronica">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/telefonos">Celulares</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
@@ -206,8 +206,8 @@
             <h6 class="text-white" style="font-size:11px;">Tarimoro, Guanajuato Mexico.</h6>
         </div>
         <div class="ctn-f-user w=100 d-flex justify-content-end" style="height:30%;">
-            <button class="border border-0" style="background-color:transparent;" onclick=login()><i
-                    class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
+            <a href="<?= base_url() ?>index.php/admin/"><button class="border border-0" style="background-color:transparent;" ><i
+                    class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button></a>
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
@@ -217,7 +217,6 @@
     </script>
     <script src="<?= base_url() ?>public/js/categorias.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
 </body>
 
 </html>

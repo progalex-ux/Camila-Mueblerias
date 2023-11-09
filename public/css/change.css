@@ -38,6 +38,7 @@ aside{
       text-align: center; 
       margin-top: 20px;
   }
+  
 .titulo{
     display: flex;
     align-items: center;
@@ -80,11 +81,11 @@ footer{
   
   section{
     width: 100%;
-    min-height: 99vh;
+    min-height: 100vh;
   }
   aside{
     width: 100%;
-    min-height: 1vh;
+    height: 100vh;
   }
   footer{
     display: block;

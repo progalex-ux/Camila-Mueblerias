@@ -22,7 +22,7 @@
                     <button style="background-color: transparent; color:#fff;"class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
                         <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="menu-content z-3 position-absolute justify-content-center rounded-start" id="myDropdown">
+                    <div class="menu-content z-3 position-absolute justify-content-center rounded" id="myDropdown">
 
                         <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown rounded-end z-3 position-absolute" id="subdropdown-recamaras">
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
-                        <div class="subdropdown rounded-end" id="subdropdown-cocinas">
+                        <div class="subdropdown rounded-end position-absolute" id="subdropdown-cocinas">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/comedores">Comedores</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/sillas">Sillas</a></span>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
-                        <div class="subdropdown rounded-end" id="subdropdown-salas">
+                        <div class="subdropdown rounded-end position-absolute" id="subdropdown-salas">
                             <div class="seccion-1">
                             <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
                             <span><a href="<?= base_url() ?>index.php/secciones/salamodular">Sala Modular</a></span>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
-                        <div class="subdropdown rounded-end" id="subdropdown-electrodomesticos">
+                        <div class="subdropdown rounded-end position-absolute" id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
-                        <div class="subdropdown rounded-end" id="subdropdown-electronica">
+                        <div class="subdropdown rounded-end position-absolute" id="subdropdown-electronica">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/telefonos">Celulares</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
@@ -205,7 +205,7 @@
                 <div class="content" style="width:88%; height:auto;">
                     <div class="row" style="max-width: 100%;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                     <a href="<?= base_url() ?>index.php/secciones/telefonos"><img
                                             class="object-fit-contain"
@@ -220,7 +220,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                     <a href="<?= base_url() ?>index.php/secciones/tablets"><img
                                             class="object-fit-contain"
@@ -236,7 +236,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                     <a href="<?= base_url() ?>index.php/secciones/laptop"><img
                                             class="object-fit-contain"
@@ -251,7 +251,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                     <a href="<?= base_url() ?>index.php/secciones/televisiones"><img
                                             class="object-fit-contain"
@@ -268,7 +268,7 @@
 
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                     <a href="<?= base_url() ?>index.php/electronica/bocinas"><img
                                             class="object-fit-contain"
