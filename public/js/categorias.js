@@ -234,15 +234,31 @@ function loadImage() {
       } else if (identificadorVista === 'CE' && valor.identificador === 'CE') {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
-            $("<div class='image'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
-            ),
-            $("<div class='custom-card-content'>").append(
-              $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
-              $("<p class='custom-card-tittle'>").text(valor.titulo)
-            )
+              $("<div class='card-inner'>").append(
+                  $("<div class='front'>").append(
+                      $("<div class='image'>").append(
+                          $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+                      ),
+                      $("<div class='custom-card-content'>").append(
+                          $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
+                          $("<p class='custom-card-tittle'>").text(valor.titulo)
+                      )
+                  ),
+                  $("<div class='back rounded'>").append(
+                      $("<ul class='list-group list-group-flush'>").append(
+                          $("<li class='list-group-item list-group-item-warning'> ").text("Memoria Interna : 128gb"),
+                          $("<li class='list-group-item list-group-item-warning'>").text("Memoria RAM : 4 GB"),
+                          $("<li class='list-group-item list-group-item-warning'>").text("Red móvil : 5G"),
+                          $("<li class='list-group-item list-group-item-warning'> ").text("Memoria Interna : 128gb"),
+                          $("<li class='list-group-item list-group-item-warning'>").text("Red móvil : 5G")
+                          
+                      )
+                  )
+              )
           )
-        );
+      );
+      
+      
         $("#tarjetas").append($div);
       } else if (identificadorVista === 'TA' && valor.identificador === 'TA') {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(

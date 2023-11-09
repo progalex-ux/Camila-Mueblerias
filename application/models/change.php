@@ -36,6 +36,7 @@ class change extends CI_Model {
         }
         
         
+        
         public function getCurrentImageName($id) {
             $this->db->select('image');
             $this->db->where('id', $id);

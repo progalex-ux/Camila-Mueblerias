@@ -103,11 +103,6 @@ function editCard(id) {
     formData.append('precio', precio);
     formData.append('image', $('#image')[0].files[0]);
 
-    // Mostrar información sobre la imagen antes de la solicitud AJAX
-    console.log("Nombre del archivo: " + formData.get('image').name);
-    console.log("Tipo de archivo: " + formData.get('image').type);
-    console.log("Tamaño del archivo: " + formData.get('image').size + " bytes");
-
     $.ajax({
         url: base_url + 'index.php/tarjetas/updateCard/' + cardIdBeingEdited,
         dataType: 'json',

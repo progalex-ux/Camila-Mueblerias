@@ -240,7 +240,6 @@
     </footer>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>
-    <script src="<?= base_url() ?>public/js/home.js"></script>
 </body>
 
 </html>

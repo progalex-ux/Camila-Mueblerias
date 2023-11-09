@@ -29,7 +29,7 @@
                     <button style="background-color: transparent; color:#fff;"class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
                         <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="menu-content z-3 position-absolute justify-content-center rounded-start" id="myDropdown">
+                    <div class="menu-content z-3 position-absolute justify-content-center rounded" id="myDropdown">
 
                         <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown z-3 position-absolute rounded-end" id="subdropdown-recamaras">
@@ -311,7 +311,6 @@
     </footer>
 
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/home.js"></script>
     <script src="<?= base_url() ?>public/js/login.js"></script>
 </body>
 
