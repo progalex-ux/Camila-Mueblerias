@@ -73,7 +73,7 @@
             <div class="column" id="tarjetas"></div>
         </section>
         <aside style="border-left:1px solid  rgba(0, 0, 0, 0.192);">
-            <div class="formulario" id="formul">
+            <div class="formulario" id="formul" id="dataTarjeta" method="post" enctype="multipart/form-data">
                 <form id="dataTarjeta" method="post" enctype="multipart/form-data">
                     <div class="tittle d-flex justify-content-center"
                         style="width:100%; height:10%; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
@@ -84,7 +84,7 @@
                             <img id="preview-image" src="" alt="">
                         </div>
                     </div>
-                    <div class="image">
+                    <div class="image ps-2" style="width:92%;">
                         <input class="form-control" type="file" name="image" id="image" onchange="loadImage()">
                     </div>
 
@@ -96,11 +96,12 @@
                         <input type="text" name="titulo" id="titulo" class="form-control ms-2 border-secondary-subtle"
                             required>
                     </div>
-                    <div class="send d-flex justify-content-center">
-                        <button style="width:85%;" type="button" class="btn btn-success border mt-4"
+                    <div class="send d-flex ps-2" style="width:92%;">
+                        <button style="width:100%;" type="button" class="btn btn-success border mt-4"
                             onclick="actualizarCard()">Guardar</button>
                     </div>
                 </form>
+
             </div>
         </aside>
     </main>

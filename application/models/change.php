@@ -28,7 +28,7 @@ class change extends CI_Model {
             );
         
             if (!empty($image_name)) {
-                $data['image'] = $image_name; 
+                $data['image'] = 'public/img/productos/' . $image_name; 
             }
         
             $this->db->where('id', $id);
@@ -36,6 +36,22 @@ class change extends CI_Model {
         }
         
         
+        public function getCurrentImageName($id) {
+            $this->db->select('image');
+            $this->db->where('id', $id);
+            $this->db->from('categorias');
+
+            $query = $this->db->get();
+            
+            if ($query->num_rows() > 0) {
+                $row = $query->row();
+                return $row->image;
+            } else {
+                return '';
+            }
+        }
+        
+        
+        
         
 }
-	

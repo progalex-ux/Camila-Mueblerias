@@ -18,7 +18,8 @@
     <header>
         <div class="logo">
             <div class="boton">
-                <a href="<?= base_url() ?>index.php/admin/tarjetas"><button class="btn btn-light border"><i class="bi bi-arrow-90deg-left" style="color:#000;"></i></button></a>
+                <a href="<?= base_url() ?>index.php/admin/tarjetas"><button class="btn btn-light border"><i
+                            class="bi bi-arrow-90deg-left" style="color:#000;"></i></button></a>
             </div>
 
         </div>
@@ -48,7 +49,8 @@
                         <label for="titulo">Titulo</label>
                         <input class="form-control" type="text" name="titulo" id="titulo" required>
                         <label class="pt-1" for="">Categorias</label>
-                        <select class="form-select" aria-label="Default select example" id="identificador" name="identificador">
+                        <select class="form-select" aria-label="Default select example" id="identificador"
+                            name="identificador">
                             <option value="COM" name="COM" id="COM">Comedores</option>
                             <option value="SI" name="SI" id="SI">Sillas</option>
                             <option value="VI" name="VI" id="VI">Vitrinas</option>

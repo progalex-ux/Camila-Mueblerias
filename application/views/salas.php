@@ -22,7 +22,7 @@
                     <button style="background-color: transparent; color:#fff;"class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
                         <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="menu-content z-3 position-absolute justify-content-center rounded-start" id="myDropdown">
+                    <div class="menu-content z-3 position-absolute justify-content-center rounded" id="myDropdown">
 
                         <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown rounded-end z-3 position-absolute" id="subdropdown-recamaras">
@@ -194,7 +194,7 @@
                 <div class="content" style="width:88%; height:auto;">
                     <div class="row" style="max-width: 100%;">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/sofacama"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/salas/card-sofacama.webp" alt=""></a>
@@ -207,7 +207,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/salamodular"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/salas/card-salamodular.webp"></a>
@@ -221,7 +221,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/sofas"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/salas/card-sofa.webp"></a>

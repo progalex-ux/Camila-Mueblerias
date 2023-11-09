@@ -40,30 +40,36 @@ public function getCard($id) {
 
     echo json_encode(array('status' => 'success', 'card' => $cardData));
   }
-
   public function updateCard($id) {
-    $this->load->model('Change');
+    $this->load->model('change');
     $titulo = $this->input->post('titulo');
     $precio = $this->input->post('precio');
+    
+    $current_image = $this->change->getCurrentImageName($id);
 
-    $image_name = '';
-    if (!empty($_FILES['image']['name'])) {
-        $config['upload_path'] = 'public/img/';
-       
-        
-        $this->load->library('upload', $config);
-
-        if (!$this->upload->do_upload('image')) {
-            $error = array('error' => $this->upload->display_errors());
-            echo json_encode(array('status' => 'error', 'message' => 'Error al subir la imagen', 'error' => $error));
-            return;
-        } else {
-            $uploaded_data = $this->upload->data();
-            $image_name = $uploaded_data['file_name'];
+    if (!empty($current_image)) {
+        $image_path = FCPATH . 'public/img/productos/' . $current_image;
+        if (file_exists($image_path)) {
+            unlink($image_path);
         }
     }
 
-    $success = $this->Change->updateColchon($id, $titulo, $precio, $image_name);
+    $image_name = '';
+
+    if (!empty($_FILES['image']['name'])) {
+        $target_dir = FCPATH . 'public/img/productos/';
+        $target_file = $target_dir . basename($_FILES['image']['name']);
+
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
+            $image_name = $_FILES['image']['name'];
+        } else {
+            $response = array('status' => 'error', 'message' => 'Error al subir la imagen', 'error' => 'No se pudo mover el archivo al directorio de destino.');
+            echo json_encode($response);
+            return;
+        }
+    }
+
+    $success = $this->change->updateColchon($id, $titulo, $precio, $image_name);
 
     if ($success) {
         echo json_encode(array('status' => 'success', 'message' => 'Datos actualizados con éxito'));
@@ -71,6 +77,7 @@ public function getCard($id) {
         echo json_encode(array('status' => 'error', 'message' => 'No se pudo actualizar los datos'));
     }
 }
+
 
   
 
@@ -83,7 +90,7 @@ public function getCard($id) {
         
     
         $this->upload->do_upload("file");
-        $rutaArchivo = "public/img/productos";
+        $rutaArchivo = "public/img/productos/";
         $nombreArchivo = $_FILES["image"]["name"];
         $pathFile = $rutaArchivo.$nombreArchivo;
     

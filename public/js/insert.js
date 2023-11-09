@@ -11,9 +11,9 @@ function registroTarjetas() {
   };
   enviarDatos(datosTarjeta);
 }
-reloadCardSalas();
+reloadCardCategorias();
   
-  function reloadCardSalas() {
+  function reloadCardCategorias() {
       $.ajax({
           url: base_url + "index.php/tarjetas/getCardCategorias",
           dataType: "json",
@@ -103,25 +103,27 @@ function editCard(id) {
     formData.append('precio', precio);
     formData.append('image', $('#image')[0].files[0]);
 
-    if (cardIdBeingEdited !== null) {
-        $.ajax({
-            url: base_url + 'index.php/tarjetas/updateCard/' + cardIdBeingEdited,
-            dataType: 'json',
-            type: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function (data) {
-                if (data && data.status === 'success') {
-                    location.reload();
-                } else {
-                    console.log('Respuesta JSON no válida:', data);
-                   
-                }
-            },
-            error: function (jhrx, estado, error) {
-                console.log(error);
+    // Mostrar información sobre la imagen antes de la solicitud AJAX
+    console.log("Nombre del archivo: " + formData.get('image').name);
+    console.log("Tipo de archivo: " + formData.get('image').type);
+    console.log("Tamaño del archivo: " + formData.get('image').size + " bytes");
+
+    $.ajax({
+        url: base_url + 'index.php/tarjetas/updateCard/' + cardIdBeingEdited,
+        dataType: 'json',
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (data) {
+            if (data && data.status === 'success') {
+                location.reload();
+            } else {
+                console.log('Respuesta JSON no válida:', data);
             }
-        });
-    }
+        },
+        error: function (jhrx, estado, error) {
+            console.log(error);
+        }
+    });
 }
