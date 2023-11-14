@@ -15,8 +15,7 @@
 </head>
 
 <body>
-<nav id="sticky-header" class="position-relative d-flex justify-content-around"
-        style="height:95px; background-color:#EE7323;">
+    <nav id="sticky-header" class="d-flex justify-content-around" style="background-color:#EE7323;">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
@@ -31,7 +30,8 @@
                         <div class="subdropdown rounded-end z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases para cama</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases para
+                                        cama</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/buros">Buros</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/roperos">Roperos</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/cabeceras">Cabeceras</a></span>
@@ -71,7 +71,8 @@
                                 <span><a href="<?= base_url() ?>index.php/secciones/telefonos">Celulares</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/laptop">Laptops</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
+                                <span><a
+                                        href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/bocinas">Bocinas</a></span>
                             </div>
                         </div>
@@ -92,7 +93,7 @@
                 </svg>
             </button>
         </div>
-        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; width:55%;">
+        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; ">
             <a href="<?= base_url() ?>index.php/principal/"><img class="py-1 object-fit-cover" style="height: 100%;"
                     src="<?= base_url() ?>public/img/Logo-white.png" alt=""></a>
         </div>
@@ -176,24 +177,50 @@
     <main class="d-flex justify-content-start aling-middle">
         <aside class="sidebar d-none d-lg-block">
             <div class="sidebar-tittle d-flex ps-2 ">
-            <i class="bi bi-dash-circle fs-6 pt-4"></i>&nbsp<h6 class="pt-4"><a href="<?= base_url() ?>index.php/principal/electronica" class="text-decoration-underline" style="color:black; text">Electronica</a>/ <a href="<?= base_url() ?>index.php/secciones/laptop" class="text-decoration-underline" style="color:black;">Laptop</a></h6>
+                <i class="bi bi-dash-circle fs-6 pt-4"></i>&nbsp<h6 class="pt-4"><a
+                        href="<?= base_url() ?>index.php/principal/electronica" class="text-decoration-underline"
+                        style="color:black; text">Electronica</a> / <a class="breadcrumb-item active" href="<?= base_url() ?>index.php/secciones/laptop"
+                        class="text-decoration-underline" style="color:black;">Laptop</a></h6>
             </div>
             <div class="categorias-tecno d-flex justify-content-start" style="width:100%; height:15%;">
                 <ul class="d-flex flex-column ">
-                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/telefonos">Telefonos</a>
-                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a>
-                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a>
-                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/bocinas">Bocinas</a>
+                    <a class="pt-1 ps-1" style="font-size:14px;"
+                        href="<?= base_url() ?>index.php/secciones/telefonos">Telefonos</a>
+                    <a class="pt-1 ps-1" style="font-size:14px;"
+                        href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a>
+                    <a class="pt-1 ps-1" style="font-size:14px;"
+                        href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a>
+                    <a class="pt-1 ps-1" style="font-size:14px;"
+                        href="<?= base_url() ?>index.php/secciones/bocinas">Bocinas</a>
                 </ul>
             </div>
         </aside>
         <section>
             <div class="container-fluid">
-                <div class="row" id="tarjetas">
-                    
-                    
-                    
+            <div class="sellos d-lg-none d-flex justify-content-center" >
+                <div class="sello d-none d-sm-flex d-md-flex d-lg-none ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Celulares" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/telefonos"><img src="<?= base_url() ?>public/img/electronica/sello-phone.webp" alt=""></div></a>
+                <div class="sello d-none d-sm-flex d-md-flex d-lg-none ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tablets" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/tablets"><img src="<?= base_url() ?>public/img/electronica/sello-ipad.webp" alt=""></a></div>
+                <div class="sello d-none d-sm-flex d-md-flex d-lg-none ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Laptops" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/laptop"><img src="<?= base_url() ?>public/img/electronica/sello-laptop.webp" alt=""></a></div>
+                <div class="sello d-none d-md-flex d-lg-none ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Televisiones" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/televisiones"><img src="<?= base_url() ?>public/img/electronica/sello-tv.png" alt=""></a></div>
+                <div class="sello d-none d-md-flex d-lg-none ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Bocinas" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/bocinas"><img src="<?= base_url() ?>public/img/electronica/sello-bocina.png" alt=""></a></div>
+                
+
+            </div>
+            <div class="sellosd d-md-none d-flex justify-content-center" >
+                <div class="content-sello d-flex justify-content-center" style="width:70%;">
+                    <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/televisiones"><img
+                                src="<?= base_url() ?>public/img/electronica/sello-tv.png" alt=""></a></div>
+                    <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/bocinas"><img
+                                src="<?= base_url() ?>public/img/electronica/sello-bocina.png" alt=""></a></div>
                 </div>
+            </div>
+                <div class="row" id="tarjetas">
+
+
+
+                </div>
+
+        
             </div>
     </main>
     <footer class="d-block justify-content-center align-middle w=100" style="height: 10vh;  background-color:#FF7216;">
@@ -206,14 +233,15 @@
             <h6 class="text-white" style="font-size:11px;">Tarimoro, Guanajuato Mexico.</h6>
         </div>
         <div class="ctn-f-user w=100 d-flex justify-content-end" style="height:30%;">
-            <a href="<?= base_url() ?>index.php/admin/"><button class="border border-0" style="background-color:transparent;" ><i
-                    class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button></a>
+            <a href="<?= base_url() ?>index.php/admin/"><button class="border border-0"
+                    style="background-color:transparent;"><i class="bi bi-shield-fill px-2  fs-6"
+                        style="color:white;"></i></button></a>
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script>
-        identificadorVista = 'LA'; 
+    identificadorVista = 'LA';
     </script>
     <script src="<?= base_url() ?>public/js/categorias.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>

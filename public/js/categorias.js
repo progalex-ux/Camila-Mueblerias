@@ -74,6 +74,7 @@ function loadImage() {
       return numero.toLocaleString();
     }
   
+  
     tarjetas.forEach(function (valor, i, array) {
       if (identificadorVista === 'SCA' && valor.identificador === 'SCA') {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
@@ -92,7 +93,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -118,7 +119,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -131,7 +132,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -144,7 +145,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -157,7 +158,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -170,7 +171,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -183,7 +184,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -196,7 +197,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -209,7 +210,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -222,7 +223,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -237,7 +238,7 @@ function loadImage() {
               $("<div class='card-inner'>").append(
                   $("<div class='front'>").append(
                       $("<div class='image d-flex justify-content-center'>").append(
-                          $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+                          $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
                       ),
                       $("<div class='custom-card-content'>").append(
                           $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -264,7 +265,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -290,7 +291,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -303,7 +304,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -317,7 +318,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -330,7 +331,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -343,7 +344,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -356,7 +357,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -369,7 +370,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -382,7 +383,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -395,7 +396,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),
@@ -408,7 +409,7 @@ function loadImage() {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
           $("<div class='card rounded-3 border-0'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
-              $("<img class='object-fit-cover' src='" + base_url + valor.image + "'>")
+              $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),
             $("<div class='custom-card-content'>").append(
               $("<h5 class='custom-card-price'>").text("$" + formatearNumeroConComas(valor.precio)),

@@ -115,13 +115,11 @@ section {
     margin-top: 20px; 
 }
 @media (max-width: 768px) {
+  .container{
+    width: 90%;
+  }
   .image input{
-      font-size: 0; 
-      background-color: #383838; 
-      color: #fff; 
-      padding: 10px 20px; 
-      border: none; 
-      border-radius: 5px; 
-      cursor: pointer; 
+      font-size: 15px; 
+      
   }
 }

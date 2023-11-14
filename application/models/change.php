@@ -52,7 +52,13 @@ class change extends CI_Model {
             }
         }
         
-        
+
+        ////////// buscar
+        public function searchCards($identificador) {
+            $this->db->like('identificador', $identificador);
+            $query = $this->db->get('categorias');
+            return $query->result_array();
+        }
         
         
 }

@@ -10,6 +10,7 @@ class Tarjetas extends CI_Controller{
         $this->load->library('upload');
 		$this->load->helper('url');
         $this->load->model('guardar_mdl');
+        $this->load->model('change');
 	}
 
     public function index(){
@@ -125,7 +126,21 @@ public function getCard($id) {
         echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
     }
 
+    ////////////////////7 search card
+
+    public function searchCards() {
+        $identificador = $this->input->post("identificador");
+        $tarjetas = $this->change->searchCards($identificador);
     
+        $datosEnviar = array();
+        if ($tarjetas) {
+            $datosEnviar["status"] = 'success';
+            $datosEnviar["tarjetas"] = $tarjetas;
+        } else {
+            $datosEnviar["status"] = 'error';
+        }
+        echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
+    }
 
     
 }

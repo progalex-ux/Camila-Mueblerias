@@ -39,12 +39,12 @@ reloadCardCategorias();
     tarjetas.forEach(function (valor, i, array) {
         var cardContainer = $("<div class='container text-center d-flex' style='width:100%'>");
         var col1 = $("<div class='d-flex justify-content-center align-items-center' style='width:5%; height:100px; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").text(valor.id);
-        var col2 = $("<div class='d-flex justify-content-center align-items-center' style='width:25%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").text(valor.titulo);
+        var col2 = $("<div class='text d-flex justify-content-center align-items-center' style='width:25%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").text(valor.titulo);
         var col3 = $("<div class='d-flex justify-content-center align-items-center' style='width:20%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").text("$" + formatearNumeroConComas(valor.precio));
         var col4 = $("<div class='imagen d-flex justify-content-center align-items-center' style='width:35%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").append(
             $("<img src='" + base_url + valor.image + "'>")
         );
-        var col5 = $("<div class='d-flex justify-content-center align-items-center' style='width:20%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").append(
+        var col5 = $("<div class='botones d-flex justify-content-center align-items-center' style='width:20%; border-bottom:1px solid rgba(0, 0, 0, 0.219);'>").append(
             $("<button onclick='deleteCard(" + valor.id + ")' class='btn btn-dark border me-1' data-bs-toggle='tooltip' data-placement='top' data-card-id='" + valor.id + "'><i class='bi bi-x-circle'></i></button>"),
             $("<a href='#formul'><button onclick='editCard(" + valor.id + ")' class='btn btn-dark' data-bs-toggle='tooltip' data-placement='top' title='Editar'><i class='bi bi-pencil-square'></i></button></a>")
         );
@@ -121,4 +121,45 @@ function editCard(id) {
             console.log(error);
         }
     });
+}
+
+$(document).ready(function () {
+    $('#searchInput').keypress(function (e) {
+        if (e.which === 13) { 
+            searchCards();
+        }
+    });
+});
+
+function searchCards() {
+    var identificador = $("#categorySelect").val();
+    if (identificador === 'all') {
+        identificador = '';
+    }
+
+    $.ajax({
+        url: base_url + "index.php/tarjetas/searchCards",
+        dataType: "json",
+        type: "post",
+        data: { identificador: identificador },
+        success: function (datos, estado, jhrx) {
+           
+            if (datos.tarjetas && datos.tarjetas.length > 0) {
+                
+                renderTarjetas(datos.tarjetas);
+            } else {
+               
+                renderNoProductsMessage();
+            }
+        },
+        error: function (jhrx, estado, error) {
+            console.log("Error");
+        },
+    });
+}
+
+
+function renderNoProductsMessage() {
+    $("#tarjetas").empty();
+    $("#tarjetas").append("<div class='d-flex justify-content-center mt-5'><h2>No hay productos</h2></div>");
 }

@@ -46,6 +46,41 @@
     </header>
     <main class="d-flex" style="width:100%; height:100vh;">
         <section>
+            <div class="d-flex justify-content-center">
+                <form  id="searchForm" class="opciones d-flex pt-3 ms-1 me-1" role="search" onsubmit="return false;">
+                    <select id="categorySelect" class="form-select me-2" name="identificador">
+                        <option value="all">Todos</option>
+                        <option value="CE" name="CE" id="CE">Celulares</option>
+                            <option value="TA" name="TA" id="TA">Tablets</option>
+                            <option value="LA" name="LA" id="LA">Laptops</option>
+                            <option value="TE" name="TE" id="TE">Televisiones</option>
+                            <option value="BO" name="BO" id="BO">Bocinas</option>
+                            <option value="MI" name="MI" id="MI">Microondas</option>
+                            <option value="LI" name="LI" id="LI">Licuadoras</option>
+                            <option value="ES" name="ES" id="ES">Estufas</option>
+                            <option value="PA" name="PA" id="PA">Parrillas</option>
+                            <option value="SE" name="SE" id="SE">Secadoras</option>
+                            <option value="LAV" name="LAV" id="LAV">Lavadoras</option>
+                            <option value="COM" name="COM" id="COM">Comedores</option>
+                            <option value="SI" name="SI" id="SI">Sillas</option>
+                            <option value="VI" name="VI" id="VI">Vitrinas</option>
+                            <option value="CO" name="CO" id="CO">Colchones</option>
+                            <option value="CA" name="CA" id="CA">Cabeceras</option>
+                            <option value="BA" name="BA" id="BA">Bases Cama</option>
+                            <option value="BU" name="BU" id="BU">Buros</option>
+                            <option value="RO" name="RO" id="RO">Roperos</option>
+                            <option value="RE" name="RE" id="RE">Recamaras</option>
+                            <option value="SO" name="SO" id="SO">Sofas</option>
+                            <option value="SA" name="SA" id="SA">Salas modular</option>
+                            <option value="SCA" name="SCA" id="SCA">Sofa camas</option>
+
+                    </select>
+                    <button class="btn btn-outline-dark" type="button" onclick="searchCards()">Search</button>
+                </form>
+
+
+            </div>
+
             <div class="column">
                 <div class="container text-center d-flex mt-3" style="width:100%">
                     <div class="d-flex justify-content-center align-items-center"

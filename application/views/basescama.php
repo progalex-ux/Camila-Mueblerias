@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <nav id="sticky-header" class="position-relative d-flex justify-content-around"
-        style="height:87px; background-color:#EE7323;">
+    <nav id="sticky-header" class="d-flex justify-content-around"
+        style=" background-color:#EE7323;">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
@@ -92,7 +92,7 @@
                 </svg>
             </button>
         </div>
-        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; width:55%;">
+        <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; ">
             <a href="<?= base_url() ?>index.php/principal/"><img class="py-1 object-fit-cover" style="height: 100%;"
                     src="<?= base_url() ?>public/img/Logo-white.png" alt=""></a>
         </div>
@@ -176,7 +176,7 @@
     <main class="d-flex justify-content-start aling-middle">
         <aside class="sidebar d-none d-lg-block">
             <div class="sidebar-tittle d-flex ps-2 ">
-            <i class="bi bi-dash-circle fs-6 pt-4"></i>&nbsp<h6 class="pt-4"><a href="<?= base_url() ?>index.php/principal/recamaras" class="text-decoration-underline" style="color:black; text">Recamaras</a>/ <a href="<?= base_url() ?>index.php/secciones/basescama" class="text-decoration-underline" style="color:black;">Bases para Cama</a></h6>
+            <i class="bi bi-dash-circle fs-6 pt-4"></i>&nbsp<h6 class="pt-4"><a href="<?= base_url() ?>index.php/principal/recamaras" class="text-decoration-underline" style="color:black; text">Recamaras</a> / <a href="<?= base_url() ?>index.php/secciones/basescama" class="text-decoration-underline" style="color:black;">Bases para Cama</a></h6>
             </div>
             <div class="categorias-tecno d-flex justify-content-start" style="width:100%; height:15%;">
                 <ul class="d-flex flex-column ">
