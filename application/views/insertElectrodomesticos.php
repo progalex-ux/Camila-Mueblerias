@@ -55,6 +55,7 @@
                             <option value="PA" name="PA" id="PA">Parrillas</option>
                             <option value="SE" name="SE" id="SE">Secadoras</option>
                             <option value="LAV" name="LAV" id="LAV">Lavadoras</option>
+                            <option value="LAV" name="RE" id="RE">Refrigerador</option>
                         </select>
                 </div>
                 <div class="send">

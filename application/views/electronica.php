@@ -54,12 +54,16 @@
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
+                                <span><a class="rounded" href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/parrillas">Parrillas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a></span>
+
+                            </div>
+                            <div class="seccion-2">
+                                <span><a href="<?= base_url() ?>index.php/secciones/refrigerador">Refrigerador</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
@@ -184,7 +188,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sellos d-flex justify-content-center " style="background-color:#F2F3F4;">
+            <div class="sellos " style="background-color:#F2F3F4;">
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Celulares" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/telefonos"><img src="<?= base_url() ?>public/img/electronica/sello-phone.webp" alt=""></div></a>
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tablets" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/tablets"><img src="<?= base_url() ?>public/img/electronica/sello-ipad.webp" alt=""></a></div>
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Laptops" data-bs-custom-class="custom-tooltip-class"><a href="<?= base_url() ?>index.php/secciones/laptop"><img src="<?= base_url() ?>public/img/electronica/sello-laptop.webp" alt=""></a></div>
@@ -201,8 +205,8 @@
                                 src="<?= base_url() ?>public/img/electronica/sello-bocina.png" alt=""></a></div>
                 </div>
             </div>
-            <div class="content-p d-flex justify-content-center" style="width:100%; height:auto; ">
-                <div class="content" style="width:88%; height:auto;">
+            <div class="content d-flex justify-content-center" style="width:100%; height:auto; ">
+                <div class="content d-flex justify-content-center" style="width:88%; height:auto;">
                     <div class="row" style="max-width: 100%;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="card rounded-0">

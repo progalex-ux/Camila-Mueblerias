@@ -44,7 +44,7 @@
             </div>
         </div>
     </header>
-    <main class="d-flex" style="width:100%; height:100vh;">
+    <main class="d-flex" style="width:100%; min-height:100vh;">
         <section>
             <div class="d-flex justify-content-center">
                 <form  id="searchForm" class="opciones d-flex pt-3 ms-1 me-1" role="search" onsubmit="return false;">
@@ -60,6 +60,7 @@
                             <option value="ES" name="ES" id="ES">Estufas</option>
                             <option value="PA" name="PA" id="PA">Parrillas</option>
                             <option value="SE" name="SE" id="SE">Secadoras</option>
+                            <option value="REF" name="REF" id="REF">Refrigerador</option>
                             <option value="LAV" name="LAV" id="LAV">Lavadoras</option>
                             <option value="COM" name="COM" id="COM">Comedores</option>
                             <option value="SI" name="SI" id="SI">Sillas</option>
@@ -75,7 +76,7 @@
                             <option value="SCA" name="SCA" id="SCA">Sofa camas</option>
 
                     </select>
-                    <button class="btn btn-outline-dark" type="button" onclick="searchCards()">Search</button>
+                    <button class="btn btn-outline-dark" type="button" onclick="searchCards()">Buscar</button>
                 </form>
 
 
@@ -140,6 +141,7 @@
             </div>
         </aside>
     </main>
+   
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">

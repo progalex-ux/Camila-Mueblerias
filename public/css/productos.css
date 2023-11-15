@@ -7,7 +7,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 1;
-    height: 87px;
+    height: 94px;
 }
 
 .buton{
@@ -47,11 +47,12 @@ nav{
     background-color: #fff;
     top: 0;
     left: 98%;
-    width: 450px;
-   
+    width: 325px;
     height: 264px;
 }
-
+.seccion-2,.seccion-1,.seccion-3{
+    float: left;
+}
 .subdropdown a {
     display: block;
     padding: 10px 20px;

@@ -54,12 +54,16 @@
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
+                                <span><a class="rounded" href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/parrillas">Parrillas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a></span>
+
+                            </div>
+                            <div class="seccion-2">
+                                <span><a href="<?= base_url() ?>index.php/secciones/refrigerador">Refrigerador</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
@@ -184,7 +188,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sellos d-flex justify-content-center " style="background-color:#F2F3F4;">
+            <div class="sellos " style="background-color:#F2F3F4;">
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Estufas"><a href="<?= base_url() ?>index.php/secciones/estufas"><img src="<?= base_url() ?>public/img/electrodomesticos/estufa.png" alt=""></div></a>
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Microondas"><a href="<?= base_url() ?>index.php/secciones/microondas"><img src="<?= base_url() ?>public/img/electrodomesticos/microondas.png" alt=""></a></div>
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Licuadoras"><a href="<?= base_url() ?>index.php/secciones/licuadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/licuadora.png" alt=""></a></div>
@@ -192,16 +196,16 @@
                 <div class="sello d-none d-md-block ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Secadoras"><a href="<?= base_url() ?>index.php/secciones/secadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/secadora.png" alt=""></a></div>
                 <div class="sello d-none d-md-block ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Lavadoras"><a href="<?= base_url() ?>index.php/secciones/lavadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/lavadora.png" alt=""></a></div>
             </div>
-            <div class="sellos d-md-none d-flex justify-content-center " style="background-color:#F2F3F4;">
+            <div class="sellos d-md-none" style="background-color:#F2F3F4;">
                 <div class="sello d-lg-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/parrillas"><img src="<?= base_url() ?>public/img/electrodomesticos/parrilla.png" alt=""></a></div>
                 <div class="sello d-lg-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/secadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/secadora.png" alt=""></a></div>
                 <div class="sello d-lg-none d-sm-flex ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/lavadoras"><img src="<?= base_url() ?>public/img/electrodomesticos/lavadora.png" alt=""></a></div>
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto; ">
-                <div class="content" style="width:88%; height:auto;">
+                <div class="content d-flex justify-content-center" style="width:88%; height:auto;">
                     <div class="row" style="max-width: 100%;">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/estufas"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/card-estufa.webp" alt=""></a>
@@ -214,7 +218,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/microondas"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/card-microondas.webp"></a>
@@ -227,7 +231,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/licuadoras"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/licuadora.png"></a>
@@ -242,7 +246,7 @@
                         
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/parrillas"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/card-parrilla.webp"></a>
@@ -257,7 +261,7 @@
                         
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                     <a href="<?= base_url() ?>index.php/secciones/secadoras"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/card-secadora.webp"></a>
@@ -270,7 +274,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/lavadoras"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/electrodomesticos/card-lavadora.webp"></a>

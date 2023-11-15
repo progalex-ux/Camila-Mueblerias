@@ -7,20 +7,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Refrigerador | Electrodomesticos | Camila Mueblerias</title>
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/categorias.css">
-    <title>Motos | Camila Mueblerias</title>
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/productos.css">
 </head>
 
 <body>
-<nav id="sticky-nav" class="d-flex justify-content-around">
+<nav id="sticky-header" class="position-relative d-flex justify-content-around"
+        style=" background-color:#EE7323;">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
-                    <button style="background-color: transparent; color:#fff;"class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block" onclick="toggleMenu()">Categorias
-                        <i id="menu-icon"  class="bi bi-chevron-down"></i>
+                    <button style="background-color: transparent; color:#fff;"
+                        class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block"
+                        onclick="toggleMenu()">Categorías
+                        <i id="menu-icon" class="bi bi-chevron-down"></i>
                     </button>
                     <div class="menu-content z-3 position-absolute justify-content-center rounded" id="myDropdown">
 
@@ -28,7 +31,7 @@
                         <div class="subdropdown rounded-end z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
                                 <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases Cama</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases para cama</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/buros">Buros</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/roperos">Roperos</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/cabeceras">Cabeceras</a></span>
@@ -43,12 +46,12 @@
                                 <span><a href="<?= base_url() ?>index.php/secciones/vitrinas">Vitrinas</a></span>
                             </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
+                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Salas</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-salas">
                             <div class="seccion-1">
-                            <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
-                            <span><a href="<?= base_url() ?>index.php/secciones/salamodular">Sala Modular</a></span>
-                            <span><a href="<?= base_url() ?>index.php/secciones/sofas">Sofas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/salamodular">Sala Modular</a></span>
+                                <span><a href="<?= base_url() ?>index.php/secciones/sofas">Sofas</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
@@ -79,13 +82,13 @@
                         <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
 
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        <div class="buton" >
-            <button class="d-lg-none border border-0"  style="background-color:transparent;"type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-                aria-controls="staticBackdrop">
+        <div class="buton">
+            <button class="d-lg-none border border-0" style="background-color:transparent;" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
                     viewBox="0 0 16 16" style="color:white;">
                     <path fill-rule="evenodd"
@@ -94,8 +97,8 @@
             </button>
         </div>
         <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; ">
-            <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"
-                    alt=""></a>
+            <a href="<?= base_url() ?>index.php/principal/"><img class="py-1 object-fit-cover" style="height: 100%;"
+                    src="<?= base_url() ?>public/img/Logo-white.png" alt=""></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
             aria-labelledby="staticBackdropLabel">
@@ -174,76 +177,53 @@
             </div>
         </div>
     </nav>
-    <main class="d-flex justify-content-center ">
-        <section class="">
-            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active c-item" data-bs-interval="5000">
-                        <img src="<?= base_url() ?>public/img/motos/motos-carousel.png"
-                            class="d-block w-100 c-image object-fit-cover" alt="item1">
-                        <div class="carousel-caption d-block">
-                            <h3>Motos</h3>
-
-                        </div>
-                    </div>
+    <main class="d-flex justify-content-start aling-middle">
+        <aside class="sidebar d-none d-lg-block">
+        <div class="sidebar-tittle d-flex ps-2 ">
+            <i class="bi bi-dash-circle fs-6 pt-4"></i>&nbsp<h6 class="pt-4"><a href="<?= base_url() ?>index.php/principal/electrodomesticos" class="text-decoration-underline" style="color:black; text">Electrodomesticos</a> / <a href="<?= base_url() ?>index.php/secciones/refrigerador" class="text-decoration-underline" style="color:black;">Refrigerador</a></h6>
+            </div>
+            <div class="categorias-tecno d-flex justify-content-start" style="width:100%; height:15%;">
+                <ul class="d-flex flex-column ">
+                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a>
+                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a>
+                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a>
+                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/parrillas">Parrillas</a>
+                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a>
+                    <a class="pt-1 ps-1" style="font-size:14px;" href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a>
+                </ul>
+            </div>
+        </aside>
+        <section>
+            <div class="container-fluid">
+                <div class="row" id="tarjetas">
+                    
+                
+                    
+                    
                 </div>
             </div>
-            <div class="sellos " style="background-color:#E5E7E9 ;">
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/"><img src="<?= base_url() ?>public/img/motos/sello-cuatrimoto.png" alt=""></a></div>
-                <div class="sello ms-5 rounded-5"><a href="<?= base_url() ?>index.php/secciones/"><img src="<?= base_url() ?>public/img/motos/sello-motoneta.png"></a></div>
-            </div>
-            <div class="content-p d-flex justify-content-center" style="width:100%; height:auto;">
-                <div class="content d-flex justify-content-center" style="width:88%; height:auto;">
-                    <div class="row" style="max-width: 100%;">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                            <div class="card rounded-0">
-                                <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/sofacama"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/motos/cuatri.jpg" alt=""></a>
-                                </div>
-                                <div class="boton" style="width:100%; height:15%;">
-                                    <a href="<?= base_url() ?>index.php/secciones/sofacama"><button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Cuatrimotos</button></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                            <div class="card rounded-0">
-                                <div class="image" style="width:100%; height:85%;">
-                                <a href="<?= base_url() ?>index.php/secciones/salamodular"><img class="object-fit-contain"
-                                        src="<?= base_url() ?>public/img/motos/portada.webp"></a>
-                                </div>
-                                <div class="boton" style="width:100%; height:15%;">
-                                
-                                   <a href="<?= base_url() ?>index.php/secciones/salamodular"> <button class="btn botun btn-rounded"
-                                        style="width:100%; height:100%;">Motonetas</button></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
-    <footer class="d-block justify-content-center align-middle w=100" style="height: 12vh;  background-color:#FF7216;">
+    <footer class="d-block justify-content-center align-middle w=100" style="height: 10vh;  background-color:#FF7216;">
         <div class="ctn-f-f w=100" style="height:20%;">
         </div>
-        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%" >
+        <div class="ctn-f w=100 d-flex justify-content-center" style="height:20%">
             <h6 class="text-white" style="font-size:11px;">Derechos Reservados &copy;Camila Mueblerias 2023</h6>
         </div>
-        <div class="ctn-f-s w=100 d-flex justify-content-center" style="height:25%;">
+        <div class="ctn-f-s w=100 d-flex justify-content-center" style="height:20%;">
             <h6 class="text-white" style="font-size:11px;">Tarimoro, Guanajuato Mexico.</h6>
         </div>
         <div class="ctn-f-user w=100 d-flex justify-content-end" style="height:30%;">
-            <button class="border border-0" style="background-color:transparent;" onclick=login()><i class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
+            <a href="<?= base_url() ?>index.php/admin/"><button class="border border-0" style="background-color:transparent;" ><i
+                    class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button></a>
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
+    <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+    <script>
+        identificadorVista = 'REF'; 
+    </script>
+    <script src="<?= base_url() ?>public/js/categorias.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
 </body>
 
 </html>

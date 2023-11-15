@@ -54,12 +54,16 @@
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
+                                <span><a class="rounded" href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/parrillas">Parrillas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a></span>
+
+                            </div>
+                            <div class="seccion-2">
+                                <span><a href="<?= base_url() ?>index.php/secciones/refrigerador">Refrigerador</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
@@ -184,14 +188,14 @@
                     </div>
                 </div>
             </div>
-            <div class="sellos d-flex justify-content-center" style="background-color:#E5E7E9 ;">
+            <div class="sellos " style="background-color:#E5E7E9 ;">
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Sofa camas"><a href="<?= base_url() ?>index.php/secciones/sofacama"><img src="<?= base_url() ?>public/img/salas/sofacama1.png"></div></a>
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Salas modulares"><a href="<?= base_url() ?>index.php/secciones/salamodular"><img src="<?= base_url() ?>public/img/salas/salamodu.webp" alt=""></a></div>
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Sofas"><a href="<?= base_url() ?>index.php/secciones/sofas" ><img src="<?= base_url() ?>public/img/salas/sofa.webp"></a></div>
     
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto;">
-                <div class="content" style="width:88%; height:auto;">
+                <div class="content d-flex justify-content-center" style="width:88%; height:auto;">
                     <div class="row" style="max-width: 100%;">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="card rounded-0">

@@ -57,12 +57,16 @@
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
+                                <span><a class="rounded" href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/parrillas">Parrillas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a></span>
+
+                            </div>
+                            <div class="seccion-2">
+                                <span><a href="<?= base_url() ?>index.php/secciones/refrigerador">Refrigerador</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>

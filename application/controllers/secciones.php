@@ -40,6 +40,9 @@ class Secciones extends CI_Controller {
 	public function lavadoras(){
 		$this->load->view('lavadoras');
 	}
+	public function refrigerador(){
+		$this->load->view('refrigerador');
+	}
 //VISTAS ELECTRONICA
 	public function telefonos(){
 		$this->load->view('telefonos');

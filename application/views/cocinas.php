@@ -54,12 +54,16 @@
                         <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
+                                <span><a class="rounded" href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/parrillas">Parrillas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a></span>
+
+                            </div>
+                            <div class="seccion-2">
+                                <span><a href="<?= base_url() ?>index.php/secciones/refrigerador">Refrigerador</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
@@ -184,18 +188,18 @@
                     </div>
                 </div>
             </div>
-            <div class="sellos d-flex justify-content-center" style="background-color:#E5E7E9 ;">
+            <div class="sellos " style="background-color:#E5E7E9 ;">
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Comedores"><a href="<?= base_url() ?>index.php/secciones/comedores"><img src="<?= base_url() ?>public/img/cocinas/sello-comedor.png"></div></a>
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Sillas"><a href="<?= base_url() ?>index.php/secciones/sillas"><img src="<?= base_url() ?>public/img/cocinas/sello-silla.png"></a></div>
                 <div class="sello ms-5 rounded-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Vitrinas"><a href="<?= base_url() ?>index.php/secciones/vitrinas"><img src="<?= base_url() ?>public/img/cocinas/sello-vitrina.png"></a></div>
 
             </div>
             <div class="content-p d-flex justify-content-center" style="width:100%; height:auto;">
-                <div class="content" style="width:88%; height:auto;">
+                <div class="content d-flex justify-content-center" style="width:88%; height:auto;">
                     <div class="row" style="max-width: 100%;">
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/comedores"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/cocinas/comedor-card.webp" alt=""></a>
@@ -208,7 +212,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/sillas"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/cocinas/silla-card.webp"></a>
@@ -225,7 +229,7 @@
 
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="card">
+                            <div class="card rounded-0">
                                 <div class="image" style="width:100%; height:85%;">
                                 <a href="<?= base_url() ?>index.php/secciones/vitrinas"><img class="object-fit-contain"
                                         src="<?= base_url() ?>public/img/cocinas/vitrina-card.webp"></a>

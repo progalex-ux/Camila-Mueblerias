@@ -14,7 +14,7 @@ class Principal extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('home');
+		$this->load->view('index');
 	}
     public function salas()
     {
