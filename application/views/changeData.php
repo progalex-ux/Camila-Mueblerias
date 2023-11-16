@@ -15,7 +15,7 @@
 </head>
 
 <body style="background-color:white;">
-    <header class="d-flex " style="height:60px; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
+    <header class="d-flex " style="height:60px;     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
         <div class="logo" style="width:45%;">
             <div class="mt-2 ms-1"><a
                     class="icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0"

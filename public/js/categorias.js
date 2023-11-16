@@ -26,15 +26,22 @@ function loadImage() {
     var precio = $("#precio").val();
     var image = $("#image").val();
     var identificador = $("#identificador").val();
+
+   
+    if (!titulo || !precio || !image || identificador === "null") {
+      toastr.error('Todos los campos son obligatorios. Por favor, llénelos antes de enviar el formulario o seleccione una categoría.');
+      return;
+  }
+
     var datosTarjeta = new FormData($("#dataTarjeta")[0]);
     var tarjeta = {
-      image: image,
-      titulo: titulo,
-      precio: precio,
-      identificador: identificador,
+        image: image,
+        titulo: titulo,
+        precio: precio,
+        identificador: identificador,
     };
     enviarDatos(datosTarjeta);
-  }
+}
   
   function enviarDatos(jsonTarjeta) {
     $.ajax({
@@ -45,7 +52,7 @@ function loadImage() {
       contentType: false,
       processData: false,
       success: function (datos, estado, jhrx) {
-        alert("Producto insertado correctamente!");
+        toastr.success("Producto insertado correctamente!");
         location.reload();
       },
       error: function (jhrx, estado, error) {},

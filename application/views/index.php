@@ -65,7 +65,8 @@
 
                         <div class="sub subdropdown rounded-end position-absolute " id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
-                                <span><a class="rounded" href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
+                                <span><a class="rounded"
+                                        href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
                                 <span><a href="<?= base_url() ?>index.php/secciones/parrillas">Parrillas</a></span>
@@ -74,7 +75,8 @@
 
                             </div>
                             <div class="seccion-2">
-                                <span><a href="<?= base_url() ?>index.php/secciones/refrigerador">Refrigerador</a></span>
+                                <span><a
+                                        href="<?= base_url() ?>index.php/secciones/refrigerador">Refrigerador</a></span>
                             </div>
                         </div>
                         <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
@@ -233,6 +235,46 @@
                 </button>
             </div>
 
+            <div class="about d-flex flex-column justify-content-center" style="width:100%; background-color: #EFEFEF">
+                <div class="empty" style="height:100px;"></div>
+                <div class="tittle d-flex justify-content-center">
+                    <h3 class="text-center" style="font-size: 1.5em;">Acerca de Camila Mueblerias</h3>
+                </div>
+                <div class="father">
+                    <div class="articles d-flex flex-wrap justify-content-center mt-1">
+                        <article class="text-center mb-4 col-md-4">
+                            <i class="bi bi-clipboard2-check fs-1"></i>
+                            <span>
+                                <p class="fs-5" style="font-weight: bold;">Calidad y Garantia</p>
+                            </span>
+                            <span>
+                                <p>Contamos con productos de excelente calidad</p>
+                            </span>
+                        </article>
+                        <article class="text-center mb-4 col-md-4">
+                            <i class="bi bi-truck fs-1"></i>
+                            <span>
+                                <p class="fs-5" style="font-weight: bold;">Entrega a domicilio</p>
+                            </span>
+                            <span>
+                                <p>Entrega rápida y segura de tus productos</p>
+                            </span>
+                        </article>
+                        <article class="text-center mb-4 col-md-4">
+                            <i class="bi bi-person-check fs-1"></i>
+                            <span>
+                                <p class="fs-5" style="font-weight: bold;">Atención al cliente</p>
+                            </span>
+                            <span>
+                                <p>Brindamos atención personalizada de todos nuestros productos.</p>
+                            </span>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+
             <div class="content d-flex justify-content-center">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
@@ -242,7 +284,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Salas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/salas"><button
-                                        class='btn btn-light border-dark-subtle rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-dark rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -254,7 +296,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Recamaras</h5>
                                 <a href="<?= base_url() ?>index.php/principal/recamaras"><button
-                                        class='btn btn-light border-dark-subtle rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-dark rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -266,7 +308,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Cocinas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/cocinas"><button
-                                        class='btn btn-light border-dark-subtle rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-dark rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -278,7 +320,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electronica</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electronica"><button
-                                        class='btn btn-light border-dark-subtle rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-dark rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -290,7 +332,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electrodomesticos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electrodomesticos"><button
-                                        class='btn btn-light border-dark-subtle rounded-pill'>Ver mas </button></a>
+                                        class='btn btn-light border-dark rounded-pill'>Ver mas </button></a>
                             </div>
                         </div>
                     </div>
@@ -302,7 +344,7 @@
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Motos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/motos"><button
-                                        class='btn btn-light border-dark-subtle rounded-pill'>Ver mas</button></a>
+                                        class='btn btn-light border-dark rounded-pill'>Ver mas</button></a>
                             </div>
                         </div>
                     </div>

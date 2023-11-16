@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
 #sticky-nav{
     height:94px; 
     background-color:#EE7323; 
@@ -109,6 +114,12 @@ section{
     height: 30%;
 }
 
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Invertir los colores de los iconos para que se vean blancos */
+}
 
 @media(max-width: 991px){
     #sticky-nav{

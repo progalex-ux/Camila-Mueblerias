@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<header class="d-flex" style="height:60px; border-bottom:1px solid rgba(0, 0, 0, 0.219);">
+<header class="d-flex" style="height:60px; ">
         <div class="logo" style="width:45%;">
             <div class="mt-2 ms-1"><a class="icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0" href="<?= base_url() ?>index.php/admin/"
                     style="color:black;"><button class="btn btn-light border-0 rounded-pill mt-1 ms-1"><i

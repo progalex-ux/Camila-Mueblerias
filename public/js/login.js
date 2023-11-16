@@ -148,29 +148,26 @@ function loginUser(){
     checkLogin(jsonLogin);
 }
 
-function checkLogin(jsonLogin){
+function checkLogin(jsonLogin) {
   $.ajax({
-    url:base_url+"index.php/admin/login",
-    dataType:"json",
-    type:"post",
-    data:jsonLogin,
-    success:function(datos, estado, jhrx){
-        console.log(datos);
-        
-        if(datos.status=="true"){
-           window.location.href =base_url+"index.php/admin/tarjetas";
+    url: base_url + "index.php/admin/login",
+    dataType: "json",
+    type: "post",
+    data: jsonLogin,
+    success: function (datos, estado, jhrx) {
+      console.log(datos);
 
-           
-        } else {
-            alert('Datos Incorrectos');
-        }
-    
+      if (datos.status == "true") {
+        window.location.href = base_url + "index.php/admin/tarjetas";
+      } else {
+        toastr.success('Usuario o Contraseña Incorrectos');
+      }
     },
-    error:function(jhrx,estado,errorA){
-       console.log(errorA);
+    error: function (jhrx, estado, errorA) {
+      console.log(errorA);
     }
-    
-   })
+  });
 }
+
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
