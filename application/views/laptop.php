@@ -101,6 +101,13 @@
             <a href="<?= base_url() ?>index.php/principal/"><img class="py-1 object-fit-cover" style="height: 100%;"
                     src="<?= base_url() ?>public/img/Logo-white.png" alt=""></a>
         </div>
+        <div class="social-media d-none d-lg-flex " >
+            <a  href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
+                    class="bi bi-facebook px-2  fs-4" style="color:white;"></i></a>
+            <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i class="bi bi-instagram px-2  fs-4 pe-5"
+                    style="color:white;"></i></a>
+        </div>
+        
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
             aria-labelledby="staticBackdropLabel">
             <div class="offcanvas-header">

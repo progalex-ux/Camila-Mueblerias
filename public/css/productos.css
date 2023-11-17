@@ -14,10 +14,10 @@ nav{
     width: 0%;
 }
 .secciones{
-    width: 40%;
+    width: 48%;
 }
 .logo{
-    width: 55%;
+    width: 52%;
 }
 
 .menu-content {
@@ -220,6 +220,11 @@ section img{
     width: 70px;
     background-color:#FC924D;
 }
+.social-media{
+    display: flex;
+    align-items: center;
+}
+
 @media(min-width:1967px){
     .menu-content {
         left: -169%; 

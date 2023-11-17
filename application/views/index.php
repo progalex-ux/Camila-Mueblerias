@@ -16,13 +16,6 @@
 
 <body class="m-0 p-0">
 
-    <header class="100w d-none d-lg-flex justify-content-center align-middle"
-        style="height:30px; background-color:#474545; ">
-        <a href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
-                class="bi bi-facebook px-2  fs-5" style="color:white;"></i></a>
-        <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i class="bi bi-instagram px-2  fs-5"
-                style="color:white;"></i></a>
-    </header>
     <nav id="sticky-nav" class="d-flex justify-content-around">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
@@ -110,6 +103,12 @@
         <div class="logo d-flex justify-content-start " style="height:100%; background-color: transparent; ">
             <a href="<?= base_url() ?>index.php/principal/"><img class="py-1 object-fit-cover" style="height: 100%;"
                     src="<?= base_url() ?>public/img/Logo-white.png" alt=""></a>
+        </div>
+        <div class="social-media d-none d-lg-flex " >
+            <a  href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
+                    class="bi bi-facebook px-2  fs-4" style="color:white;"></i></a>
+            <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i class="bi bi-instagram px-2  fs-4 pe-5"
+                    style="color:white;"></i></a>
         </div>
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
             aria-labelledby="staticBackdropLabel">

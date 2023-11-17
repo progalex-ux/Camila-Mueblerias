@@ -12,10 +12,10 @@
     width: 0%;
 }
 .secciones{
-    width: 40%;
+    width: 48%;
 }
 .logo{
-    width: 55%;
+    width: 52%;
 }
 
 .menu-content {
@@ -162,6 +162,10 @@ section{
 .botun:hover{
     background-color: #f87d2b;
     color: #fff;
+}
+.social-media{
+    display: flex;
+    align-items: center;
 }
 
 @media(max-width: 820px){

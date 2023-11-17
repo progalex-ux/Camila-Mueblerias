@@ -8,13 +8,13 @@
     background-color:#EE7323; 
 }
 .logo{
-    width: 55%;
+    width: 52%;
 }
 .buton{
     width: 0%;
 }
 .secciones{
-    width: 46%;
+    width: 48%;
 }
 
 .menu-content {
@@ -120,16 +120,13 @@ section{
     height: 30%;
 }
 
-
-
-/*
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(100%); /* Invertir los colores de los iconos para que se vean blancos */
 .empty{
     height: 100px;
 }
-
+.social-media{
+    display: flex;
+    align-items: center;
+}
 
 @media(max-width: 991px){
     #sticky-nav{
