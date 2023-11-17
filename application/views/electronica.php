@@ -206,7 +206,7 @@
                 </div>
             </div>
             <div class="content d-flex justify-content-center" style="width:100%; height:auto; ">
-                <div class="content d-flex justify-content-center" style="width:88%; height:auto;">
+                <div class="content " style="width:88%; height:auto;">
                     <div class="row" style="max-width: 100%;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="card rounded-0">

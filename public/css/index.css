@@ -24,6 +24,7 @@
     left:-50%; 
     width: 180px; 
     transition: 0.3s left ease;
+
 }
 
 .menu-content a {
@@ -36,7 +37,7 @@
 
 .menu-content a:hover {
     color:#f87d2b;
-    background-color: #f3f2f2;
+
 }
 .subdropdown {
     display: none;
@@ -45,6 +46,7 @@
     left: 98%;
     width: 325px;
     height: 264px;
+    z-index: 100;
 }
 .seccion-2,.seccion-1,.seccion-3{
     float: left;
@@ -58,7 +60,7 @@
     text-align: left;
 }
 .seccion-1 {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -104,8 +106,12 @@ section{
     height: 350px;
     margin: 15px 5px 20px 5px;
 }
-.card img {
+.image {
     height: 70%;
+    width: 100%;
+}
+.image img{
+    height: 100%;
     width: 100%;
 }
 .custom-card-content {
@@ -116,10 +122,14 @@ section{
 
 
 
+/*
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(100%); /* Invertir los colores de los iconos para que se vean blancos */
+.empty{
+    height: 100px;
 }
+
 
 @media(max-width: 991px){
     #sticky-nav{
@@ -146,7 +156,7 @@ section{
         justify-content: start;
     }
     .buton{
-        width: 50%;
+        width: 60%;
         display: flex;
         
     }
@@ -159,11 +169,18 @@ section{
     footer{
         height: 11vh;
     }
-    
+    .empty{
+        height: 30px;
+    }
 }  
 @media(max-width:767px){
     .c-item{
         height: 30vh;
+    }
+    .buton{
+        width: 50%;
+        display: flex;
+        
     }
 
 }

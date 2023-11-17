@@ -32,7 +32,7 @@
                         onclick="toggleMenu()">Categorias
                         <i id="menu-icon" class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="menu-content z-3 position-absolute justify-content-center rounded" id="myDropdown">
+                    <div class="menu-content z-2 position-absolute justify-content-center rounded" id="myDropdown">
 
                         <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
                         <div class="subdropdown z-3 position-absolute rounded-end" id="subdropdown-recamaras">
@@ -190,7 +190,7 @@
     </nav>
     <main class="d-flex justify-content-center">
         <section class="d-block justify-content-center ">
-            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="hero-carousel" class="carousel slide z-0" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -236,7 +236,7 @@
             </div>
 
             <div class="about d-flex flex-column justify-content-center" style="width:100%; background-color: #EFEFEF">
-                <div class="empty" style="height:100px;"></div>
+                <div class="empty" ></div>
                 <div class="tittle d-flex justify-content-center">
                     <h3 class="text-center" style="font-size: 1.5em;">Acerca de Camila Mueblerias</h3>
                 </div>
@@ -274,13 +274,15 @@
 
             </div>
 
-
             <div class="content d-flex justify-content-center">
+                
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card rounded-3">
-                            <img src="<?= base_url() ?>public/img/salas/portada-s.webp" class="object-fit-contain"
-                                alt="Imagen">
+                            <div class="image">
+                            <a href="<?= base_url() ?>index.php/principal/salas"><img src="<?= base_url() ?>public/img/salas/portada-s.webp" class="object-fit-contain"
+                                alt="Imagen"></a>
+                            </div>
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Salas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/salas"><button
@@ -291,8 +293,8 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card rounded-3">
-                            <img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" class="object-fit-contain"
-                                alt="Imagen">
+                            <div class="image"><a href="<?= base_url() ?>index.php/principal/recamaras"><img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" class="object-fit-contain"
+                                alt="Imagen"></a></div>
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Recamaras</h5>
                                 <a href="<?= base_url() ?>index.php/principal/recamaras"><button
@@ -303,8 +305,8 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card rounded-3">
-                            <img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" class="object-fit-contain"
-                                alt="Imagen">
+                            <div class="image"><a href="<?= base_url() ?>index.php/principal/cocinas"><img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" class="object-fit-contain"
+                                alt="Imagen"></a></div>
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Cocinas</h5>
                                 <a href="<?= base_url() ?>index.php/principal/cocinas"><button
@@ -315,8 +317,8 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card rounded-3">
-                            <img src="<?= base_url() ?>public/img/electronica/portada.webp" class="object-fit-contain"
-                                alt="Imagen">
+                            <div class="image"><a href="<?= base_url() ?>index.php/principal/electronica"><img src="<?= base_url() ?>public/img/electronica/portada.webp" class="object-fit-contain"
+                                alt="Imagen"></a></div>
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electronica</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electronica"><button
@@ -327,8 +329,8 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card rounded-3">
-                            <img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp"
-                                class="object-fit-contain" alt="Imagen">
+                            <div class="image"><a href="<?= base_url() ?>index.php/principal/electrodomesticos"><img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp"
+                                class="object-fit-contain" alt="Imagen"></a></div>
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Electrodomesticos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/electrodomesticos"><button
@@ -339,8 +341,8 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card rounded-3">
-                            <img src="<?= base_url() ?>public/img/motos/portada.webp" class="object-fit-contain"
-                                alt="Imagen">
+                            <div class="image"><a href="<?= base_url() ?>index.php/principal/motos"><img src="<?= base_url() ?>public/img/motos/portada.webp" class="object-fit-contain"
+                                alt="Imagen"></a></div>
                             <div class="custom-card-content">
                                 <h5 class="custom-card-title">Motos</h5>
                                 <a href="<?= base_url() ?>index.php/principal/motos"><button
@@ -368,8 +370,10 @@
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
 
-    <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
+
     <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
