@@ -21,7 +21,7 @@
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
                     <button style="background-color: transparent; color:#fff;"
-                        class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block"
+                        class="menu-button mt-5 pe-4 border border-0 d-none d-lg-block"
                         onclick="toggleMenu()">Categorias
                         <i id="menu-icon" class="bi bi-chevron-down"></i>
                     </button>
@@ -105,6 +105,7 @@
                     src="<?= base_url() ?>public/img/Logo-white.png" alt=""></a>
         </div>
         <div class="social-media d-none d-lg-flex " >
+
             <a  href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
                     class="bi bi-facebook px-2  fs-4" style="color:white;"></i></a>
             <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i class="bi bi-instagram px-2  fs-4 pe-5"
@@ -234,7 +235,7 @@
                 </button>
             </div>
 
-            <div class="about d-flex flex-column justify-content-center" style="width:100%; background-color: #EFEFEF">
+            <div id="about" class="about d-flex flex-column justify-content-center" style="width:100%; background-color: #EFEFEF">
                 <div class="empty" ></div>
                 <div class="tittle d-flex justify-content-center">
                     <h3 class="text-center" style="font-size: 1.5em;">Acerca de Camila Mueblerias</h3>

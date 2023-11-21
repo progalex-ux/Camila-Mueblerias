@@ -20,7 +20,7 @@
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block">
                     <button style="background-color: transparent; color:#fff;"
-                        class="menu-button pt-5 pe-4 border border-0 d-none d-lg-block"
+                        class="menu-button mt-5 pe-4 border border-0 d-none d-lg-block"
                         onclick="toggleMenu()">Categorias
                         <i id="menu-icon" class="bi bi-chevron-down"></i>
                     </button>

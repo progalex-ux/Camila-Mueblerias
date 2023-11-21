@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-11-2023 a las 17:57:25
+-- Tiempo de generación: 21-11-2023 a las 18:14:23
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -64,7 +64,11 @@ INSERT INTO `categorias` (`id`, `image`, `precio`, `titulo`, `identificador`, `e
 (31, 'public/img/productos/redmi10c.png', '2990', 'Xiaomi Redmi 10C Dual SIM 128 GB gris grafito 4 GB RAM', 'CE', ''),
 (32, 'public/img/productos/hisensev40s.webp', '2990', 'Celular Hisense V40s 64 Gb 4 Ram Negro', 'CE', ''),
 (33, 'public/img/productos/hisensev40i.webp', '2990', 'Hisense V40i 64 GB dorado 3 GB RAM', 'CE', ''),
-(34, 'public/img/productos/samusng01core.jpg', '1499', 'Samsung Galaxy A01 Core (16 GB, 1 GB RAM) 5.3 pulgadas, batería de 3000 mAh', 'CE', '');
+(34, 'public/img/productos/samusng01core.jpg', '1499', 'Samsung Galaxy A01 Core (16 GB, 1 GB RAM) 5.3 pulgadas, batería de 3000 mAh', 'CE', ''),
+(35, 'public/img/productos/pocom5s.webp', '2899', 'Xiaomi Pocophone Poco M5s Dual Sim 256 Gb Azul 8 Gb Ram', 'CE', ''),
+(36, 'public/img/productos/iphone 11.webp', '6999', 'Apple iPhone 11 (64 GB) - Blanco 4.3 Calificación 4.5 de 5 (342)', 'CE', ''),
+(37, 'public/img/productos/iphonexr.webp', '5499', 'Apple iPhone XR 64 GB - Negro', 'CE', ''),
+(38, 'public/img/productos/iphonexr128.webp', '9199', 'Apple iPhone XR 128 GB - Azul', 'CE', '');
 
 -- --------------------------------------------------------
 
@@ -109,7 +113,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
