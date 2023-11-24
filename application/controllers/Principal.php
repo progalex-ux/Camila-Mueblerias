@@ -16,29 +16,13 @@ class Principal extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
-    public function salas()
+	public function categorias()
     {
-        $this->load->view('salas');
+        $this->load->view('categorias');
     }
-	public function recamaras()
+	public function productos()
 	{
-		$this->load->view('recamaras');
-	}
-	public function cocinas()
-	{
-		$this->load->view('cocinas');
-	}
-	public function electrodomesticos()
-	{
-		$this->load->view('electrodomesticos');
-	}
-	public function electronica()
-	{
-		$this->load->view('electronica');
-	}
-	public function motos()
-	{
-		$this->load->view('motos');
+		$this->load->view('productos');
 	}
 	public function login()
 	{

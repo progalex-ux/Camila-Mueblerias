@@ -1,35 +1,26 @@
 *{
     margin: 0;
     padding: 0;
-
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#sticky-nav{
+nav{ 
+    width: 100%;
     height:94px; 
     background-color:#EE7323; 
 }
-.logo{
-    width: 52%;
-}
-.buton{
-    width: 0%;
-}
-.secciones{
-    width: 48%;
-}
-
 .menu-content {
     display: none;
+    position: absolute;
     background-color: #fff;
     top: 100%;
-    left:-50%; 
+    z-index: 100;
+    left: -50%; 
     width: 180px; 
     transition: 0.3s left ease;
-
 }
 
 .menu-content a {
     display: block;
-    justify-content: center;
     padding: 10px 20px;
     text-decoration: none;
     color: #000;
@@ -37,7 +28,7 @@
 
 .menu-content a:hover {
     color:#f87d2b;
-
+    background-color: #f3f2f2;
 }
 .subdropdown {
     display: none;
@@ -46,7 +37,6 @@
     left: 98%;
     width: 325px;
     height: 264px;
-    z-index: 100;
 }
 .seccion-2,.seccion-1,.seccion-3{
     float: left;
@@ -60,15 +50,21 @@
     text-align: left;
 }
 .seccion-1 {
-    width: 40%;
+    width: 25%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; 
 }
+
 .subdropdown a:hover {
     border:none;
     border-left: 3px solid white;
     color: #f87d2b;
 }
+section img{
+    width: 100%;
+}
+
 .linked{
     color:grey;
 }
@@ -82,15 +78,17 @@ main{
     background-color: #fff;
 }
 section{
-    height: 100%;
+    height: 70%;
     width: 100%;
 }
+
 .c-item{
-    height: 480px;
+    height: 500px;
 }
 .c-image{
+    width: 100%;
     height: 100%;
-    filter: brightness(0.4);
+    filter: brightness(0.5);
 }
 .redes{
     display: flex;
@@ -99,16 +97,23 @@ section{
 .redes i{
     color: dodgerblue;
 }
-.row{
-    max-width: 100%;    
-}
 .card {
-    height: 350px;
+    height: 270px;
     margin: 15px 5px 20px 5px;
+    transition: transform 0.2s;
 }
-.image {
-    height: 70%;
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+  }   
+.card img {
+    height: 60%;
     width: 100%;
+    object-fit:cover;
+}
+.image{
+    width: 100%;
+    height: 60%;
 }
 .image img{
     height: 100%;
@@ -117,51 +122,62 @@ section{
 .custom-card-content {
     padding: 15px;
     display: block;
-    height: 30%;
+    height: 40%;
 }
 
-.empty{
-    height: 100px;
+.sellos{
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sellosd{
+    width: 100%;
+    height: 120px;
+    align-items: center;
+}
+
+.sello{
+    display: flex;
+    height: 70px;
+    width: 70px;
+    background-color:#FC924D;
+    justify-content: center;
+}
+.botun{
+    color: #fff;
+    background-color:#DC7633;
+}
+.botun:hover{
+    background-color: #f87d2b;
+    color: #fff;
 }
 .social-media{
     display: flex;
     align-items: center;
 }
 
-@media(max-width: 991px){
+@media(max-width: 820px){
     #sticky-nav{
         position: sticky;
         top: 0;
-        z-index: 100;
- 
     }
     .c-item{
         height: 30vh;
     }
 
-    .logo{
-        width: 68%;
-        display: flex;
-        justify-content: start;
-    }
-    .buton{
-        width: 32%;
-        display: flex;
-        
-    }
-    
-    .secciones{
-        display: none;
-        width: 0%;
-        height: 0%;
-    }
     footer{
         height: 11vh;
     }
-    .empty{
-        height: 30px;
-    }
+    
 }  
+@media(max-width:767px){
+    .c-item{
+        height: 30vh;
+    }
+
+}
 @media(max-width:574px){
     #hero-carousel{
         border-radius: 7px;

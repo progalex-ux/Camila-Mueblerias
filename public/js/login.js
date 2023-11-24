@@ -1,4 +1,4 @@
-const base_url="http://localhost/CamilaMueblerias/";
+const base_url="http://localhost/CamilaMueblerias/"; // 192.168.1.69
 function toggleMenu() {
   var dropdown = document.getElementById("myDropdown");
   
@@ -160,7 +160,7 @@ function checkLogin(jsonLogin) {
       if (datos.status == "true") {
         window.location.href = base_url + "index.php/admin/tarjetas";
       } else {
-        toastr.success('Usuario o Contraseña Incorrectos');
+        toastr.error('Usuario o Contraseña Incorrectos');
       }
     },
     error: function (jhrx, estado, errorA) {

@@ -48,22 +48,17 @@ section{
   margin: 15px 5px 20px 5px;
   transition: transform 0.2s;
 }
-.card img {
+.image {
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
   height: 70%;
   width: 100%;
   object-fit: contain;
 }
-.custom-card-button{
-  margin-top: 2px;
-  color: black;
-  border-radius: 12px;
-  background-color: white;
-  border-color: white;
-  width: 150px;
-  height: 35px;
-  margin-bottom: 2px;
+.image img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .custom-card-content {
   padding: 15px;

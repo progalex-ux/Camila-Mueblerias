@@ -17,11 +17,10 @@
 <body style="background-color:white;">
     <header class="d-flex " style="height:60px;     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
         <div class="logo" style="width:45%;">
-            <div class="mt-2 ms-1"><a
-                    class="icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0"
+            <div class="mt-2 ms-1"><a class="icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0"
                     href="<?= base_url() ?>index.php/admin/" style="color:black;"><button
-                        class="btn btn-light border-0 rounded-pill mt-1 ms-1"><i class="bi bi-arrow-left"
-                            style="color:black;"></i> Cerrar sesión</button></a></div>
+                        class="btn btn-light border-0 rounded-pill mt-1 ms-1"  style="background-color:transparent;"><i class="bi bi-box-arrow-left fs-4"
+                            style="color:black;"></i></button></a></div>
 
         </div>
         <div class="titulo d-flex justify-content-between" style="width:55%;">
@@ -31,7 +30,7 @@
             <div>
                 <a class="link-offset-2 link-underline link-underline-opacity-0"
                     href="<?= base_url() ?>index.php/admin/tarjetas">
-                    <button class="btn btn-light custom-tooltip" data-bs-toggle="tooltip" data-placement="bottom"
+                    <button  style="background-color:transparent;" class="btn btn-light border-0 custom-tooltip" data-bs-toggle="tooltip" data-placement="bottom"
                         title="Agregar contenido" data-bs-custom-class="custom-tooltip">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-plus-circle" viewBox="0 0 16 16">

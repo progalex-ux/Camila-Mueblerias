@@ -3,18 +3,16 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/index.css">
-    <title>Camila Mueblerias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/product/productos.css">
+    <title id="titulo"></title>
 </head>
-
-<body class="m-0 p-0">
+<body>
     <nav id="sticky-nav" class="position-absolute w-100 d-flex justify-content-around z-3">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
@@ -157,166 +155,20 @@
             </div>
         </div>
     </nav> 
-    <main class="d-flex justify-content-center">
-        <section class="d-block justify-content-center ">
-            <div id="hero-carousel" class="carousel slide z-0" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active c-item" data-bs-interval="5000">
-                        <img src="<?= base_url() ?>public/img/recamaras/portada.webp"
-                            class="d-block w-100 c-image object-fit-cover" alt="item1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Ofreciendo amor a los tuyos</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item c-item" data-bs-interval="3000">
-                        <img src="<?= base_url() ?>public/img/salas/portada.webp"
-                            class="d-block w-100 c-image object-fit-cover" alt="item2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Crea un hogar que refleje tu personalidad</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item c-item">
-                        <img src="<?= base_url() ?>public/img/cocinas/portada.webp"
-                            class="d-block w-100 c-image object-fit-cover" alt="item3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Transforma tu espacio, transforma tu vida</h5>
-                        </div>
-                    </div>
+    <main class="d-flex justify-content-center" style="min-height:100vh;">
+        <aside class="z-1" style="width: 20%; height: 100vh;">
 
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <div id="about" class="about d-flex flex-column justify-content-center" style="width:100%; background-color: #EFEFEF">
-                <div class="empty" ></div>
-                <div class="tittle d-flex justify-content-center">
-                    <h3 class="text-center" style="font-size: 1.5em;">Acerca de Camila Mueblerias</h3>
-                </div>
-                <div class="father">
-                    <div class="articles d-flex flex-wrap justify-content-center mt-1">
-                        <article class="text-center mb-4 col-md-4">
-                            <i class="bi bi-clipboard2-check fs-1"></i>
-                            <span>
-                                <p class="fs-5" style="font-weight: bold;">Calidad y Garantia</p>
-                            </span>
-                            <span>
-                                <p>Contamos con productos de excelente calidad</p>
-                            </span>
-                        </article>
-                        <article class="text-center mb-4 col-md-4">
-                            <i class="bi bi-truck fs-1"></i>
-                            <span>
-                                <p class="fs-5" style="font-weight: bold;">Entrega a domicilio</p>
-                            </span>
-                            <span>
-                                <p>Entrega rápida y segura de tus productos</p>
-                            </span>
-                        </article>
-                        <article class="text-center mb-4 col-md-4">
-                            <i class="bi bi-person-check fs-1"></i>
-                            <span>
-                                <p class="fs-5" style="font-weight: bold;">Atención al cliente</p>
-                            </span>
-                            <span>
-                                <p>Brindamos atención personalizada de todos nuestros productos.</p>
-                            </span>
-                        </article>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="content d-flex justify-content-center">
-                
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image">
-                            <a href="<?= base_url() ?>index.php/principal/salas"><img src="<?= base_url() ?>public/img/salas/portada-s.webp" class="object-fit-contain"
-                                alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Salas</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('salas');">Ver mas </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/recamaras"><img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" class="object-fit-contain"
-                                alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Recamaras</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('recamaras');">Ver mas </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/cocinas"><img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" class="object-fit-contain"
-                                alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Cocinas</h5>
-                               <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('cocinas');">Ver mas </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/electronica"><img src="<?= base_url() ?>public/img/electronica/portada.webp" class="object-fit-contain"
-                                alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Electronica</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('electronica');">Ver mas </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/electrodomesticos"><img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp"
-                                class="object-fit-contain" alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Electrodomesticos</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('electrodomesticos');">Ver mas </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/motos"><img src="<?= base_url() ?>public/img/motos/portada.webp" class="object-fit-contain"
-                                alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Motos</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('motos');">Ver mas</button>
-                            </div>
-                        </div>
-                    </div>
+        </aside>       
+        <section style="width: 80%; "> 
+            <div class="container-fluid">
+                <div class="row" id="tarjetas" style="max-width: 100%;">
+                    
+                    
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="d-block justify-content-center align-middle w=100" style="height: 12vh;  background-color:#FF7216;">
         <div class="ctn-f-f w=100" style="height:20%;">
         </div>
@@ -333,10 +185,8 @@
         <div class="ctn-f-free w=100" style="height:3%;"></div>
     </footer>
 
-    <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
-    <script src="<?= base_url() ?>public/js/Reload/send.js"></script>
-    <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    
+<script src="<?= base_url() ?>public/jquery/jquery.js"></script>
+<script src="<?= base_url() ?>public/js/categorias.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-
 </html>
