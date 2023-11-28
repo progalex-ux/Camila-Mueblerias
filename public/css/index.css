@@ -3,7 +3,8 @@
     padding: 0;
 
 }
-#sticky-nav{
+nav{
+    position: absolute;
     height:94px; 
     background-color:#EE7323; 
 }
@@ -78,8 +79,10 @@
 }
 main{
     width: 100%;
-    min-height:100vh;
+    min-height: 100vh;
     background-color: #fff;
+    position: relative;
+    top: 94px; 
 }
 section{
     height: 100%;
@@ -103,22 +106,9 @@ section{
     max-width: 100%;    
 }
 .card {
-    height: 350px;
     margin: 15px 5px 20px 5px;
 }
-.image {
-    height: 70%;
-    width: 100%;
-}
-.image img{
-    height: 100%;
-    width: 100%;
-}
-.custom-card-content {
-    padding: 15px;
-    display: block;
-    height: 30%;
-}
+
 
 .empty{
     height: 100px;
@@ -127,35 +117,40 @@ section{
     display: flex;
     align-items: center;
 }
+.custom-card {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+  }
+
+
+  .custom-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .custom-card .overlay-button {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 @media(max-width: 991px){
-    #sticky-nav{
+    nav{
         position: sticky;
         top: 0;
         z-index: 100;
  
     }
+    main{
+        top:0;
+    }
     .c-item{
         height: 30vh;
     }
-
-    .logo{
-        width: 68%;
-        display: flex;
-        justify-content: start;
-    }
-    .buton{
-        width: 32%;
-        display: flex;
-        
-    }
-    
-    .secciones{
-        display: none;
-        width: 0%;
-        height: 0%;
-    }
-    footer{
+      footer{
         height: 11vh;
     }
     .empty{
@@ -163,14 +158,7 @@ section{
     }
 }  
 @media(max-width:574px){
-    #hero-carousel{
-        border-radius: 7px;
-    }
     .c-item{
-        height: 15vh;
-        border-radius: 8px;
+        height: 15vh;   
     }
-   .c-image{
-        border-radius: 8px;
-   }
 }

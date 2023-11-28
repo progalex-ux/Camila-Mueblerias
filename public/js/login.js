@@ -1,4 +1,4 @@
-const base_url="http://localhost/CamilaMueblerias/"; // 192.168.1.69
+const base_url="http://localhost/CamilaMueblerias/"; 
 function toggleMenu() {
   var dropdown = document.getElementById("myDropdown");
   

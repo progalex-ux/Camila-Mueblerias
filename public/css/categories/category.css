@@ -4,6 +4,7 @@
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 nav{ 
+    position: absolute;
     width: 100%;
     height:94px; 
     background-color:#EE7323; 
@@ -74,16 +75,18 @@ section img{
 }
 main{
     width: 100%;
-    min-height:100vh;
+    min-height: 100vh;
     background-color: #fff;
+    position: relative;
+    top: 94px; 
 }
 section{
-    height: 70%;
+    height: 100%;
     width: 100%;
 }
 
 .c-item{
-    height: 500px;
+    height: 350px;
 }
 .c-image{
     width: 100%;
@@ -162,6 +165,10 @@ section{
     #sticky-nav{
         position: sticky;
         top: 0;
+
+    }
+    main{
+        top:0;
     }
     .c-item{
         height: 30vh;
@@ -179,14 +186,8 @@ section{
 
 }
 @media(max-width:574px){
-    #hero-carousel{
-        border-radius: 7px;
-    }
     .c-item{
         height: 15vh;
-        border-radius: 8px;
-    }
-   .c-image{
-        border-radius: 8px;
-   }
+        
+    } 
 }

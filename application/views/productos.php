@@ -13,7 +13,7 @@
     <title id="titulo"></title>
 </head>
 <body>
-    <nav id="sticky-nav" class="position-absolute w-100 d-flex justify-content-around z-3">
+<nav id="sticky-nav" class="w-100 d-flex justify-content-around z-3">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block position-absolute top-0 start-0 ms-5">
@@ -85,7 +85,7 @@
                 </svg>
             </button>
         </div>
-        <div class="logo position-absolute top-50 start-50 translate-middle d-flex justify-content-center" style="height:100%; background-color: transparent; ">
+        <div class="logo position-absolute top-50 start-50 translate-middle d-flex justify-content-center" style="height:94px; background-color: transparent; ">
             <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"></a>
         </div>
         <div class="social-media d-none d-lg-flex position-absolute top-50 end-0" >
@@ -156,7 +156,7 @@
         </div>
     </nav> 
     <main class="d-flex justify-content-center" style="min-height:100vh;">
-        <aside class="z-1" style="width: 20%; height: 100vh;">
+        <aside class="z-1 d-none d-lg-block" style="width: 20%; height: 100vh;">
 
         </aside>       
         <section style="width: 80%; "> 
@@ -187,6 +187,7 @@
 
 <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
 <script src="<?= base_url() ?>public/js/categorias.js"></script>
+<script src="<?= base_url() ?>public/js/menu.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

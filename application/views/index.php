@@ -15,7 +15,7 @@
 </head>
 
 <body class="m-0 p-0">
-    <nav id="sticky-nav" class="position-absolute w-100 d-flex justify-content-around z-3">
+    <nav id="sticky-nav" class="w-100 d-flex justify-content-around z-3">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block position-absolute top-0 start-0 ms-5">
@@ -87,7 +87,7 @@
                 </svg>
             </button>
         </div>
-        <div class="logo position-absolute top-50 start-50 translate-middle d-flex justify-content-center" style="height:100%; background-color: transparent; ">
+        <div class="logo position-absolute top-50 start-50 translate-middle d-flex justify-content-center" style="height:94px; background-color: transparent; ">
             <a href="<?= base_url() ?>index.php/principal/"><img  class="py-1 object-fit-cover" style="height: 100%;" src="<?= base_url() ?>public/img/Logo-white.png"></a>
         </div>
         <div class="social-media d-none d-lg-flex position-absolute top-50 end-0" >
@@ -247,72 +247,59 @@
                 
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image">
-                            <a href="<?= base_url() ?>index.php/principal/salas"><img src="<?= base_url() ?>public/img/salas/portada-s.webp" class="object-fit-contain"
-                                alt="Imagen"></a>
-                            </div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Salas</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('salas');">Ver mas </button>
+                        <div class="card custom-card">
+                            <img src="<?= base_url() ?>public/img/salas/salas.jpg"  alt="Imagen de fondo" class="card-img">
+                            <div class="card-img-overlay">
+                                <button class="btn btn-light border-0 rounded-3 overlay-button">Salas</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/recamaras"><img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" class="object-fit-contain"
-                                alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Recamaras</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('recamaras');">Ver mas </button>
+                        <div class="card custom-card">
+                            <img src="<?= base_url() ?>public/img/recamaras/recamara.jpg"  alt="Imagen de fondo" class="card-img">
+                            <div class="card-img-overlay">
+                                <button class="btn btn-light border-0 rounded-3 overlay-button">Recamaras</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/cocinas"><img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" class="object-fit-contain"
-                                alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Cocinas</h5>
-                               <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('cocinas');">Ver mas </button>
+                        <div class="card custom-card">
+                            <img src="<?= base_url() ?>public/img/cocinas/cocina.jpg"  alt="Imagen de fondo" class="card-img">
+                            <div class="card-img-overlay">
+                                <button class="btn btn-light border-0 rounded-3 overlay-button">Cocinas</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/electronica"><img src="<?= base_url() ?>public/img/electronica/portada.webp" class="object-fit-contain"
-                                alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Electronica</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('electronica');">Ver mas </button>
+                        <div class="card custom-card">
+                            <img src="<?= base_url() ?>public/img/electrodomesticos/electrodomesticos.jpg"  alt="Imagen de fondo" class="card-img">
+                            <div class="card-img-overlay">
+                                <button class="btn btn-light border-0 rounded-3 overlay-button">Electrodomesticos</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/electrodomesticos"><img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp"
-                                class="object-fit-contain" alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Electrodomesticos</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('electrodomesticos');">Ver mas </button>
+                        <div class="card custom-card">
+                            <img src="<?= base_url() ?>public/img/electronica/electronica.jpg"  alt="Imagen de fondo" class="card-img">
+                            <div class="card-img-overlay">
+                                <button class="btn btn-light border-0 rounded-3 overlay-button">Electronica</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card rounded-3">
-                            <div class="image"><a href="<?= base_url() ?>index.php/principal/motos"><img src="<?= base_url() ?>public/img/motos/portada.webp" class="object-fit-contain"
-                                alt="Imagen"></a></div>
-                            <div class="custom-card-content">
-                                <h5 class="custom-card-title">Motos</h5>
-                                <button class='btn btn-light border-dark rounded-pill' onclick="showCategory('motos');">Ver mas</button>
+                        <div class="card custom-card">
+                            <img src="<?= base_url() ?>public/img/motos/moto.jpg"  alt="Imagen de fondo" class="card-img">
+                            <div class="card-img-overlay">
+                                <button class="btn btn-light border-0 rounded-3 overlay-button">Motos</button>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -335,6 +322,7 @@
 
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="<?= base_url() ?>public/js/Reload/send.js"></script>
+    <script src="<?= base_url() ?>public/js/menu.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     
 </body>
