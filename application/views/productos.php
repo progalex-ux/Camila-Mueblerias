@@ -13,7 +13,7 @@
     <title id="titulo"></title>
 </head>
 <body>
-<nav id="sticky-nav" class="w-100 d-flex justify-content-around z-3">
+    <nav id="sticky-nav" class="w-100 d-flex justify-content-around z-3">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block position-absolute top-0 start-0 ms-5">
@@ -105,32 +105,32 @@
 
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/recamaras" class="nav-link linked">Recamaras</a>
+                                <a href="#" onclick="showCategory('recamaras');" class="nav-link linked">Recamaras</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/cocinas" class="nav-link linked">Cocinas</a>
+                                <a href="#" onclick="showCategory('cocinas');" class="nav-link linked">Cocinas</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/salas" class="nav-link linked">Salas</a>
+                                <a href="#" onclick="showCategory('salas');" class="nav-link linked">Salas</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/electrodomesticos" class="nav-link linked">Electrodomesticos</a>
+                                <a href="#" onclick="showCategory('electrodomesticos');" class="nav-link linked">Electrodomesticos</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/electronica" class="nav-link linked">Electronica</a>
+                                <a href="#" onclick="showCategory('electronica');" class="nav-link linked">Electronica</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/motos" class="nav-link linked">Motos</a>
+                                <a href="#" onclick="showCategory('motos');" class="nav-link linked">Motos</a>
                             </li>
                         </ul>
                     </li>
@@ -155,7 +155,7 @@
             </div>
         </div>
     </nav>  
-    <main class="d-flex justify-content-center" style="min-height:100vh;">
+    <main class="d-flex w-100" style="min-height:100vh;">
         <aside class="z-1 d-none d-lg-block" style="width: 20%; height: 100vh; border-right: 1px solid rgba(0, 0, 0, 0.13);">
             <div class="sidebar-tittle d-flex ps-2 breadcrumb" style="border-bottom: 1px solid rgba(0, 0, 0, 0.13);">
                 <i class="bi bi-dash-circle fs-6 pt-4"></i>&nbsp<h6 class="pt-4"><a href="<?= base_url() ?>index.php/principal/electronica" class="breadcrumb-item" style="color:black; text" id="category"></a> / <a href="<?= base_url() ?>index.php/secciones/bocinas" class="link-offset-2 link-underline link-underline-opacity-0 " style="color:black; font-size:13px" id="product"></a></h6>
@@ -166,7 +166,7 @@
                     </ul>
                 </div>
         </aside>       
-        <section style="width: 80%; "> 
+        <section > 
             <div class="container-fluid">
                 <div class="row" id="tarjetas" style="max-width: 100%;">
                     

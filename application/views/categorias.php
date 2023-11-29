@@ -13,7 +13,7 @@
     <title id="titulo"></title>
 </head>
 <body>
-<nav id="sticky-nav" class="w-100 d-flex justify-content-around z-3">
+    <nav id="sticky-nav" class="w-100 d-flex justify-content-around z-3">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block position-absolute top-0 start-0 ms-5">
@@ -105,32 +105,32 @@
 
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/recamaras" class="nav-link linked">Recamaras</a>
+                                <a href="#" onclick="showCategory('recamaras');" class="nav-link linked">Recamaras</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/cocinas" class="nav-link linked">Cocinas</a>
+                                <a href="#" onclick="showCategory('cocinas');" class="nav-link linked">Cocinas</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/salas" class="nav-link linked">Salas</a>
+                                <a href="#" onclick="showCategory('salas');" class="nav-link linked">Salas</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/electrodomesticos" class="nav-link linked">Electrodomesticos</a>
+                                <a href="#" onclick="showCategory('electrodomesticos');" class="nav-link linked">Electrodomesticos</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/electronica" class="nav-link linked">Electronica</a>
+                                <a href="#" onclick="showCategory('electronica');" class="nav-link linked">Electronica</a>
                             </li>
                         </ul>
                         <ul class="nav collapse flex-column" id="sidemenu" data-base-parent="#menuLateral">
                             <li class="nav-item">
-                                <a href="<?= base_url() ?>index.php/principal/motos" class="nav-link linked">Motos</a>
+                                <a href="#" onclick="showCategory('motos');" class="nav-link linked">Motos</a>
                             </li>
                         </ul>
                     </li>
@@ -154,7 +154,7 @@
                 </div>
             </div>
         </div>
-    </nav> 
+    </nav>
     <main class="d-flex justify-content-center" id="mainget">
 
     </main>
