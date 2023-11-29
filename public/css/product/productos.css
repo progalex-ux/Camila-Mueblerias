@@ -32,7 +32,6 @@ aside{
 
 .menu-content a:hover {
     color:#f87d2b;
-    background-color: #f3f2f2;
 }
 .subdropdown {
     display: none;
@@ -81,7 +80,7 @@ main{
     min-height: 100vh;
     background-color: #fff;
     position: relative;
-    top: 94px; 
+    padding-top: 94px; 
 }
 section{
     height: 70%;

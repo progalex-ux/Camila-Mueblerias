@@ -13,7 +13,7 @@
     <title id="titulo"></title>
 </head>
 <body>
-    <nav id="sticky-nav" class="w-100 d-flex justify-content-around z-3">
+<nav id="sticky-nav" class="w-100 d-flex justify-content-around z-3">
         <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
             <div class="categorias" style="width:44%;">
                 <div class="menu position-relative d-inline-block position-absolute top-0 start-0 ms-5">
@@ -21,59 +21,59 @@
                         <i id="menu-icon"  class="bi bi-chevron-down"></i>
                     </button>
                     <div class="menu-content z-3 position-absolute justify-content-center rounded" id="myDropdown">
-                        <a href="<?= base_url() ?>index.php/principal/recamaras">Recamaras</a>
+                        <a href="#" onclick="showCategory('recamaras');">Recamaras</a>
                         <div class="subdropdown rounded-end z-3 position-absolute" id="subdropdown-recamaras">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/colchones">Colchones</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/basescama">Bases Cama</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/buros">Buros</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/roperos">Roperos</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/cabeceras">Cabeceras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/recamarasS">Recamaras</a></span>
+                                <span><a href="#" onclick="separador('CO')">Colchones</a></span>
+                                <span><a href="#" onclick="separador('BA')">Bases Cama</a></span>
+                                <span><a href="#" onclick="separador('BU')">Buros</a></span>
+                                <span><a href="#" onclick="separador('RO')">Roperos</a></span>
+                                <span><a href="#" onclick="separador('CA')">Cabeceras</a></span>
+                                <span><a href="#" onclick="separador('RE')">Recamaras</a></span>
                             </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/cocinas">Cocinas</a>
+                        <a href="#" onclick="showCategory('cocinas');">Cocinas</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-cocinas">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/comedores">Comedores</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/sillas">Sillas</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/vitrinas">Vitrinas</a></span>
+                                <span><a href="#" onclick="separador('COM')">Comedores</a></span>
+                                <span><a href="#" onclick="separador('SI')">Sillas</a></span>
+                                <span><a href="#" onclick="separador('VI')">Vitrinas</a></span>
                             </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/salas">Salas</a>
+                        <a href="#" onclick="showCategory('salas');">Salas</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-salas">
                             <div class="seccion-1">
-                            <span><a href="<?= base_url() ?>index.php/secciones/sofacama">Sofá Camas</a></span>
-                            <span><a href="<?= base_url() ?>index.php/secciones/salamodular">Sala Modular</a></span>
-                            <span><a href="<?= base_url() ?>index.php/secciones/sofas">Sofas</a></span>
+                            <span><a href="#" onclick="separador('SCA')">Sofá Camas</a></span>
+                            <span><a href="#" onclick="separador('SA')">Sala Modular</a></span>
+                            <span><a href="#" onclick="separador('SO')">Sofas</a></span>
                             </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/electrodomesticos">Electrodomesticos</a>
+                        <a href="#" onclick="showCategory('electrodomesticos');">Electrodomesticos</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-electrodomesticos">
                             <div class="seccion-1">
-                                <span><a class="rounded" href="<?= base_url() ?>index.php/secciones/estufas">Estufas</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/microondas">Microondas</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/licuadoras">Licuadoras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/parrillas">Parrillas</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/secadoras">Secadoras</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/lavadoras">Lavadoras</a></span>
+                                <span><a class="rounded" href="#" onclick="separador('CO')">Estufas</a></span>
+                                <span><a href="#" onclick="separador('MI')">Microondas</a></span>
+                                <span><a href="#" onclick="separador('LI')">Licuadoras</a></span>
+                                <span><a href="#" onclick="separador('PA')">Parrillas</a></span>
+                                <span><a href="#" onclick="separador('SE')">Secadoras</a></span>
+                                <span><a href="#" onclick="separador('LAV')">Lavadoras</a></span>
 
                             </div>
                             <div class="seccion-2">
-                                <span><a href="<?= base_url() ?>index.php/secciones/refrigerador">Refrigerador</a></span>
+                                <span><a href="#" onclick="separador('REF');">Refrigerador</a></span>
                             </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/electronica">Electronica</a>
+                        <a href="#" onclick="showCategory('electronica');">Electronica</a>
                         <div class="subdropdown rounded-end position-absolute" id="subdropdown-electronica">
                             <div class="seccion-1">
-                                <span><a href="<?= base_url() ?>index.php/secciones/telefonos">Celulares</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/tablets">Tablets</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/laptop">Laptops</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/televisiones">Televisiones</a></span>
-                                <span><a href="<?= base_url() ?>index.php/secciones/bocinas">Bocinas</a></span>
+                                <span><a href="#" onclick="separador('CE')">Celulares</a></span>
+                                <span><a href="#" onclick="separador('TA')">Tablets</a></span>
+                                <span><a href="#" onclick="separador('LA')">Laptops</a></span>
+                                <span><a href="#" onclick="separador('TE')">Televisiones</a></span>
+                                <span><a href="#" onclick="separador('BO')">Bocinas</a></span>
                             </div>
                         </div>
-                        <a href="<?= base_url() ?>index.php/principal/motos">Motos</a>
+                        <a href="#" onclick="showCategory('motos');">Motos</a>
                     </div>    
                 </div>
             </div>
@@ -158,7 +158,7 @@
     <main class="d-flex justify-content-center" id="mainget">
 
     </main>
-    <footer class="d-block justify-content-center align-middle w=100" style="height: 12vh;  background-color:#FF7216;">
+    <footer class="d-block justify-content-center align-middle w=100" style="height: 15vh;  background-color:#FF7216;">
         <div class="ctn-f-f w=100" style="height:20%;">
         
         </div>

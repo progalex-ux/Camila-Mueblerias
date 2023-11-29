@@ -232,7 +232,7 @@ switch (getData){
                   )
               ),
           
-              $("<div class='sellosd d-md-none d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
+              $("<div class='sellosd d-none d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
                 $("<div class='content-sello d-flex' style='width:70%;'>").append(
                  
                   $("<div class='sello ms-4 rounded-5'>").append(
@@ -499,12 +499,12 @@ switch (getData){
                       $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>").append(
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
-                            $("<a onclick=\"separador('RE');\">").append(
+                            $("<a onclick=\"separador('REF');\">").append(
                               $("<img class='object-fit-contain' src='" + base_url + "public/img/electrodomesticos/card-secadora.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
-                            $("<a onclick=\"separador('RE');\">").append(
+                            $("<a onclick=\"separador('REF');\">").append(
                               $("<button class='btn botun rounded-bottom-1' style='width:100%; height:100%;'>").text("Refrigerador")
                             )
                           )
@@ -721,4 +721,8 @@ switch (getData){
 function separador(identificador){
     localStorage.setItem("identificador", identificador);
     window.location.href = base_url + "index.php/principal/productos"
+}
+function  showCategory(category){
+  localStorage.setItem("category", category)
+  window.location.href = base_url + "index.php/principal/categorias"
 }

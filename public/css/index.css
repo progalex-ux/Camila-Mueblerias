@@ -82,7 +82,7 @@ main{
     min-height: 100vh;
     background-color: #fff;
     position: relative;
-    top: 94px; 
+    padding-top: 94px; 
 }
 section{
     height: 100%;

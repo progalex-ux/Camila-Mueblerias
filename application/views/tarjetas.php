@@ -46,40 +46,48 @@
             <div class="row ">
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
-                        <img src="<?= base_url() ?>public/img/salas/portada-s.webp" alt="Imagen">
+                        <div class="image">
+                            <img src="<?= base_url() ?>public/img/salas/portada-s.webp" alt="Imagen">
+                        </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Salas </h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertSalas/"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
+                            <a href="#" onclick="insertar('salas');"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
+                        <div class="image">
                         <img src="<?= base_url() ?>public/img/recamaras/portada-r.webp" alt="Imagen">
+                        </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Recamaras</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertRecamaras/"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
+                            <a href="#" onclick="insertar('recamaras');"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
+                        <div class="image">
                         <img src="<?= base_url() ?>public/img/cocinas/portada-c.webp" alt="Imagen">
+                        </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Cocinas</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertCocinas"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
+                            <a href="#" onclick="insertar('cocinas');"><button type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
+                        <div class="image">
                         <img src="<?= base_url() ?>public/img/electronica/portada.webp" alt="Imagen">
+                        </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Electronica</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertElectronica/"><button
+                            <a href="#" onclick="insertar('electronica');"><button
                             type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
@@ -87,10 +95,12 @@
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
+                        <div class="image">
                         <img src="<?= base_url() ?>public/img/electrodomesticos/portada.webp" alt="Imagen">
+                        </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Electrodomesticos</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertElectrodomesticos/"><button
+                            <a href="#" onclick="insertar('electrodomesticos');"><button
                             type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
@@ -98,10 +108,12 @@
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
+                        <div class="image">
                         <img src="<?= base_url() ?>public/img/motos/portada.webp" alt="Imagen">
+                        </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Motos</h5>
-                            <a href="<?= base_url() ?>index.php/admin/insertMotos/"><button
+                            <a href="#" onclick="insertar('motos');"><button
                             type="button" class="btn btn-dark border-0" style="background-color:#db600e;">Agregar contenido</button></a>
                         </div>
                     </div>
@@ -112,6 +124,7 @@
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
+    <script src="<?= base_url() ?>public/js/Reload/send.js"></script>
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

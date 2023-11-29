@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<header>
+    <header>
         <div class="logo">
             <div class="boton">
                 <a href="<?= base_url() ?>index.php/admin/tarjetas"><button class="btn btn-light border"><i
@@ -47,45 +47,15 @@
     <main>
         <section>
 
-            <div class="container mt-3">
-                <form id="dataTarjeta" method="post" enctype="multipart/form-data">
-                    <div class="tittle">
-                        <h3>Formulario para agregar contenido</h3>
-                    </div>
-                    <div class="selected-image">
-                        <div id="image-container">
-                            <img id="preview-image" src="" alt="">
-                        </div>
-                    </div>
-                    <div class="image">
-                        <input class="form-control" type="file" name="image" id="image" onchange="loadImage()" required>
-                    </div>
-                    <div class="data">
-                        <label for="precio">Precio</label>
-                        <input class="form-control" type="number" name="precio" id="precio" required>
-                        <label for="titulo">Titulo</label>
-                        <input class="form-control" type="text" name="titulo" id="titulo" required>
-                        <label class="pt-1" for="">Categorias</label>
-                        <select class="form-select" aria-label="Default select example" id="identificador"
-                            name="identificador">
-                            <option  selected value="null" name="null" id="null">Seleccionar</option>
-                            <option value="COM" name="COM" id="COM">Comedores</option>
-                            <option value="SI" name="SI" id="SI">Sillas</option>
-                            <option value="VI" name="VI" id="VI">Vitrinas</option>
-                        </select>
-                    </div>
-                    <div class="send">
-                        <button type="button" class="btn btn-light border" onclick="registroTarjetas()">Agregar</button>
-                    </div>
+            <div class="container" id="form">
+                
             </div>
 
         </section>
     </main>
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-
     <script src="<?= base_url() ?>public/js/categorias.js"></script>
-
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
 
 </body>

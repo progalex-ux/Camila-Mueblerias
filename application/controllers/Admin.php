@@ -41,7 +41,9 @@ class Admin extends CI_Controller {
 		}
 		echo json_encode($data,JSON_NUMERIC_CHECK);
     }
-
+	public function insertProducts(){
+        $this->load->view("insertProducts");
+    }
 	public function insertElectronica(){
         $this->load->view("insertElectronica");
     }
