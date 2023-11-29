@@ -22,8 +22,6 @@ class Admin extends CI_Controller {
 	public function changeData(){
 		$this->load->view('changeData');
 	}
-
-
     public function login()
     {
         $usuario =$this->input->post('usuario');
@@ -43,24 +41,6 @@ class Admin extends CI_Controller {
     }
 	public function insertProducts(){
         $this->load->view("insertProducts");
-    }
-	public function insertElectronica(){
-        $this->load->view("insertElectronica");
-    }
-	public function insertElectrodomesticos(){
-        $this->load->view("insertElectrodomesticos");
-    }
-    public function insertMotos(){
-        $this->load->view("insertMotos");
-    }
-    public function insertSalas(){
-        $this->load->view("insertSalas");
-    }
-    public function insertRecamaras(){
-        $this->load->view("insertRecamaras");
-    }
-    public function insertCocinas(){
-        $this->load->view("insertCocinas");
     }
 
 }

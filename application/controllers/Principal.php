@@ -24,9 +24,5 @@ class Principal extends CI_Controller {
 	{
 		$this->load->view('productos');
 	}
-	public function login()
-	{
-		$this->load->view('login');
-	}
 }
 	

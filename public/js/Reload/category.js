@@ -1,7 +1,8 @@
 const base_url="http://localhost/CamilaMueblerias/";
 var getData = localStorage.getItem("category")
 var main = document.getElementById("mainget");
-
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 switch (getData){
     case "salas":
         

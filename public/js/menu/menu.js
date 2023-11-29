@@ -1,3 +1,7 @@
+
+function login(){
+	window.location.href = base_url+"index.php/admin/";
+  }
 function toggleMenu() {
     var dropdown = document.getElementById("myDropdown");
     

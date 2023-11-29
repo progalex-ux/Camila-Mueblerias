@@ -162,7 +162,7 @@ section{
         top: 0;
     }
     main{
-        top:0;
+        padding-top: 0px;
     }
     .c-item{
         height: 30vh;

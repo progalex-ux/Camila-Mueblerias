@@ -1,4 +1,23 @@
 const base_url="http://localhost/CamilaMueblerias/";
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+function loadImage() {
+    const input = document.getElementById('image');
+    const preview = document.getElementById('preview-image');
+
+    if (input.files && input.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            preview.src = e.target.result;
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    } else {
+        preview.src = '';
+    }
+}
 function registroTarjetas() {
   var titulo = $("#titulo").val();
   var precio = $("#precio").val();
@@ -130,7 +149,6 @@ function searchCards() {
     if (identificador === 'all') {
         identificador = '';
     }
-
     $.ajax({
         url: base_url + "index.php/tarjetas/searchCards",
         dataType: "json",
@@ -151,7 +169,6 @@ function searchCards() {
         },
     });
 }
-
 
 function renderNoProductsMessage() {
     $("#tarjetas").empty();

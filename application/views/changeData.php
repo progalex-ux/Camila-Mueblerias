@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/change.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/cambio/change.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Admin | Camila Mueblerias</title>
@@ -148,29 +148,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
     </script>
-    <script src="<?= base_url() ?>public/js/insert.js"></script>
-    <script>
-    function loadImage() {
-        const input = document.getElementById('image');
-        const preview = document.getElementById('preview-image');
-
-        if (input.files && input.files[0]) {
-            const reader = new FileReader();
-
-            reader.onload = function(e) {
-                preview.src = e.target.result;
-            };
-
-            reader.readAsDataURL(input.files[0]);
-        } else {
-            preview.src = '';
-        }
-    }
-    </script>
-    <script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
+    <script src="<?= base_url() ?>public/js/insertar/insert.js"></script>
 </body>
 
 </html>

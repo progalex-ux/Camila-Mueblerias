@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Camila Mueblerias</title>
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/login.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/login/login.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
@@ -52,7 +52,7 @@
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= base_url() ?>public/js/login.js"></script>
+    <script src="<?= base_url() ?>public/js/login/login.js"></script>
 
 </body>
 

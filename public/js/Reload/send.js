@@ -1,5 +1,6 @@
 const base_url="http://localhost/CamilaMueblerias/";
-
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 function  showCategory(category){
     localStorage.setItem("category", category)
     window.location.href = base_url + "index.php/principal/categorias"

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="<?= base_url() ?>public/img/logos/Logo.icon">
-    <link rel="stylesheet" href="<?= base_url() ?>public/css/index.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/index/index.css">
     <title>Camila Mueblerias</title>
 </head>
 
@@ -314,7 +314,7 @@
             <h6 class="text-white" style="font-size:11px;">Tarimoro, Guanajuato Mexico.</h6>
         </div>
         <div class="ctn-f-user w=100 d-flex justify-content-end" style="height:30%;">
-            <button class="border border-0" style="background-color:transparent;" onclick=login()><i
+            <button class="border border-0" style="background-color:transparent;" onclick="login()"><i
                     class="bi bi-shield-fill px-2  fs-6" style="color:white;"></i></button>
         </div>
         <div class="ctn-f-free w=100" style="height:3%;"></div>
@@ -322,7 +322,7 @@
 
     <script src="<?= base_url() ?>public/jquery/jquery.js"></script>
     <script src="<?= base_url() ?>public/js/Reload/send.js"></script>
-    <script src="<?= base_url() ?>public/js/menu.js"></script>
+    <script src="<?= base_url() ?>public/js/menu/menu.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
     
 </body>
