@@ -16,10 +16,10 @@
 
 <body style="background-color:white;">
     <header class="d-flex " style="height:60px;     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-        <div class="logo" style="width:45%;">
-            <div class="mt-2 ms-1"><a class="icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0"
+        <div class="logo" style="width:44%">
+            <div class="ms-1 h-100" style="display:flex; align-items: center;"><a class="icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0"
                     href="<?= base_url() ?>index.php/admin/" style="color:black;"><button
-                        class="btn btn-light border-0 rounded-pill mt-1 ms-1"  style="background-color:transparent;"><i class="bi bi-box-arrow-left fs-4"
+                        class="btn btn-light border-0 rounded-pill ms-1"  style="background-color:transparent;"><i class="bi bi-box-arrow-left fs-5"
                             style="color:black;"></i></button></a></div>
 
         </div>
@@ -27,7 +27,9 @@
             <div>
                 <h1 style="color:#db600e;">Admin </h1>
             </div>
-            <div>
+            
+        </div>
+        <div style="display:flex; align-items: center;">
                 <a class="link-offset-2 link-underline link-underline-opacity-0"
                     href="<?= base_url() ?>index.php/admin/tarjetas">
                     <button  style="background-color:transparent;" class="btn btn-light border-0 custom-tooltip" data-bs-toggle="tooltip" data-placement="bottom"
@@ -41,7 +43,6 @@
                     </button>
                 </a>
             </div>
-        </div>
     </header>
     <main class="d-flex" style="width:100%; min-height:100vh;">
         <section>

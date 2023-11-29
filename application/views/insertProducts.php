@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <div class="logo">
+        <div class="logo" style="display:flex; align-items: center;">
             <div class="boton">
                 <a href="<?= base_url() ?>index.php/admin/tarjetas"><button class="btn btn-light border"><i
                             class="bi bi-arrow-90deg-left" style="color:#000;"></i></button></a>
@@ -29,7 +29,9 @@
             <div>
                 <h1 style="color:#db600e;">Admin </h1>
             </div>
-            <div>
+            
+        </div>
+        <div style="display:flex; align-items: center;">
                 
                 <a href="<?= base_url() ?>index.php/admin/changedata">
                     <button class="btn btn-light custom-tooltip" data-bs-toggle="tooltip" data-placement="bottom"
@@ -42,7 +44,6 @@
                     
                 </a>
             </div>
-        </div>
     </header>
     <main>
         <section>
@@ -57,6 +58,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="<?= base_url() ?>public/js/Productos/categorias.js"></script>
     <script src="<?= base_url() ?>public/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 
 </body>
 

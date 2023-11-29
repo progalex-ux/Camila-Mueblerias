@@ -1,6 +1,5 @@
 const base_url="http://localhost/CamilaMueblerias/";
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 function loadImage() {
     const input = document.getElementById('image');
     const preview = document.getElementById('preview-image');

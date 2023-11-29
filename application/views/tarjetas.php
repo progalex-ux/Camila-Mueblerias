@@ -16,18 +16,19 @@
 
 <body>
 <header class="d-flex" style="height:60px; ">
-        <div class="logo" style="width:45%;">
-            <div class="mt-2 ms-1"><a class="icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0" href="<?= base_url() ?>index.php/admin/"
-                    style="color:black;"><button class="btn btn-light border-0 rounded-pill mt-1 ms-1"><i
-                            class="bi bi-arrow-left" style="color:black;"></i> Cerrar sesión</button></a> </div>
+        <div class="logo" >
+            <div class="ms-1" style="display:flex; align-items: center;"><a class="icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0" href="<?= base_url() ?>index.php/admin/"
+                    style="color:black;"><button class="btn btn-light border-0 rounded-pill  ms-1"><i
+                            class="bi bi-box-arrow-left fs-5" style="color:black;"></i></button></a> </div>
 
         </div>
         <div class="titulo d-flex justify-content-between" style="width:55%;">
             <div>
                 <h1 style="color:#db600e;">Admin </h1>
             </div>
-            <div>
-                
+            
+        </div>
+        <div style="display:flex; align-items: center;">  
                 <a href="<?= base_url() ?>index.php/admin/changedata">
                     <button class="btn btn-light custom-tooltip" data-bs-toggle="tooltip" data-placement="bottom"
                         title="Modificar contenido">
@@ -39,7 +40,6 @@
                     
                 </a>
             </div>
-        </div>
     </header>
     <section >
         <div class="content d-flex justify-content-center">
