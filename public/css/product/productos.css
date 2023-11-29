@@ -10,7 +10,7 @@ nav{
 }
 aside{
     position: sticky;
-    top: 94px;
+    top: 0;
 }
 .menu-content {
     display: none;

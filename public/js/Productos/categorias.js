@@ -324,3 +324,380 @@ switch (id){
         $("#form").append(formHTML); 
         break;
 }
+var producto = localStorage.getItem("identificador");
+
+switch (producto) {
+// ELECTRODOMESTICOS
+    case "MI":
+        var category=`Electrodomesticos`;
+        var product=`Microondas`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('ES');\">Estufa</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('PA');\"">Parrilas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LI');\">Licuadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('REF');\">Refrigeradores</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LAV');\">Lavadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SE');\">Secadoras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "ES":
+        var category=`Electrodomesticos`;
+        var product=`Estufas`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('MI');\">Microondas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('PA');\"">Parrilas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LI');\">Licuadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('REF');\">Refrigeradores</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LAV');\">Lavadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SE');\">Secadoras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "PA":
+        var category=`Electrodomesticos`;
+        var product=`Parrillas`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('ES');\">Estufas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('MI');\"">Microondas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LI');\">Licuadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('REF');\">Refrigeradores</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LAV');\">Lavadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SE');\">Secadoras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "LI":
+        var category=`Electrodomesticos`;
+        var product=`Licuadoras`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('ES');\">Estufas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('PA');\"">Parrillas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('MI');\">Microondas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('REF');\">Refrigeradores</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LAV');\">Lavadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SE');\">Secadoras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "REF":
+        var category=`Electrodomesticos`;
+        var product=`Refrigeradores`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('ES');\">Estufas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('PA');\"">Parrillas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('MI');\">Microondas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LI');\">Licuadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LAV');\">Lavadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SE');\">Secadoras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "LAV":
+        var category=`Electrodomesticos`;
+        var product=`Lavadoras`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('ES');\">Estufas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('PA');\"">Parrillas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('MI');\">Microondas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LI');\">Licuadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('REF');\">Refrigeradores</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SE');\">Secadoras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "SE":
+        var category=`Electrodomesticos`;
+        var product=`Secadoras`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('ES');\">Estufas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('PA');\"">Parrillas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('MI');\">Microondas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LI');\">Licuadoras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('REF');\">Refrigeradores</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LAV');\">Lavadoras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+
+//  ELECTRONICA
+    case "CE":
+        var category=`Electronica`;
+        var product=`Celulares`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('TA');\">Tablets</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LA');\"">Laptops</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('TE');\">Televisiones</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BO');\">Bocinas</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "TA":
+        var category=`Electronica`;
+        var product=`Tablets`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CE');\">Celulares</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LA');\"">Laptops</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('TE');\">Televisiones</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BO');\">Bocinas</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "LA":
+        var category=`Electronica`;
+        var product=`Laptops`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CE');\">Celulares</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('TA');\"">Tablets</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('TE');\">Televisiones</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BO');\">Bocinas</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "TE":
+        var category=`Electronica`;
+        var product=`Televisiones`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CE');\">Celulares</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('TA');\"">Tablets</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LA');\">Laptops</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BO');\">Bocinas</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "BO":
+        var category=`Electronica`;
+        var product=`Bocinas`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CE');\">Celulares</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('TA');\"">Tablets</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('LA');\">Laptops</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('TE');\">Televisiones</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+// RECAMARAS
+    case "CO":
+        var category=`Recamaras`;
+        var product=`Colchones`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CA');\">Cabeceras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BA');\"">Bases cama</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BU');\">Buros</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RO');\">Roperos</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RE');\">Recamaras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "CA":
+        var category=`Recamaras`;
+        var product=`Cabeceras`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CO');\">Colchones</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BA');\"">Bases cama</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BU');\">Buros</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RO');\">Roperos</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RE');\">Recamaras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "BA":
+        var category=`Recamaras`;
+        var product=`Bases cama`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CO');\">Colchones</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CA');\"">Cabeceras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BU');\">Buros</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RO');\">Roperos</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RE');\">Recamaras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "BU":
+        var category=`Recamaras`;
+        var product=`Buros`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CO');\">Colchones</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CA');\"">Cabeceras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BA');\">Bases cama</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RO');\">Roperos</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RE');\">Recamaras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "RO":
+        var category=`Recamaras`;
+        var product=`Roperos`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CO');\">Colchon</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CA');\"">Cabeceras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BA');\">Bases cama</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BU');\">Buros</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RE');\">Recamaras</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "RE":
+        var category=`Recamaras`;
+        var product=`Recamaras`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CO');\">Colchon</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CA');\"">Cabeceras</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BA');\">Bases cama</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('BU');\">Buros</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('RO');\">Roperos</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+// Salas
+    case "SO":
+        var category=`Salas`;
+        var product=`Sofas`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SA');\">Salas modular</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SCA');\"">Sofa camas</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "SA":
+        var category=`Salas`;
+        var product=`Salas modular`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SO');\">Sofas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SCA');\"">Sofa camas</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "SCA":
+        var category=`Salas`;
+        var product=`Sofa camas`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SO');\">Sofas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SA');\"">Salas modular</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+// Cocinas
+    case "COM":
+        var category=`Cocinas`;
+        var product=`Comedores`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SI');\">Sillas</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('VI');\"">Vitrinas</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "SI":
+        var category=`Cocinas`;
+        var product=`Sillas`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('COM');\">Comedores</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('VI');\"">Vitrinas</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "VI":
+        var category=`Cocinas`;
+        var product=`Vitrinas`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('COM');\">Comedores</a>
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('SI');\"">Sillas</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+//Motos
+    case "MO":
+        var category=`Motos`;
+        var product=`Motos`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('CUA');\">Cuatrimotos</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+    case "CU":
+        var category=`Motos`;
+        var product=`Cuatrimotos`;
+        var links=`
+        <a class="pt-1 ps-1 link-offset-2 link-underline link-underline-opacity-0 text-dark" style="font-size:14px;" href="#" onclick=\"separador('MOT');\">Motos</a>
+        `;
+
+        $("#category").append(category);
+        $("#product").append(product);
+        $("#links").append(links);
+        break;
+}
