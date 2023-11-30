@@ -250,7 +250,7 @@
                         <div class="card custom-card">
                             <img  src="<?= base_url() ?>public/img/salas/salas.jpg"  alt="Imagen de fondo" class="card-img">
                             <div class="card-img-overlay" onclick="showCategory('salas');">
-                                <button onclick="showCategory('salas');" class="btn btn-light border-dark-subtle rounded-3 overlay-button">Salas</button>
+                                <button onclick="showCategory('salas');" class="btn btn-light border-0 rounded-3 overlay-button">Salas</button>
                             </div>
                         </div>
                     </div>
@@ -259,7 +259,7 @@
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/recamaras/recamara.jpg"  alt="Imagen de fondo" class="card-img">
                             <div class="card-img-overlay" onclick="showCategory('recamaras');" >
-                                <button onclick="showCategory('recamaras');" class="btn btn-light border-dark-subtle rounded-3 overlay-button">Recamaras</button>
+                                <button onclick="showCategory('recamaras');" class="btn btn-light border-0 rounded-3 overlay-button">Recamaras</button>
                             </div>
                         </div>
                     </div>
@@ -268,7 +268,7 @@
                         <div class="card custom-card">
                             <img  src="<?= base_url() ?>public/img/cocinas/cocina.jpg"  alt="Imagen de fondo" class="card-img">
                             <div class="card-img-overlay" onclick="showCategory('cocinas');">
-                                <button onclick="showCategory('cocinas');" class="btn btn-light border-dark-subtle rounded-3 overlay-button">Cocinas</button>
+                                <button onclick="showCategory('cocinas');" class="btn btn-light border-0 rounded-3 overlay-button">Cocinas</button>
                             </div>
                         </div>
                     </div>
@@ -277,25 +277,25 @@
                         <div class="card custom-card">
                             <img  src="<?= base_url() ?>public/img/electrodomesticos/electrodomesticos.jpg"  alt="Imagen de fondo" class="card-img">
                             <div class="card-img-overlay" onclick="showCategory('electrodomesticos');">
-                                <button onclick="showCategory('electrodomesticos');" class="btn btn-light border-dark-subtle rounded-3 overlay-button">Electrodomesticos</button>
+                                <button onclick="showCategory('electrodomesticos');" class="btn btn-light border-0 rounded-3 overlay-button">Electrodomesticos</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card custom-card">
-                            <img  src="<?= base_url() ?>public/img/electronica/electronica.jpg"  alt="Imagen de fondo" class="card-img">
+                            <img  src="<?= base_url() ?>public/img/electronica/pantalla.jpg"  alt="Imagen de fondo" class="card-img">
                             <div class="card-img-overlay" onclick="showCategory('electronica');">
-                                <button onclick="showCategory('electronica');" class="btn btn-light border-dark-subtle rounded-3 overlay-button">Electronica</button>
+                                <button onclick="showCategory('electronica');" class="btn btn-light border-0 rounded-3 overlay-button">Electronica</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card custom-card">
-                            <img   src="<?= base_url() ?>public/img/motos/moto.jpg"  alt="Imagen de fondo" class="card-img">
+                            <img   src="<?= base_url() ?>public/img/motos/moto1.jpg"  alt="Imagen de fondo" class="card-img object-fit-cover">
                             <div class="card-img-overlay " onclick="showCategory('motos');">
-                                <button onclick="showCategory('motos');" class="btn btn-light border-dark-subtle rounded-3 overlay-button">Motos</button>
+                                <button onclick="showCategory('motos');" class="btn btn-light border-0 rounded-3 overlay-button">Motos</button>
                             </div>
                         </div>
                     </div>

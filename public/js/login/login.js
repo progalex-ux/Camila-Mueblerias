@@ -1,4 +1,4 @@
-const base_url="http://localhost/CamilaMueblerias/"; 
+const base_url="http://192.168.1.79/CamilaMueblerias/"; 
 
 function loginUser(){
     var usuario =$("#usuario").val();
