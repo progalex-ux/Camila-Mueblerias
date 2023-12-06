@@ -88,6 +88,8 @@ switch (getData){
                 )
               )
           );
+      var tittle = `Salas | Camila Mueblerias`;
+      $("#titulo").append(tittle)
       $("#mainget").append($section);
 
         break;
@@ -177,7 +179,8 @@ switch (getData){
               )
           );
       
-     
+      var tittle = `Cocinas | Camila Mueblerias`;
+      $("#titulo").append(tittle)
       $("#mainget").append($section);
     
         break;
@@ -328,7 +331,8 @@ switch (getData){
                   )
               );
           
-         
+          var tittle = `Recamaras | Camila Mueblerias`;
+          $("#titulo").append(tittle)
           $("#mainget").append($section);
         break;
 
@@ -487,7 +491,8 @@ switch (getData){
                   )
               );
           
-         
+          var tittle = `Electrodomesticos | Camila Mueblerias`;
+          $("#titulo").append(tittle)
           $("#mainget").append($section);
         break;
 
@@ -612,7 +617,9 @@ switch (getData){
                       )
                     )
                   )
-              );        
+              );       
+          var tittle = `Electronica | Camila Mueblerias`;
+          $("#titulo").append(tittle) 
           $("#mainget").append($section);        
         break;
 
@@ -673,6 +680,8 @@ switch (getData){
                     )
                   )
               );
+        var tittle = `Motos | Camila Mueblerias`;
+        $("#titulo").append(tittle)
         $("#mainget").append($section);         
         break;
 }

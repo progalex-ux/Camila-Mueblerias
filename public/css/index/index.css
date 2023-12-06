@@ -22,7 +22,7 @@ nav{
     display: none;
     background-color: #fff;
     top: 100%;
-    left:-50%; 
+    left:-25%; 
     width: 180px; 
     transition: 0.3s left ease;
 
@@ -89,7 +89,7 @@ section{
     width: 100%;
 }
 .c-item{
-    height: 480px;
+    height: 86vh;
 }
 .c-image{
     height: 100%;
@@ -111,7 +111,7 @@ section{
 
 
 .empty{
-    height: 100px;
+    height: 55px;
 }
 .social-media{
     display: flex;
@@ -121,6 +121,7 @@ section{
     position: relative;
     overflow: hidden;
     height: 250px;
+    margin: 15px 5px 20px 5px;
   }
 
 
@@ -136,6 +137,49 @@ section{
     width: 50%;
     transform: translate(-50%, -50%);
   }
+.card-produ{
+    height: 300px;
+    
+}
+.card-body{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    float:right;
+}
+.card-tittle{
+    width: 100%;
+    height: 40%;
+}
+.card-text{
+    width: 100%;
+    height: 60%;
+}
+.img-wrapper{
+    max-width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.previus, .nextt{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top:50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+.previus:hover, .nextt:hover{
+ opacity: 0.9;
+}
 
 @media(max-width: 991px){
     nav{
@@ -150,6 +194,7 @@ section{
     .c-item{
         height: 30vh;
     }
+
       footer{
         height: 11vh;
     }
@@ -161,4 +206,29 @@ section{
     .c-item{
         height: 15vh;   
     }
+    
+    .cali{
+        margin-right: 10px;
+    }
+    .aten{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:576px){
+    .carousel-multiple-items .carousel-inner {
+    display: flex;
+}
+
+.carousel-multiple-items .carousel-item {
+    display: block; 
+    margin-right: 0;
+    flex: 0 0 calc(100%/5); 
+}
+
+.carousel-multiple-items .carousel-inner {
+    padding: 1em;
+}
+
+   
 }

@@ -21,7 +21,7 @@ aside{
     background-color: #fff;
     top: 100%;
     z-index: 100;
-    left: -50%; 
+    left: -25%; 
     width: 180px; 
     transition: 0.3s left ease;
 }
