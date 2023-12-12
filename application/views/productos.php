@@ -156,7 +156,7 @@
     <main class="d-flex w-100" style="min-height:100vh;">
         <aside class="z-1 d-none d-lg-block" style="width: 20%; height: 100vh; border-right: 1px solid rgba(0, 0, 0, 0.13);">
             <div class="sidebar-tittle d-flex ps-2 breadcrumb" style="border-bottom: 1px solid rgba(0, 0, 0, 0.13);">
-                <i class="bi bi-dash-circle fs-6 pt-4"></i>&nbsp<h6 class="pt-4"><a href="<?= base_url() ?>index.php/principal/electronica" class="breadcrumb-item" style="color:black; text" id="category"></a> / <a href="<?= base_url() ?>index.php/secciones/bocinas" class="link-offset-2 link-underline link-underline-opacity-0 " style="color:black; font-size:13px" id="product"></a></h6>
+                <i class="bi bi-dash-circle fs-6 pt-4"></i>&nbsp<h6 class="pt-4"><span id="categorylink"></span> / <a href="<?= base_url() ?>index.php/secciones/bocinas" class="link-offset-2 link-underline link-underline-opacity-0 " style="color:black; font-size:13px" id="product"></a></h6>
                 </div>
                 <div class="categorias-tecno d-flex justify-content-start" style="width:100%; height:15%;">
                     <ul class="d-flex flex-column " id="links">

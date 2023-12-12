@@ -9,11 +9,6 @@ function separador(identificador){
     localStorage.setItem("identificador", identificador);
     window.location.href = base_url + "index.php/principal/productos"
 }
-function insertar(insert){
-    localStorage.setItem("insert",insert);
-    window.location.href = base_url + "index.php/admin/insertProducts"
-}
-
 
 const multipleItemCarousel = document.querySelector('.carousel-multiple-items');
 let carousel;

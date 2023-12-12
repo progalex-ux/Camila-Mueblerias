@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
 
-}
 nav{
     position: absolute;
     height:94px; 
@@ -17,7 +13,12 @@ nav{
 .secciones{
     width: 48%;
 }
-
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 .menu-content {
     display: none;
     background-color: #fff;
@@ -89,7 +90,7 @@ section{
     width: 100%;
 }
 .c-item{
-    height: 86vh;
+    height: 70vh;
 }
 .c-image{
     height: 100%;
@@ -109,14 +110,6 @@ section{
     margin: 15px 5px 20px 5px;
 }
 
-
-.empty{
-    height: 55px;
-}
-.social-media{
-    display: flex;
-    align-items: center;
-}
 .custom-card {
     position: relative;
     overflow: hidden;
@@ -134,7 +127,7 @@ section{
     position: absolute;
     top: 85%;
     left: 50%;
-    width: 50%;
+    width: 55%;
     transform: translate(-50%, -50%);
   }
 .card-produ{
@@ -188,6 +181,9 @@ section{
         z-index: 100;
  
     }
+    .social-media{
+        display: none;
+    }
     main{
         padding-top:0px;
     }
@@ -205,13 +201,6 @@ section{
 @media(max-width:574px){
     .c-item{
         height: 15vh;   
-    }
-    
-    .cali{
-        margin-right: 10px;
-    }
-    .aten{
-        margin-right: 10px;
     }
 }
 

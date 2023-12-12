@@ -95,7 +95,7 @@
             <a href="<?= base_url() ?>index.php/principal/"><img class="py-1 object-fit-cover" style="height: 100%;"
                     src="<?= base_url() ?>public/img/Logo-white.png"></a>
         </div>
-        <div class="social-media d-none d-lg-flex position-absolute top-50 end-0  bottom-25 mb-5">
+        <div class="social-media ">
             <a href="https://www.facebook.com/profile.php?id=100054430302386" target="_blank"><i
                     class="bi bi-facebook px-2  fs-4" style="color:white;"></i></a>
             <a href="https://www.instagram.com/camilamuebleriasgto/" target="_blank"><i
@@ -218,51 +218,8 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div id="about" class="about d-flex flex-column justify-content-center mt-1"
-                style="width:100%; background-color: #EFEFEF">
-                <div class="father  d-flex justify-content-center">
-                    <div class="articles d-flex flex-wrap justify-content-center mt-1 w-75">
-
-                        <article class="cali text-center mb-1 col-md-3 ">
-                            <i class="bi bi-clipboard2-check fs-2"></i>
-                            <span>
-                                <p class="fs-6 " style="font-weight: ;">Calidad y Garantía</p>
-                            </span>
-                            <span>
-                                <p></p>
-                            </span>
-                        </article>
-                        <article class="text-center mb-1 col-md-3">
-                            <i class="bi bi-truck fs-2"></i>
-                            <span>
-                                <p class="fs-6 " style="font-weight: ;">Entrega a domicilio</p>
-                            </span>
-                            <span>
-                                <p></p>
-                            </span>
-                        </article>
-                        <article class="aten text-center mb-1 col-md-3 ">
-                            <i class="bi bi-person-check fs-2"></i>
-                            <span>
-                                <p class="fs-6" style="font-weight: ;">Atención al cliente</p>
-                            </span>
-                            <span>
-                                <p></p>
-                            </span>
-                        </article>
-                        <article class="text-center mb-1 col-md-3">
-                            <i class="bi bi-lock fs-2"></i>
-                            <span>
-                                <p class="fs-6 " style="font-weight:;">Compra segura</p>
-                            </span>
-                            <span>
-                                <p></p>
-                            </span>
-                        </article>
-                    </div>
-                </div>
-            </div>
             
+
             <div class="caption d-flex justify-content-center w-100 mt-3">
                 <h4 style="font-weight:bold;">¡Lo mejor para ti!</h4>
             </div>
@@ -394,14 +351,154 @@
                     </button>
                 </div>
             </div>
-
-            <div class="caption d-flex justify-content-center w-100 mt-3">
-                <h4 style="font-weight:bold;">Catalogo</h4>
+            <div class="row w-100 d-flex justify-content-center">
+                <div class="w-75 ">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="card custom-card">
+                            <img src="<?= base_url() ?>public/img/electronica/banner.jpg" alt="Imagen de fondo"
+                                class="card-img">
+                            <div class="card-img-overlay" onclick="showCategory('electronica');">
+                                <button onclick="showCategory('electronica');"
+                                    class="btn btn-light border-0 rounded-3 overlay-button">Electronica</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-           
+            <div class="caption d-flex justify-content-center w-100 mt-3">
+                <h4 style="font-weight:bold;">¡Lo mejor para tu hogar!</h4>
+            </div>
+            <div class="carousel d-flex justify-content-center w-100">
+                <div id="carouselExample" class="carousel carousel-multiple-items " style="width:80%;">
+                    <div class="carousel-inner inner">
+                        <div class="carousel-item active produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/cocinas/comedor-card.webp" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$11,999</h6>
+                                    <p class="card-text">Comedor cristal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/cocinas/silla-card.webp" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$1,299</h6>
+                                    <p class="card-text">Silla </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/recamaras/colchon.jpg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title ">$2,499</h6>
+                                    <p class="card-text ">Colchon Matrimonial</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/recamaras/sello-cabecera.webp" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$1,499</h6>
+                                    <p class="card-text ">Cabecera matrimonial</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/recamaras/sello-ropero.png" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$7,999</h6>
+                                    <p class="card-text">Ropero color cafe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/pococ40.jpg" alt="...">
+                                </div>
+                                <div class="card-body ">
+                                    <h6 class="card-title">$3,199</h6>
+                                    <p class="card-text">Xiaomi poco c40 128gb</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/redmi10c.png" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$3,499</h6>
+                                    <p class="card-text">Xiaomi redmi 10c 128gb</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/samusng01core.jpg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title"></h6>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/hisensev40i.webp" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title"></h6>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/hisensev40s.webp" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title"></h6>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev previus z-0" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon iconn z-0" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next nextt z-0" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon iconn z-0" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
             <div class="content d-flex justify-content-center">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="row w-75">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/salas/salas.jpg" alt="Imagen de fondo"
                                 class="card-img">
@@ -412,7 +509,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/recamaras/recamara.jpg" alt="Imagen de fondo"
                                 class="card-img">
@@ -423,7 +520,144 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                </div>
+            </div>
+            <div class="caption d-flex justify-content-center w-100 mt-3">
+                <h4 style="font-weight:bold;">¡Lo que estabas buscando!</h4>
+            </div>
+            <div class="carousel d-flex justify-content-center w-100">
+                <div id="carouselExample" class="carousel carousel-multiple-items " style="width:80%;">
+                    <div class="carousel-inner inner">
+                        <div class="carousel-item active produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/electrodomesticos/refrigerador.png" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$13,999</h6>
+                                    <p class="card-text">Regrigerador 19ft</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/electrodomesticos/lavadora.png" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$9,999</h6>
+                                    <p class="card-text">Lavadora Samsung</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/cocinas/sello-vitrina.png" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$5,999</h6>
+                                    <p class="card-text">Vitrina color cafe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/electrodomesticos/card-licuadora.webp" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title ">$5,499</h6>
+                                    <p class="card-text ">Licuadora Ninja</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/cocinas/sello-silla.png" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$899</h6>
+                                    <p class="card-text ">Silla</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/pococ40.jpg" alt="...">
+                                </div>
+                                <div class="card-body ">
+                                    <h6 class="card-title">$3,199</h6>
+                                    <p class="card-text">Xiaomi poco c40 128gb</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/redmi10c.png" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">$3,499</h6>
+                                    <p class="card-text">Xiaomi redmi 10c 128gb</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/samusng01core.jpg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title"></h6>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/hisensev40i.webp" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title"></h6>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item produ">
+                            <div class="card-produ">
+                                <div class="img-wrapper">
+                                    <img src="<?= base_url() ?>public/img/productos/hisensev40s.webp" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title"></h6>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev previus z-0" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon iconn z-0" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next nextt z-0" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon iconn z-0" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+                <div class="row w-75">
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/cocinas/cocina.jpg" alt="Imagen de fondo"
                                 class="card-img">
@@ -433,7 +667,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/electrodomesticos/electrodomesticos.jpg"
                                 alt="Imagen de fondo" class="card-img">
@@ -443,19 +677,13 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card custom-card">
-                            <img  src="<?= base_url() ?>public/img/electronica/pantalla.jpg"  alt="Imagen de fondo" class="card-img">
-                            <div class="card-img-overlay" onclick="showCategory('electronica');">
-                                <button onclick="showCategory('electronica');" class="btn btn-light border-0 rounded-3 overlay-button">Electronica</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                </div>
+            </div>
+            <div class="row w-100 d-flex justify-content-center">
+                <div class="w-75 ms-4">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="card custom-card mb-2">
-                            <img src="<?= base_url() ?>public/img/motos/moto1.jpg" alt="Imagen de fondo"
+                            <img src="<?= base_url() ?>public/img/motos/banner.webp" alt="Imagen de fondo"
                                 class="card-img object-fit-cover">
                             <div class="card-img-overlay " onclick="showCategory('motos');">
                                 <button onclick="showCategory('motos');"
@@ -463,13 +691,55 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+            
         </section>
     </main>
 
+    <div id="about" class="about justify-content-center mt-1" style="width:100%; background-color: #EFEFEF">
+                <div class="father  d-flex justify-content-center">
+                    <div class="row d-flex  justify-content-center mt-1 w-75 ">
 
+                        <article class=" text-center mb-1 col-xs-6 col-sm-6 col-md-3 ">
+                            <i class="bi bi-clipboard2-check fs-2"></i>
+                            <span>
+                                <p class="fs-6 " style="font-weight: ;">Calidad y Garantía</p>
+                            </span>
+                            <span>
+                                <p></p>
+                            </span>
+                        </article>
+                        <article class="text-center mb-1  col-xs-6 col-sm-6 col-md-3">
+                            <i class="bi bi-truck fs-2"></i>
+                            <span>
+                                <p class="fs-6 " style="font-weight: ;">Entrega a domicilio</p>
+                            </span>
+                            <span>
+                                <p></p>
+                            </span>
+                        </article>
+                        <article class="text-center mb-1 col-xs-6 col-sm-6 col-md-3 ">
+                            <i class="bi bi-person-check fs-2"></i>
+                            <span>
+                                <p class="fs-6" style="font-weight: ;">Atención al cliente</p>
+                            </span>
+                            <span>
+                                <p></p>
+                            </span>
+                        </article>
+                        <article class="text-center mb-1  col-xs-6 col-sm-6 col-md-3">
+                            <i class="bi bi-lock fs-2"></i>
+                            <span>
+                                <p class="fs-6 " style="font-weight:;">Compra segura</p>
+                            </span>
+                            <span>
+                                <p></p>
+                            </span>
+                        </article>
+                    </div>
+                </div>
+            </div>
     <footer class="d-block justify-content-center align-middle w=100" style="height: 15vh;  background-color:#FF7216;">
         <div class="ctn-f-f w=100" style="height:20%;">
         </div>
