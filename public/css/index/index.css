@@ -4,6 +4,9 @@ nav{
     height:94px; 
     background-color:#EE7323; 
 }
+.electronica{
+    width: 75%;
+}
 .logo{
     width: 52%;
 }
@@ -131,7 +134,7 @@ section{
     transform: translate(-50%, -50%);
   }
 .card-produ{
-    height: 300px;
+    height: 250px;
     
 }
 .card-body{
@@ -187,6 +190,9 @@ section{
     main{
         padding-top:0px;
     }
+    .electronica{
+        width: 90%;
+    }
     .c-item{
         height: 30vh;
     }
@@ -202,9 +208,25 @@ section{
     .c-item{
         height: 15vh;   
     }
+    
 }
 
 @media screen and (min-width:576px){
+    .carousel-multiple-items .carousel-inner {
+    display: flex;
+}
+
+.carousel-multiple-items .carousel-item {
+    display: block; 
+    margin-right: 0;
+    flex: 0 0 calc(100%/3); 
+}
+
+.carousel-multiple-items .carousel-inner {
+    padding: 1em;
+}
+}
+@media screen and (min-width:1281px){
     .carousel-multiple-items .carousel-inner {
     display: flex;
 }
@@ -218,6 +240,5 @@ section{
 .carousel-multiple-items .carousel-inner {
     padding: 1em;
 }
-
-   
 }
+   

@@ -352,7 +352,7 @@
                 </div>
             </div>
             <div class="row w-100 d-flex justify-content-center">
-                <div class="w-75 ">
+                <div class="electronica">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/electronica/banner.jpg" alt="Imagen de fondo"
@@ -369,9 +369,9 @@
                 <h4 style="font-weight:bold;">¡Lo mejor para tu hogar!</h4>
             </div>
             <div class="carousel d-flex justify-content-center w-100">
-                <div id="carouselExample" class="carousel carousel-multiple-items " style="width:80%;">
+                <div id="carouselExample2" class="carousel carousel-multiple-items produd" style="width:80%;">
                     <div class="carousel-inner inner">
-                        <div class="carousel-item active produ">
+                        <div class="carousel-item active produc">
                             <div class="card-produ">
                                 <div class="img-wrapper">
                                     <img src="<?= base_url() ?>public/img/cocinas/comedor-card.webp" alt="...">
@@ -498,7 +498,7 @@
             </div>
             <div class="content d-flex justify-content-center">
                 <div class="row w-75">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/salas/salas.jpg" alt="Imagen de fondo"
                                 class="card-img">
@@ -509,7 +509,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/recamaras/recamara.jpg" alt="Imagen de fondo"
                                 class="card-img">
@@ -526,7 +526,7 @@
                 <h4 style="font-weight:bold;">¡Lo que estabas buscando!</h4>
             </div>
             <div class="carousel d-flex justify-content-center w-100">
-                <div id="carouselExample" class="carousel carousel-multiple-items " style="width:80%;">
+                <div id="carouselExample3" class="carousel carousel-multiple-items " style="width:80%;">
                     <div class="carousel-inner inner">
                         <div class="carousel-item active produ">
                             <div class="card-produ">
@@ -657,7 +657,7 @@
             <div class="w-100 d-flex justify-content-center">
                 <div class="row w-75">
 
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/cocinas/cocina.jpg" alt="Imagen de fondo"
                                 class="card-img">
@@ -667,7 +667,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="card custom-card">
                             <img src="<?= base_url() ?>public/img/electrodomesticos/electrodomesticos.jpg"
                                 alt="Imagen de fondo" class="card-img">
@@ -699,9 +699,9 @@
 
     <div id="about" class="about justify-content-center mt-1" style="width:100%; background-color: #EFEFEF">
                 <div class="father  d-flex justify-content-center">
-                    <div class="row d-flex  justify-content-center mt-1 w-75 ">
+                    <div class="row mt-1 w-75 ">
 
-                        <article class=" text-center mb-1 col-xs-6 col-sm-6 col-md-3 ">
+                        <article class="text-center col-xs-6 col-sm-6 col-md-3 ">
                             <i class="bi bi-clipboard2-check fs-2"></i>
                             <span>
                                 <p class="fs-6 " style="font-weight: ;">Calidad y Garantía</p>
@@ -710,7 +710,7 @@
                                 <p></p>
                             </span>
                         </article>
-                        <article class="text-center mb-1  col-xs-6 col-sm-6 col-md-3">
+                        <article class="text-center col-xs-6 col-sm-6 col-md-3">
                             <i class="bi bi-truck fs-2"></i>
                             <span>
                                 <p class="fs-6 " style="font-weight: ;">Entrega a domicilio</p>
@@ -719,7 +719,7 @@
                                 <p></p>
                             </span>
                         </article>
-                        <article class="text-center mb-1 col-xs-6 col-sm-6 col-md-3 ">
+                        <article class="text-center  col-xs-6 col-sm-6 col-md-3 ">
                             <i class="bi bi-person-check fs-2"></i>
                             <span>
                                 <p class="fs-6" style="font-weight: ;">Atención al cliente</p>
@@ -728,7 +728,7 @@
                                 <p></p>
                             </span>
                         </article>
-                        <article class="text-center mb-1  col-xs-6 col-sm-6 col-md-3">
+                        <article class="text-center  col-xs-6 col-sm-6 col-md-3">
                             <i class="bi bi-lock fs-2"></i>
                             <span>
                                 <p class="fs-6 " style="font-weight:;">Compra segura</p>
