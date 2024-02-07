@@ -9,7 +9,7 @@ class Tarjetas extends CI_Controller{
 
         $this->load->library('upload');
 		$this->load->helper('url');
-        $this->load->model('guardar_mdl');
+        $this->load->model('guardar_tarjetas');
         $this->load->model('change');
 	}
 
@@ -17,7 +17,7 @@ class Tarjetas extends CI_Controller{
         $this->load->view("insert");
     }
 
-// DELETE CARDS
+// Funcion para eliminar tarjetas
 
 public function deleteCard($id) {
 
@@ -30,9 +30,8 @@ public function deleteCard($id) {
 }
 
 
-////////////////////////////////////////////
 
-//EDIT CARDS
+// Funcion para editar
 
 public function getCard($id) {
 
@@ -49,7 +48,7 @@ public function getCard($id) {
     $current_image = $this->change->getCurrentImageName($id);
 
     if (!empty($current_image)) {
-        $image_path = FCPATH . 'public/img/productos/' . $current_image;
+        $image_path = FCPATH . 'assets/img/productos/' . $current_image;
         if (file_exists($image_path)) {
             unlink($image_path);
         }
@@ -58,7 +57,7 @@ public function getCard($id) {
     $image_name = '';
 
     if (!empty($_FILES['image']['name'])) {
-        $target_dir = FCPATH . 'public/img/productos/';
+        $target_dir = FCPATH . 'assets/img/productos/';
         $target_file = $target_dir . basename($_FILES['image']['name']);
 
         if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
@@ -82,7 +81,7 @@ public function getCard($id) {
 
   
 
-//////////////////////////////////////
+// Funcion para actualizar
     public function saveCardCategorias(){
         $titulo = $this->input->post("titulo");
         $precio = $this->input->post("precio");
@@ -91,7 +90,7 @@ public function getCard($id) {
         
     
         $this->upload->do_upload("file");
-        $rutaArchivo = "public/img/productos/";
+        $rutaArchivo = "assets/img/productos/";
         $nombreArchivo = $_FILES["image"]["name"];
         $pathFile = $rutaArchivo.$nombreArchivo;
     
@@ -104,7 +103,7 @@ public function getCard($id) {
             'identificador' => $identificador 
         );
     
-        $idTarjeta = $this->guardar_mdl->cardCategorias($datosTarjeta);
+        $idTarjeta = $this->guardar_tarjetas->cardCategorias($datosTarjeta);
     
         $datosEnviar = array();
         $datosEnviar['mensaje'] = "Registro con éxito";
@@ -115,7 +114,7 @@ public function getCard($id) {
     
     public function getCardCategorias(){
 
-        $tarjetas = $this->guardar_mdl->readCardCategorias();
+        $tarjetas = $this->guardar_tarjetas->readCardCategorias();
         $datosEnviar = array();
         if($tarjetas){
             $datosEnviar["status"] = 'success';
@@ -126,10 +125,11 @@ public function getCard($id) {
         echo json_encode($datosEnviar, JSON_NUMERIC_CHECK);
     }
 
-    ////////////////////7 search card
+    // Funcion para buscar 
 
     public function searchCards() {
         $identificador = $this->input->post("identificador");
+      
         $tarjetas = $this->change->searchCards($identificador);
     
         $datosEnviar = array();

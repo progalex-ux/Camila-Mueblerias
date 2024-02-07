@@ -28,7 +28,7 @@ class change extends CI_Model {
             );
         
             if (!empty($image_name)) {
-                $data['image'] = 'public/img/productos/' . $image_name; 
+                $data['image'] = 'assets/img/productos/' . $image_name; 
             }
         
             $this->db->where('id', $id);
@@ -53,10 +53,14 @@ class change extends CI_Model {
         }
         
 
-        ////////// buscar
+        // buscar
         public function searchCards($identificador) {
-            $this->db->where('identificador', $identificador);
-            $query = $this->db->get('categorias');
+            if ($identificador === 'all') {
+                $query = $this->db->get('categorias');
+            } else {
+                $this->db->where('identificador', $identificador);
+                $query = $this->db->get('categorias');
+            }
             return $query->result_array();
         }
         

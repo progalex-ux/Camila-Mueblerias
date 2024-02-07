@@ -3,26 +3,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
 
-
-
-		public function __construct()
+    public function __construct()
 		{
 			parent::__construct();
 			$this->load->model('login');
 			$this->load->helper('url');
 		}
-
+	
 	public function index()
 	{
 		$this->load->view('login');
 	}
-	public function tarjetas(){
-		$this->load->view('tarjetas');
-	}
-	public function changeData(){
-		$this->load->view('changeData');
-	}
-    public function login()
+
+	public function login()
     {
         $usuario =$this->input->post('usuario');
         $contrasena=$this->input->post('contrasena');
@@ -39,8 +32,14 @@ class Admin extends CI_Controller {
 		}
 		echo json_encode($data,JSON_NUMERIC_CHECK);
     }
-	public function insertProducts(){
-        $this->load->view("insertProducts");
-    }
-
+	
+	public function tarjetas(){
+		$this->load->view('tarjetas');
+	}
+	public function modificarTarjetas(){
+		$this->load->view('modificarTarjetas');
+	}
+	public function insert(){
+		$this->load->view('insert');
+	}
 }

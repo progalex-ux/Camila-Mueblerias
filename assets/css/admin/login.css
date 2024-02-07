@@ -1,0 +1,118 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-contenedor{
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login{
+    width: 100%;
+    height: 100%;
+}
+.empty{
+    width: 100%;
+    height: 5%;
+}
+.imagen{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.tittle{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.vacio{
+    width: 100%;
+    height: 5%;
+}
+.datos-login{
+    width: 100%;
+    height: 50%;
+}
+.datos-login label,
+.datos-login input {
+    display: block;
+    margin-bottom: 10px; 
+    
+}
+.datos-login label{
+    display: flex;
+    justify-content: center;
+}
+.datos-login input{
+    margin: 0 auto;
+    width: 50%;
+    height: 15%;
+    border:1px solid transparent;
+}
+.boton{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton button{
+    border-radius: 15px;
+    width: 50%;
+}
+.login-contenedor{
+    width: 400px; 
+    background-color:#212F3C ; 
+    height: 85%;
+    border-radius: 10px;
+}
+@media(max-width: 572px){
+    .login-contenedor{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 0;
+    }
+    .imagen-login{
+        width: 0%;
+        height: 100%;
+        background-color: gray;
+
+    }
+    .datos-login{
+        height: 30%;
+    }
+    .datos-login input{
+        width: 80%;
+        height: 20%;
+    }
+    .boton{
+        height: 7%;
+    }
+    .boton button{
+        width: 70%;
+    }
+    .login{
+        width: 100%;
+        height: 100%;
+    }
+}
