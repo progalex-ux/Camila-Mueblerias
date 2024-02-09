@@ -132,7 +132,7 @@ function editCard(id) {
 function searchCards() {
     var identificador = $("#categorySelect").val();
     if (identificador === 'all') {
-        identificador = '';
+        location.reload();
     }
     $.ajax({
         url: base_url + "index.php/tarjetas/searchCards",

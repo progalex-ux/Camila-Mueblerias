@@ -88,6 +88,39 @@ main{
     width: 100%;
     background-color: #fff;
 }
+.carouseluno{
+    width: 75%;
+}
+
+@media(max-width: 991px){
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+ 
+    }
+    .social-media{
+        display: none;
+    }
+    main{
+        padding-top:0px;
+    }
+    .c-item{
+        height: 30vh;
+    }
+
+      footer{
+        height: 11vh;
+    }
+    .empty{
+        height: 30px;
+    }
+}  
+@media(max-width:574px){
+    .c-item{
+        height: 15vh;   
+    }
+}
 
 @media screen and (min-width:576px){
     .carousel-multiple-items .carousel-inner {

@@ -39,6 +39,7 @@ section{
 }
 .card {
     height: 270px;
+    max-height: 270px;
     margin: 15px 5px 20px 5px;
     transition: transform 0.2s;
 }
@@ -46,11 +47,7 @@ section{
     cursor: pointer;
     transform: scale(1.04);
   }   
-.card img {
-    height: 60%;
-    width: 100%;
-    object-fit:cover;
-}
+
 .image{
     width: 100%;
     height: 60%;
@@ -58,11 +55,6 @@ section{
 .image img{
     height: 100%;
     width: 100%;
-}
-.custom-card-content {
-    padding: 15px;
-    display: block;
-    height: 40%;
 }
 
 .sellos{
@@ -84,6 +76,11 @@ section{
     width: 70px;
     background-color:#FC924D;
     justify-content: center;
+}
+.sello img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .botun{
     color: #fff;

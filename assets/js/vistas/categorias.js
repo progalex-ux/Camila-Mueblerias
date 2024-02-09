@@ -1,3 +1,11 @@
+function separador(productos){
+  var productos = localStorage.setItem("productos",productos)
+  window.location.href= base_url + "index.php/home/productos";
+}
+function showCategory(category){
+var category = localStorage.setItem("category",category)
+window.location.href= base_url + "index.php/home/categorias";
+}
 var category = localStorage.getItem("category");
 
 switch (category){
@@ -18,18 +26,18 @@ switch (category){
         $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
             $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Sofa camas' data-bs-custom-class='custom-tooltip-class'>").append(
               $("<a onclick=\"separador('SCA');\">").append(
-                $("<img src='" + base_url + "public/img/salas/sofacama1.png' alt=''>")
+                $("<img src='" + base_url + "aseets/img/categorias/sofacama1.png' alt=''>")
               )
             ),
            
             $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip'data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Salas Modular' data-bs-custom-class='custom-tooltip-class'>").append(
               $("<a onclick=\"separador('SA');\">").append(
-                $("<img src='" + base_url + "public/img/salas/salamodu.webp' alt=''>")
+                $("<img src='" + base_url + "assets/img/categorias/salamodu.webp' alt=''>")
               )
             ),
             $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Sofas' data-bs-custom-class='custom-tooltip-class'>").append(
                 $("<a 7>").append(
-                  $("<img src='" + base_url + "public/img/salas/sofa.webp' alt=''>")
+                  $("<img src='" + base_url + "assets/img/categorias/sofa.webp' alt=''>")
                 )
               ),
             
@@ -44,7 +52,7 @@ switch (category){
                   $("<div class='card rounded-bottom-1 '>").append(
                     $("<div class='image' style='width:100%; height:85%;'>").append(
                       $("<a onclick=\"separador('SCA');\">").append(
-                        $("<img class='object-fit-contain' src='" + base_url + "public/img/salas/card-sofacama.webp' alt=''>")
+                        $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/card-sofacama.webp' alt=''>")
                       )
                     ),
                     $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -59,7 +67,7 @@ switch (category){
                     $("<div class='card rounded-bottom-1'>").append(
                       $("<div class='image' style='width:100%; height:85%;'>").append(
                         $("<a onclick=\"separador('SA');\">").append(
-                          $("<img class='object-fit-contain' src='" + base_url + "public/img/salas/card-salamodular.webp' alt=''>")
+                          $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/card-salamodular.webp' alt=''>")
                         )
                       ),
                       $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -73,7 +81,7 @@ switch (category){
                     $("<div class='card rounded-bottom-1'>").append(
                       $("<div class='image' style='width:100%; height:85%;'>").append(
                         $("<a onclick=\"separador('SO');\">").append(
-                          $("<img class='object-fit-contain' src='" + base_url + "public/img/salas/card-sofa.webp' alt=''>")
+                          $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/card-sofa.webp' alt=''>")
                         )
                       ),
                       $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -108,18 +116,18 @@ switch (category){
         $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
             $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Comedores' data-bs-custom-class='custom-tooltip-class'>").append(
               $("<a onclick=\"separador('COM');\">").append(
-                $("<img src='" + base_url + "public/img/cocinas/sello-comedor.png' alt=''>")
+                $("<img src='" + base_url + "assets/img/categorias/sello-comedor.png' alt=''>")
               )
             ),
            
             $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Sillas' data-bs-custom-class='custom-tooltip-class'>").append(
               $("<a onclick=\"separador('SI');\">").append(
-                $("<img src='" + base_url + "public/img/cocinas/sello-silla.png'  alt=''>")
+                $("<img src='" + base_url + "assets/img/categorias/sello-silla.png'  alt=''>")
               )
             ),
             $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Vitrinas' data-bs-custom-class='custom-tooltip-class'>").append(
                 $("<a onclick=\"separador('VI');\">").append(
-                  $("<img src='" + base_url + "public/img/cocinas/sello-vitrina.png' alt=''>")
+                  $("<img src='" + base_url + "assets/img/categorias/sello-vitrina.png' alt=''>")
                 )
               ),
             
@@ -134,7 +142,7 @@ switch (category){
                   $("<div class='card rounded-bottom-1'>").append(
                     $("<div class='image' style='width:100%; height:85%;'>").append(
                       $("<a onclick=\"separador('COM');\">").append(
-                        $("<img class='object-fit-contain' src='" + base_url + "public/img/cocinas/comedor-card.png' alt=''>")
+                        $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/comedor-card.png' alt=''>")
                       )
                     ),
                     $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -149,7 +157,7 @@ switch (category){
                     $("<div class='card rounded-bottom-1'>").append(
                       $("<div class='image' style='width:100%; height:85%;'>").append(
                         $("<a onclick=\"separador('SI');\">").append(
-                          $("<img class='object-fit-contain' src='" + base_url + "public/img/cocinas/silla-card.webp' alt=''>")
+                          $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/silla-card.webp' alt=''>")
                         )
                       ),
                       $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -163,7 +171,7 @@ switch (category){
                     $("<div class='card rounded-bottom-1'>").append(
                       $("<div class='image' style='width:100%; height:85%;'>").append(
                         $("<a onclick=\"separador('VI');\">").append(
-                          $("<img class='object-fit-contain' src='" + base_url + "public/img/cocinas/vitrina-card.webp' alt=''>")
+                          $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/vitrina-card.webp' alt=''>")
                         )
                       ),
                       $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -199,36 +207,36 @@ switch (category){
             $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
                 $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-placement='bottom' data-bs-custom-class='custom-tooltip' data-bs-title='Bases para cama' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('BA');\">").append(
-                    $("<img src='" + base_url + "public/img/recamaras/basecama-sello.webp' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/basecama-sello.webp' alt=''>")
                   )
                 ),
                
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Buros' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('BU');\">").append(
-                    $("<img src='" + base_url + "public/img/recamaras/sello-buro.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-buro.png' alt=''>")
                   )
                 ),
                 
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Roperos' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('RO');\">").append(
-                    $("<img src='" + base_url + "public/img/recamaras/sello-ropero.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-ropero.png' alt=''>")
                   )
                 ),
                 
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Cabeceras' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('CA');\">").append(
-                    $("<img src='" + base_url + "public/img/recamaras/sello-cabecera.webp' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-cabecera.webp' alt=''>")
                   )
                 ),
                 
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Recamaras' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('RE');\">").append(
-                    $("<img src='" + base_url + "public/img/recamaras/sello-recamara.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-recamara.png' alt=''>")
                   )
                 ),
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Colchones' data-bs-custom-class='custom-tooltip-class'>").append(
                     $("<a onclick=\"separador('CO');\">").append(
-                      $("<img src='" + base_url + "public/img/recamaras/sello-colchon.png' alt=''>")
+                      $("<img src='" + base_url + "assets/img/categorias/sello-colchon.png' alt=''>")
                     )
                   )
               ),
@@ -240,7 +248,7 @@ switch (category){
                       $("<div class='card rounded-bottom-1'>").append(
                         $("<div class='image' style='width:100%; height:85%;'>").append(
                           $("<a onclick=\"separador('CO');\">").append(
-                            $("<img class='object-fit-contain' src='" + base_url + "public/img/recamaras/sello-colchon.png' alt=''>")
+                            $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-colchon.png' alt=''>")
                           )
                         ),
                         $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -255,7 +263,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('BA');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/recamaras/basecama-sello.webp' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/basecama-sello.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -270,7 +278,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('BU');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/recamaras/sello-buro.png' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-buro.png' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -285,7 +293,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('RO');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/recamaras/sello-ropero.png' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-ropero.png' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -300,7 +308,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('CA');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/recamaras/sello-cabecera.webp' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-cabecera.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -315,7 +323,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('RE');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/recamaras/sello-recamara.png' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-recamara.png' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -351,41 +359,41 @@ switch (category){
             $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
                 $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Estufas' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('ES');\">").append(
-                    $("<img src='" + base_url + "public/img/electrodomesticos/estufa.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/estufa.png' alt=''>")
                   )
                 ),
                
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Microondas' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('MI');\">").append(
-                    $("<img src='" + base_url + "public/img/electrodomesticos/microondas.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/microondas.png' alt=''>")
                   )
                 ),
                 
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Licuadoras' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('LI');\">").append(
-                    $("<img src='" + base_url + "public/img/electrodomesticos/licuadora.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/licuadora.png' alt=''>")
                   )
                 ),
                 
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Parrilla' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('PA');\">").append(
-                    $("<img src='" + base_url + "public/img/electrodomesticos/parrilla.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/parrilla.png' alt=''>")
                   )
                 ),
                 
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Secadora' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('SE');\">").append(
-                    $("<img src='" + base_url + "public/img/electrodomesticos/secadora.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/secadora.png' alt=''>")
                   )
                 ),
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Lavadora' data-bs-custom-class='custom-tooltip-class'>").append(
                     $("<a onclick=\"separador('LAV');\">").append(
-                      $("<img src='" + base_url + "public/img/electrodomesticos/lavadora.png' alt=''>")
+                      $("<img src='" + base_url + "assets/img/categorias/lavadora.png' alt=''>")
                     )
                   ),
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Refrigerador' data-bs-custom-class='custom-tooltip-class'>").append(
                     $("<a onclick=\"separador('REF');\">").append(
-                      $("<img src='" + base_url + "public/img/electrodomesticos/refrigerador.png' alt=''>")
+                      $("<img src='" + base_url + "assets/img/categorias/refrigerador.png' alt=''>")
                     )
                   )
               ),
@@ -399,7 +407,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('ES');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electrodomesticos/card-estufa.webp' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/card-estufa.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -414,7 +422,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('MI');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electrodomesticos/card-microondas.webp' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/card-microondas.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -429,7 +437,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('LI');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electrodomesticos/licuadora.png' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/licuadora.png' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -444,7 +452,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('PA');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electrodomesticos/card-parrilla.webp' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/card-parrilla.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -459,7 +467,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('LAV');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electrodomesticos/card-lavadora.webp' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/card-lavadora.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -474,7 +482,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('SE');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electrodomesticos/card-secadora.webp' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/card-secadora.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -511,31 +519,31 @@ switch (category){
             $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
                 $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Celulares' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('CE');\">").append(
-                    $("<img src='" + base_url + "public/img/electronica/sello-phone.webp' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-phone.webp' alt=''>")
                   )
                 ),
                
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Tablets' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('TA');\">").append(
-                    $("<img src='" + base_url + "public/img/electronica/sello-ipad.webp' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-ipad.webp' alt=''>")
                   )
                 ),
                 
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Laptops' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('LA');\">").append(
-                    $("<img src='" + base_url + "public/img/electronica/sello-laptop.webp' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-laptop.webp' alt=''>")
                   )
                 ),
                 
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Televisiones' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('TE');\">").append(
-                    $("<img src='" + base_url + "public/img/electronica/sello-tv.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-tv.png' alt=''>")
                   )
                 ),
                 
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Bocinas' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('BO');\">").append(
-                    $("<img src='" + base_url + "public/img/electronica/sello-bocina.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-bocina.png' alt=''>")
                   )
                 )
               ),
@@ -547,7 +555,7 @@ switch (category){
                       $("<div class='card rounded-bottom-1'>").append(
                         $("<div class='image' style='width:100%; height:85%;'>").append(
                           $("<a onclick=\"separador('CE');\">").append(
-                            $("<img class='object-fit-contain' src='" + base_url + "public/img/electronica/sello-phone.webp' alt=''>")
+                            $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-phone.webp' alt=''>")
                           )
                         ),
                         $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -561,7 +569,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('TA');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electronica/sello-ipad.webp' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-ipad.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -575,7 +583,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('LA');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electronica/sello-laptop.webp' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-laptop.webp' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -589,7 +597,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('TE');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electronica/sello-tv.png' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-tv.png' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -603,7 +611,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('BO');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/electronica/sello-bocina.png' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/sello-bocina.png' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -636,12 +644,12 @@ switch (category){
             $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
                 $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Cuatrimoto' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('CUA');\">").append(
-                    $("<img src='" + base_url + "public/img/motos/sello-cuatrimoto.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-cuatrimoto.png' alt=''>")
                   )
                 ),         
                 $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Motos' data-bs-custom-class='custom-tooltip-class'>").append(
                   $("<a onclick=\"separador('MOT');\">").append(
-                    $("<img src='" + base_url + "public/img/motos/sello-motoneta.png' alt=''>")
+                    $("<img src='" + base_url + "assets/img/categorias/sello-motoneta.png' alt=''>")
                   )
                 ),       
               ),
@@ -651,7 +659,7 @@ switch (category){
                       $("<div class='card rounded-bottom-1'>").append(
                         $("<div class='image' style='width:100%; height:85%;'>").append(
                           $("<a onclick=\"separador('MOT');\">").append(
-                            $("<img class='object-fit-contain' src='" + base_url + "public/img/motos/portada.webp' alt=''>")
+                            $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/portada.webp' alt=''>")
                           )
                         ),
                         $("<div class='boton' style='width:100%; height:15%;'>").append(
@@ -665,7 +673,7 @@ switch (category){
                         $("<div class='card rounded-bottom-1'>").append(
                           $("<div class='image' style='width:100%; height:85%;'>").append(
                             $("<a onclick=\"separador('CUA');\">").append(
-                              $("<img class='object-fit-contain' src='" + base_url + "public/img/motos/cuatri.jpg' alt=''>")
+                              $("<img class='object-fit-contain' src='" + base_url + "assets/img/categorias/cuatri.jpg' alt=''>")
                             )
                           ),
                           $("<div class='boton' style='width:100%; height:15%;'>").append(
