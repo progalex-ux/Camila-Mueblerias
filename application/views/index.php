@@ -182,7 +182,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner ">
+                <div class="carousel-inner rounded-0">
                     <div class="carousel-item active c-item " data-bs-interval="5000">
                         <img src="<?= base_url() ?>assets/img/index/c-image1.webp"
                             class="d-block w-100 c-image object-fit-cover" alt="recamaras">
@@ -222,15 +222,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="caption d-flex justify-content-center w-100 mt-3 mb-3">
                 <h4 style="font-weight:bold;">¡Lo mejor para ti!</h4>
             </div>
-            <div class="carousel d-flex justify-content-center w-100">
-                <div id="carouselExample" class="carousel carousel-multiple-items carouseluno " style="background-color:white;">
+            
+            <div class="carousel rounded d-flex justify-content-center ">
+                <div id="carouselExample1" class="carousel carousel-multiple-items carouseluno " style="background-color:white;">
                     <div class="carousel-inner inner ">
                         <div class="carousel-item active produ">
-                            <div class="card-produ">
-                                <div class="img-wrapper">
+                            <div class="card-produ ">
+                                <div class="img-wrapper rounded-top">
                                     <img src="<?= base_url() ?>assets/img/index/carousel-laptop.webp" alt="Laptop">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body ">
                                     <h6 class="card-title">$10,999</h6>
                                     <p class="card-text">Laptop HP 14-DK1032WM / RYZEN 3-3250U</p>
                                 </div>
@@ -315,12 +316,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev previus z-0" type="button" data-bs-target="#carouselExample"
+                    <button class="carousel-control-prev previus z-0" type="button" data-bs-target="#carouselExample1"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon iconn z-0" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next nextt z-0" type="button" data-bs-target="#carouselExample"
+                    <button class="carousel-control-next nextt z-0" type="button" data-bs-target="#carouselExample1"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon iconn z-0" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
@@ -328,21 +329,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
             <div class="d-flex justify-content-center w-100 mt-4">
-                <div class="banner-electronica w-75" >
+                <div class="banner-electronica" >
                     <button class="border-0" onclick="showCategory('electronica')"><img class="object-fit-cover w-100 h-100" src="<?= base_url() ?>assets/img/index/banner-electronica1.webp" alt="electronica"></button>
                 </div>
             </div>
         </section>
         <section class="section-cards h-100 w-100">
             <div class="container-fluid d-flex justify-content-center">
-                <div class="row w-75 d-flex jusitfy-items-center" style="max-width:100%">
+                <div class="row rou d-flex jusitfy-items-center" style="max-width:100%">
                     <div class="col-xs-12 col-sm-12 col-md-4 col-log-4">
                         <div class="card rounded">
                             <div class="tittle d-flex justify-content-center">
                             <h5 class="pt-3">PANTALLAS</h5>
                             </div>
                             <div class="image-card rounded-bottom">
-                                <img class="object-fit-contain" src="<?= base_url() ?>assets/img/index/card-pantallas.webp" alt="motos">
+                                <a onclick="separador('TE')" ><img class="object-fit-contain" src="<?= base_url() ?>assets/img/index/card-pantallas.webp" alt="motos"></a>
                             </div>
                             
                         </div>
@@ -353,7 +354,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h5 class="pt-3">COLCHONES</h5>
                             </div>
                             <div class="image-card rounded-bottom">
-                                <img class="object-fit-contain" src="<?= base_url() ?>assets/img/index/card-colchones.webp" alt="colchones">
+                               <a onclick="separador('CO')"><img class="object-fit-contain" src="<?= base_url() ?>assets/img/index/card-colchones.webp" alt="colchones"></a>
                             </div>
                             <div class="div"></div>
 
@@ -365,7 +366,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h5 class="pt-3">MOTOS</h5>
                             </div>
                             <div class="image-card rounded-bottom">
-                                <img class="object-fit-contain" src="<?= base_url() ?>assets/img/index/card-motos.webp" alt="motos">
+                                <a onclick="showCategory('motos')"><img class="object-fit-contain" src="<?= base_url() ?>assets/img/index/card-motos.webp" alt="motos"></a>
                             </div>
                             <div class="div"></div>
                         </div>
@@ -380,8 +381,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 
             </div>
-            <div class="carousel d-flex justify-content-center w-100 pb-4">
-                <div id="carouselExample" class="carousel carousel-multiple-items carouseluno " style="width:75%; background-color:white;">
+            <div class="carousel d-flex justify-content-center w-100 pb-4 ">
+                <div id="carouselExample2" class="carousel carousel-multiple-items carouseluno " style="background-color:white;">
                     <div class="carousel-inner inner ">
                         <div class="carousel-item active produ">
                             <div class="card-produ">
@@ -473,12 +474,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev previus z-0" type="button" data-bs-target="#carouselExample"
+                    <button class="carousel-control-prev previus z-0" type="button" data-bs-target="#carouselExample2"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon iconn z-0" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next nextt z-0" type="button" data-bs-target="#carouselExample"
+                    <button class="carousel-control-next nextt z-0" type="button" data-bs-target="#carouselExample2"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon iconn z-0" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>

@@ -182,7 +182,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
         </aside>       
         <section > 
-            <div class="container-fluid">
+            <div class="container-fluid content">
                 <div class="row" id="tarjetas" style="max-width: 100%;">
                     
                     

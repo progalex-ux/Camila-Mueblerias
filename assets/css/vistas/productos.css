@@ -58,6 +58,7 @@ section{
 .link:hover{
     color: #EE7323;
 }
+
 @media(max-width:991px){
      aside{
         width: 0;
@@ -66,4 +67,12 @@ section{
      section{
         width:100%;
      }
+     .content{
+        display: flex;
+        justify-content: center;
+     }
+     .row{
+        width: 90%;
+     }
+     
 }

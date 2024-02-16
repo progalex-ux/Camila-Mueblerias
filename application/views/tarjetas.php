@@ -38,9 +38,9 @@
         <div class="content d-flex justify-content-center">
              <div class="row ">
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="card">
+                    <div class="card" style="height:360px">
                         <div class="image">
-                            <img src="<?= base_url() ?>assets/img/admin/" alt="Imagen">
+                            <img src="<?= base_url() ?>assets/img/admin/portada-s.webp" alt="Imagen">
                         </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Salas </h5>
@@ -50,9 +50,9 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="card">
+                    <div class="card" style="height:360px">
                         <div class="image">
-                        <img src="<?= base_url() ?>assets/img/admin/" alt="Imagen">
+                        <img src="<?= base_url() ?>assets/img/admin/portada-r.webp" alt="Imagen">
                         </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Recamaras</h5>
@@ -62,9 +62,9 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="card">
+                    <div class="card" style="height:360px">
                         <div class="image">
-                        <img src="<?= base_url() ?>assets/img/admin/" alt="Imagen">
+                        <img src="<?= base_url() ?>assets/img/admin/portada-c.webp" alt="Imagen">
                         </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Cocinas</h5>
@@ -74,9 +74,9 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="card">
+                    <div class="card" style="height:360px">
                         <div class="image">
-                        <img src="<?= base_url() ?>assets/img/admin/" alt="Imagen">
+                        <img src="<?= base_url() ?>assets/img/admin/portada-e.webp" alt="Imagen">
                         </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Electronica</h5>
@@ -86,9 +86,9 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="card">
+                    <div class="card" style="height:360px">
                         <div class="image">
-                        <img src="<?= base_url() ?>assets/img/admin/" alt="Imagen">
+                        <img src="<?= base_url() ?>assets/img/admin/portada-ele.webp" alt="Imagen">
                         </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Electrodomesticos</h5>
@@ -98,9 +98,9 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="card">
+                    <div class="card" style="height:360px">
                         <div class="image">
-                        <img src="<?= base_url() ?>assets/img/admin/" alt="Imagen">
+                        <img src="<?= base_url() ?>assets/img/admin/portada-m.webp" alt="Imagen">
                         </div>
                         <div class="custom-card-content">
                             <h5 class="custom-card-title" style="color:#db600e;">Motos</h5>
