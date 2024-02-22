@@ -330,15 +330,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <div class="d-flex justify-content-center w-100 mt-4">
                 <div class="banner-electronica" >
-                    <button class="border-0" onclick="showCategory('electronica')"><img class="object-fit-cover w-100 h-100" src="<?= base_url() ?>assets/img/index/banner-electronica1.webp" alt="electronica"></button>
+                    <img class="object-fit-cover w-100 h-100" onclick="showCategory('electronica')" src="<?= base_url() ?>assets/img/index/banner-electronica1.webp" alt="electronica">
                 </div>
             </div>
         </section>
         <section class="section-cards h-100 w-100">
-            <div class="container-fluid d-flex justify-content-center">
-                <div class="row rou d-flex jusitfy-items-center" style="max-width:100%">
+            <div class="w-100 d-flex justify-content-center">
+                <div class="row rou d-flex jusitfy-items-around " style="max-width:100%">
                     <div class="col-xs-12 col-sm-12 col-md-4 col-log-4">
-                        <div class="card rounded">
+                        <div class="card card-1">
                             <div class="tittle d-flex justify-content-center">
                             <h5 class="pt-3">PANTALLAS</h5>
                             </div>
@@ -349,7 +349,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-log-4">
-                        <div class="card rounded">
+                        <div class="card card-2">
                             <div class="tittle d-flex justify-content-center">
                             <h5 class="pt-3">COLCHONES</h5>
                             </div>
@@ -361,7 +361,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-log-4">
-                        <div class="card rounded">
+                        <div class="card card-3">
                             <div class="tittle d-flex justify-content-center">
                             <h5 class="pt-3">MOTOS</h5>
                             </div>

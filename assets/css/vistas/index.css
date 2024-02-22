@@ -90,14 +90,21 @@ main{
     width: 100%;
     background-color: #fff;
 }
-.carouseluno{
+.carouseluno,
+.rou,
+.banner-electronica{
     width: 75%;
 }
-
 .rou{
-    width: 76%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-
+.card-1{
+    margin-right: 36px;
+}
+.card-3{
+    margin-left: 36px;
+}
 
 @media(max-width: 991px){
     header{
@@ -126,11 +133,11 @@ main{
     #carouselExample{
         border-radius:8px
     }
-    .rou{
-        width: 75%;
+    .card-1{
+        margin-right: 0px;
     }
-    .banner-electronica{
-        width: 75%;
+    .card-3{
+        margin-left: 0px;
     }
 
     

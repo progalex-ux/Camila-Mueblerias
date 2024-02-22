@@ -24,18 +24,18 @@ switch (category){
         ),
       
         $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
-            $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Sofa camas' data-bs-custom-class='custom-tooltip-class'>").append(
+            $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Sofa camas'>").append(
               $("<a onclick=\"separador('SCA');\">").append(
                 $("<img src='" + base_url + "assets/img/categorias/sofacama1.webp' alt=''>")
               )
             ),
            
-            $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip'data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Salas Modular' data-bs-custom-class='custom-tooltip-class'>").append(
+            $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip'data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Salas Modular' >").append(
               $("<a onclick=\"separador('SA');\">").append(
                 $("<img src='" + base_url + "assets/img/categorias/salamodu.webp' alt=''>")
               )
             ),
-            $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Sofas' data-bs-custom-class='custom-tooltip-class'>").append(
+            $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Sofas' >").append(
                 $("<a 7>").append(
                   $("<img src='" + base_url + "assets/img/categorias/sofa.webp' alt=''>")
                 )
@@ -97,6 +97,9 @@ switch (category){
       var tittle = `Salas | Camila Mueblerias`;
       $("#titulo").append(tittle)
       $("#mainget").append($section);
+      $(document).ready(function () {
+        $('[data-bs-toggle="tooltip"]').tooltip();
+    });
 
         break;
     case "cocinas":
@@ -114,18 +117,18 @@ switch (category){
         ),
       
         $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
-            $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Comedores' data-bs-custom-class='custom-tooltip-class'>").append(
+            $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Comedores'>").append(
               $("<a onclick=\"separador('COM');\">").append(
                 $("<img src='" + base_url + "assets/img/categorias/sello-comedor.png' alt=''>")
               )
             ),
            
-            $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Sillas' data-bs-custom-class='custom-tooltip-class'>").append(
+            $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Sillas' >").append(
               $("<a onclick=\"separador('SI');\">").append(
                 $("<img src='" + base_url + "assets/img/categorias/sello-silla.png'  alt=''>")
               )
             ),
-            $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Vitrinas' data-bs-custom-class='custom-tooltip-class'>").append(
+            $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Vitrinas'>").append(
                 $("<a onclick=\"separador('VI');\">").append(
                   $("<img src='" + base_url + "assets/img/categorias/sello-vitrina.png' alt=''>")
                 )
@@ -188,6 +191,9 @@ switch (category){
       var tittle = `Cocinas | Camila Mueblerias`;
       $("#titulo").append(tittle)
       $("#mainget").append($section);
+      $(document).ready(function () {
+        $('[data-bs-toggle="tooltip"]').tooltip();
+    });
     
         break;
     case "recamaras":
@@ -205,36 +211,36 @@ switch (category){
             ),
           
             $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
-                $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-placement='bottom' data-bs-custom-class='custom-tooltip' data-bs-title='Bases para cama' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-placement='bottom' data-bs-custom-class='custom-tooltip' data-bs-title='Bases para cama' >").append(
                   $("<a onclick=\"separador('BA');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/basecama-sello.webp' alt=''>")
                   )
                 ),
                
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Buros' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Buros' >").append(
                   $("<a onclick=\"separador('BU');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-buro.webp' alt=''>")
                   )
                 ),
                 
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Roperos' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Roperos'>").append(
                   $("<a onclick=\"separador('RO');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-ropero.webp' alt=''>")
                   )
                 ),
                 
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Cabeceras' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Cabeceras' >").append(
                   $("<a onclick=\"separador('CA');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-cabecera.webp' alt=''>")
                   )
                 ),
                 
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Recamaras' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Recamaras' >").append(
                   $("<a onclick=\"separador('RE');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-recamara.webp' alt=''>")
                   )
                 ),
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Colchones' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Colchones' >").append(
                     $("<a onclick=\"separador('CO');\">").append(
                       $("<img src='" + base_url + "assets/img/categorias/sello-colchon.webp' alt=''>")
                     )
@@ -340,6 +346,9 @@ switch (category){
           var tittle = `Recamaras | Camila Mueblerias`;
           $("#titulo").append(tittle)
           $("#mainget").append($section);
+          $(document).ready(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
         break;
 
     case "electrodomesticos":
@@ -357,41 +366,41 @@ switch (category){
             ),
           
             $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
-                $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Estufas' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Estufas' >").append(
                   $("<a onclick=\"separador('ES');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/estufa.png' alt=''>")
                   )
                 ),
                
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Microondas' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Microondas' >").append(
                   $("<a onclick=\"separador('MI');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/microondas.png' alt=''>")
                   )
                 ),
                 
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Licuadoras' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Licuadoras' >").append(
                   $("<a onclick=\"separador('LI');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/licuadora.png' alt=''>")
                   )
                 ),
                 
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Parrilla' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Parrilla' >").append(
                   $("<a onclick=\"separador('PA');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/parrilla.png' alt=''>")
                   )
                 ),
                 
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Secadora' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Secadora' >").append(
                   $("<a onclick=\"separador('SE');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/secadora.png' alt=''>")
                   )
                 ),
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Lavadora' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Lavadora' >").append(
                     $("<a onclick=\"separador('LAV');\">").append(
                       $("<img src='" + base_url + "assets/img/categorias/lavadora.png' alt=''>")
                     )
                   ),
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Refrigerador' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Refrigerador' >").append(
                     $("<a onclick=\"separador('REF');\">").append(
                       $("<img src='" + base_url + "assets/img/categorias/refrigerador.png' alt=''>")
                     )
@@ -500,6 +509,9 @@ switch (category){
           var tittle = `Electrodomesticos | Camila Mueblerias`;
           $("#titulo").append(tittle)
           $("#mainget").append($section);
+          $(document).ready(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
         break;
 
     case "electronica":
@@ -517,31 +529,31 @@ switch (category){
             ),
           
             $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
-                $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Celulares' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Celulares' >").append(
                   $("<a onclick=\"separador('CE');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-phone.webp' alt=''>")
                   )
                 ),
                
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Tablets' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Tablets' >").append(
                   $("<a onclick=\"separador('TA');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-ipad.webp' alt=''>")
                   )
                 ),
                 
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Laptops' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Laptops' >").append(
                   $("<a onclick=\"separador('LA');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-laptop.webp' alt=''>")
                   )
                 ),
                 
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Televisiones' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Televisiones' >").append(
                   $("<a onclick=\"separador('TE');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-tv.png' alt=''>")
                   )
                 ),
                 
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Bocinas' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Bocinas' >").append(
                   $("<a onclick=\"separador('BO');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-bocina.png' alt=''>")
                   )
@@ -626,7 +638,10 @@ switch (category){
               );       
           var tittle = `Electronica | Camila Mueblerias`;
           $("#titulo").append(tittle) 
-          $("#mainget").append($section);        
+          $("#mainget").append($section);       
+          $(document).ready(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        }); 
         break;
 
     case "motos":
@@ -642,12 +657,12 @@ switch (category){
               )
             ),
             $("<div class='sellos d-none d-md-flex d-flex justify-content-center' style='background-color:#F2F3F4;'>").append(
-                $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Cuatrimoto' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Cuatrimoto' >").append(
                   $("<a onclick=\"separador('CUA');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-cuatrimoto.webp' alt=''>")
                   )
                 ),         
-                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Motos' data-bs-custom-class='custom-tooltip-class'>").append(
+                $("<div class='sello d-none d-md-flex ms-5 rounded-5' data-bs-toggle='tooltip' data-bs-custom-class='custom-tooltip' data-bs-placement='bottom' data-bs-title='Motos' >").append(
                   $("<a onclick=\"separador('MOT');\">").append(
                     $("<img src='" + base_url + "assets/img/categorias/sello-motoneta.webp' alt=''>")
                   )
@@ -688,6 +703,9 @@ switch (category){
               );
         var tittle = `Motos | Camila Mueblerias`;
         $("#titulo").append(tittle)
-        $("#mainget").append($section);         
+        $("#mainget").append($section); 
+        $(document).ready(function () {
+          $('[data-bs-toggle="tooltip"]').tooltip();
+      });        
         break;
 }

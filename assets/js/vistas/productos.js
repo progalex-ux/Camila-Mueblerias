@@ -79,7 +79,7 @@
     tarjetas.forEach(function (valor) {
       if (identificadorVista === valor.identificador) {
         var $div = $("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'>").append(
-          $("<div class='card rounded-3 border-0'>").append(
+          $("<div class='card rounded-3 border-0' style='height:350px;'>").append(
             $("<div class='image d-flex justify-content-center'>").append(
               $("<img class='object-fit-contain' src='" + base_url + valor.image + "'>")
             ),

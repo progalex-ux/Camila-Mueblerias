@@ -9,6 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/menu/menu.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/vistas/categorias.css">
     <link rel="icon" href="<?= base_url() ?>assets/img/logo/logo.icon">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/scss/boostrap.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap.min.css">
     <title>Camila Mueblerias</title>
