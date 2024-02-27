@@ -42,10 +42,7 @@
       display: flex;
       align-items: center;
   }
-  .imagen{
-      height: 90px;
-      width: 35%;
-  }
+  
   .imagen img{
       max-width: 100%;
       max-height: 100%;
@@ -62,10 +59,7 @@
     display: none;
   }
   
-  .imagen{
-    height: 100px;
-  
-  }
+
   .imagen img{
     max-width: 100%;
     max-height: 100%;
@@ -86,7 +80,8 @@
       min-height: 100vh;
       position:relative;
     }
-    .text{
+    .text,
+    .price{
       font-size: 10px;
     }
     .opciones{
