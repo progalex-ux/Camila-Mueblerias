@@ -15,19 +15,14 @@
 </head>
 
 <body>
-    <header class="d-flex " style="height:60px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-        <div class="logo" style="width:44%">
-            <div class="ms-1 h-100" style="display:flex; align-items: center;">
-            <a class="rounded-pill ms-2 icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0" href="<?= base_url() ?>index.php/admin/" style="color:black;"><i class="bi bi-box-arrow-left fs-5" style="color:black;"></i></a>
+    <header class="position-relative">
+        <div class="position-absolute top-50 start-0 translate-middle-y">
+            <a class="rounded-pill ms-2 icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0" href="<?= base_url() ?>index.php/admin/tarjetas" style="color:black;"><i class="bi bi-arrow-left fs-5" style="color:black;"></i></a>
         </div>
-        </div>
-        <div class="titulo d-flex justify-content-between" style="width:55%;">
-            <div>
+        <div class="position-absolute top-50 start-50 translate-middle" >
                 <h1 style="color:#db600e;">Admin </h1>
-            </div>
-            
         </div>
-        <div style="display:flex; align-items: center;">  
+        <div class="position-absolute top-50 end-0 translate-middle-y">  
                 <a href="<?= base_url() ?>index.php/admin/modificarTarjetas" class="btn btn-light custom-tooltip" data-bs-toggle="tooltip" data-placement="bottom"
                         title="Modificar contenido">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

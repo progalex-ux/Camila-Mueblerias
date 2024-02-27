@@ -15,19 +15,16 @@
 </head>
 
 <body style="background-color:white;">
-    <header class="d-flex " style="height:60px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-        <div class="logo" style="width:44%">
-            <div class="ms-1 h-100" style="display:flex; align-items: center;">
+    <header class="position-relative">
+        <div class="position-absolute top-50 start-0 translate-middle-y">
             <a class="rounded-pill ms-2 icon-link icon-link-hover link-offset-2 link-underline link-underline-opacity-0" href="<?= base_url() ?>index.php/admin/" style="color:black;"><i class="bi bi-box-arrow-left fs-5" style="color:black;"></i></a>
         </div>
-        </div>
-        <div class="titulo d-flex justify-content-between" style="width:55%;">
-            <div>
+        <div class="position-absolute top-50 start-50 translate-middle">
+      
                 <h1 style="color:#db600e;">Admin </h1>
-            </div>
             
         </div>
-        <div style="display:flex; align-items: center;">  
+        <div class="position-absolute top-50 end-0 translate-middle-y">  
                 <a href="<?= base_url() ?>index.php/admin/tarjetas" class="btn btn-light custom-tooltip" data-bs-toggle="tooltip" data-placement="bottom" title="Agregar contenido">     
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>

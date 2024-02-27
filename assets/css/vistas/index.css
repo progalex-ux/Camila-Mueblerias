@@ -139,6 +139,11 @@ main{
     .card-3{
         margin-left: 0px;
     }
+    .carouseluno,
+    .rou,
+    .banner-electronica{
+        width: 85%;
+    }
 
     
 }  

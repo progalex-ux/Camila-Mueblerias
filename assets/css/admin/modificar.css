@@ -8,14 +8,13 @@
     z-index: 1000;
     background-color: white;
     height: 60px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
   aside{
     position:sticky;
     top: 60px;
     z-index: 1;
-  
-    border-left:1px solid  rgba(0, 0, 0, 0.192);
-    
+    border-left:1px solid  rgba(0, 0, 0, 0.192); 
   }
   #image-container {
       width: 100%;

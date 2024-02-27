@@ -22,8 +22,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     alt="Camila Mueblerias" href="<?= base_url() ?>index.php/home/"></a>
             </div>
             <div class="social-media position-absolute top-50 end-0 translate-middle-y d-none d-lg-flex">
-                <span><i class="bi bi-facebook fs-4 pe-3"></i></span>
-                <span><i class="bi bi-instagram fs-4 pe-2"></i></span>
+                <span><a href="https://www.facebook.com/profile.php?id=100054430302386" target='_blank'><i class="bi bi-facebook fs-4 pe-3"></i></a></span>
+                <span><a href="https://www.instagram.com/camilamuebleriasgto/" target='_blank'><i class="bi bi-instagram fs-4 pe-2"></i></a></span>
             </div>
             <div class="secciones d-flex align-items-center text-center" style=" background-color: transparent;">
                 <div class="menu position-relative d-inline-block position-absolute top-50 bottom-25  start-0 ms-5">
